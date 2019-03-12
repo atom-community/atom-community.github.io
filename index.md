@@ -4,6 +4,7 @@
 
 layout: default
 ---
+## Objective
 
 The original objective of the Facebook [Nuclide](https://nuclide.io) / [Atom-IDE](https://ide.atom.io) project has been to provide extension packages for the [Atom Editor](https://www.atom.io) to interact with custom Language Servers via the [Language Server Protocol](https://langserver.org) to enable IDE like functionality in our beloved editor.
 
@@ -11,7 +12,41 @@ The original package was made of various "subpackages" that provide the overall 
 
 The objective of this project is to take over the concepts and ideas in the original atom-ide-ui package, but provide individual extensions that can be developed, released and installed independently.
 
-We will start with the most important features, and iterate on them quickly to come on par with the functionality available in the atom-ide-ui package.   
+We will start with the most important features, and iterate on them quickly to come on par with the functionality available in the atom-ide-ui package.
 
-Data Tip Provider
+
+## Getting Started
+
+So far, there have been a few features from the original atom-ide-ui package that have been created as individual packages. Here are the steps required to start using IDE features in your Atom Text Editor using the new community packages.
+
+1. Install an IDE language package that you would like to use:
+* TypeScript & JavaScript [ide-typescript](https://atom.io/packages/ide-typescript)
+* Python [ide-python](https://atom.io/packages/ide-python)
+* Rust [ide-rust](hhttps://atom.io/packages/ide-rust)
+* You can also search for [packages](https://atom.io/packages/search?q=IDE) in Atom.
+
+2. Install any of the [community packages](https://atom.io/users/atom-ide-community) listed below.
+
+3. Enjoy!
+
+## Atom IDE Community Packages
+
+### AutoComplete
+
+Once you have installed an IDE language package, this should work right away.
+
+### [Data Tip](https://atom.io/packages/atom-ide-datatip)
+
+A replacement of the DataTip functionality from atom-ide-ui. When you hover over a symbol in your code (or move your cursor to it), it can show you details about that symbol in a tool tip. [More details](https://github.com/atom-ide-community/atom-ide-datatip#atom-ide-datatip-package)
+
 ![](./assets/images/screenshot-datatip.png){:width="100%"}
+
+### [Signature Help](https://atom.io/packages/atom-ide-signature-help)
+
+A replacement of the signature help functionality from atom-ide-ui. When you're calling a function, it can help you understand the parameters or information about the function you’re calling. [More details](https://github.com/atom-ide-community/atom-ide-signature-help#atom-ide-signature-help)
+
+![](./assets/images/screenshot-sig-help.png){:width="100%"}
+
+### [Go to Definition](https://atom.io/packages/atom-ide-definitions)
+
+A replacement of the go to definition functionality from atom-ide-ui. [More details](https://github.com/atom-ide-community/atom-ide-definitions#atom-ide-definitions-package)
