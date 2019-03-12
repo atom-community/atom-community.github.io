@@ -25,15 +25,21 @@ So far, there have been a few features from the original atom-ide-ui package tha
 * Rust [ide-rust](hhttps://atom.io/packages/ide-rust)
 * You can also search for [packages](https://atom.io/packages/search?q=IDE) in Atom.
 
-2. Install any of the [community packages](https://atom.io/users/atom-ide-community) listed below.
+  **IMPORTANT: if you are asked if you want to install the atom-ide-ui dependency by one of those packages, you usually can deny doing so**
 
-3. Enjoy!
+2. Install the [Busy-Signal](https://atom.io/packages/busy-signal) package that is uses by some of the existing ide-packages to show running background tasks
+
+3. Install any of the [community packages](https://atom.io/users/atom-ide-community) listed below.
+
+4. Enjoy!
 
 ## Atom IDE Community Packages
 
 ### AutoComplete
 
 Once you have installed an IDE language package, this should work right away.
+
+![](./assets/images/screenshot-autocomplete.png){:width="100%"}
 
 ### [Data Tip](https://atom.io/packages/atom-ide-datatip)
 
@@ -50,3 +56,9 @@ A replacement of the signature help functionality from atom-ide-ui. When you're 
 ### [Go to Definition](https://atom.io/packages/atom-ide-definitions)
 
 A replacement of the go to definition functionality from atom-ide-ui. [More details](https://github.com/atom-ide-community/atom-ide-definitions#atom-ide-definitions-package)
+
+### Linter / Linter-UI
+
+There is an existing [linter](https://atom.io/packages/linter) and [linter-ui](https://atom.io/packages/linter-ui-default) that is known to work with the existing ide-packages. It can be configured to only show linting errors per file, or for the whole project in its settings.
+
+![](./assets/images/screenshot-linter.png){:width="100%"}
