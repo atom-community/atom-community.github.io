@@ -24,7 +24,7 @@ So far, there have been a few features from the original atom-ide-ui package tha
 * HTML [ide-html](https://atom.io/packages/ide-html)
 * CSS, LESS, SCSS [ide-css](https://atom.io/packages/ide-css)
 * Python [ide-python](https://atom.io/packages/ide-python)
-* Rust [ide-rust](hhttps://atom.io/packages/ide-rust)
+* Rust [ide-rust](https://atom.io/packages/ide-rust)
 * You can also search for [packages](https://atom.io/packages/search?q=IDE) in Atom.
 
   **IMPORTANT: When you are asked if you want to install the atom-ide-ui dependency by one of those packages, you usually can deny doing so**
