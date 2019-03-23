@@ -66,3 +66,7 @@ A replacement of the go to definition functionality from atom-ide-ui. [More deta
 There is an existing [linter](https://atom.io/packages/linter) and [linter-ui](https://atom.io/packages/linter-ui-default) that is known to work with the existing ide-packages. It can be configured to only show linting errors per file, or for the whole project in its settings.
 
 ![](./assets/images/screenshot-linter.png){:width="100%"}
+
+## Roadmap
+
+We have published our current roadmap on [Github](https://github.com/atom-ide-community/atom-ide-community.github.io/issues/3#issue-424527067) for you to check and provide feedback to us.
