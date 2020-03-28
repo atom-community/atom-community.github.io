@@ -67,6 +67,12 @@ There is an existing [linter](https://atom.io/packages/linter) and [linter-ui](h
 
 ![](./assets/images/screenshot-linter.png){:width="100%"}
 
+### [Outline](https://atom.io/packages/atom-ide-outline)
+
+A replacement of the outline functionality from atom-ide-ui. Presents symbols of an active text editor in a tree view. [More details](https://github.com/atom-ide-community/atom-ide-outline)
+
+![](./assets/images/screenshot-outline.png){:width="100%"}
+
 ## Roadmap
 
 We have published our current roadmap on [Github](https://github.com/atom-ide-community/atom-ide-community.github.io/issues/3#issue-424527067) for you to check and provide feedback to us.
