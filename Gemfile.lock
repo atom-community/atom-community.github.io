@@ -64,10 +64,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll (~> 3.8.5)
+  jekyll (~> 3.8)
   jekyll-feed (~> 0.6)
   jekyll-theme-midnight (~> 0.1)
   tzinfo-data
 
 BUNDLED WITH
-   2.0.1
+   2.0.2
