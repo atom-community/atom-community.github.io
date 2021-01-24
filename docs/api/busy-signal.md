@@ -9,6 +9,3 @@ eleventyNavigation:
 Here's some markdown content about `busy-signal`.
 
 ## API
-```js script
-import '/components/type-doc';
-```

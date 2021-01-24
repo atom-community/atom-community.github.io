@@ -1,4 +1,4 @@
-#content-top a svg {
+#content-top a:not(.anchor) svg {
   width: var(--header-link-size, 36px);
   height: auto;
 }

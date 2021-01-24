@@ -14,6 +14,3 @@ A replacement of the DataTip functionality from atom-ide-ui. When you hover over
 ![screenshot of datatip feature]({{ '/_assets/images/screenshot-datatip.png' | asset | url }})
 
 ## API
-```js script
-import '/components/type-doc';
-```

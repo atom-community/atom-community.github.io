@@ -4,10 +4,17 @@
   "description": "Atom Community website powered by [rocket](https://rocket.modern-web.dev).",
   "main": "rocket.config.js",
   "type": "module",
+  "exports": {
+    "./components/*": {
+      "esbuild": "./components/*.ts",
+      "default": "./components/*.js"
+    }
+  },
   "scripts": {
+    "postinstall": "patch-package",
     "start": "rocket start",
     "build": "rocket build",
-    "typedoc": "typedoc --json docs/api/api.json --entryPoints api.ts",
+    "typedoc": "typedoc --json docs/_data/api/api.json --entryPoints api.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -36,8 +43,11 @@
     "@web/dev-server-esbuild": "^0.2.11",
     "atom": "^1.4.1",
     "atom-ide-base": "^2.1.1",
+    "eleventy-plugin-add-web-component-definitions": "^2.0.1",
+    "eleventy-plugin-helmet": "^0.2.1",
     "markdown-it": "^10.0.0",
     "markdown-it-prism": "^2.1.4",
+    "patch-package": "^6.2.2",
     "rollup-plugin-esbuild": "^2.6.1",
     "typedoc": "^0.20.16",
     "typedoc-plugin-markdown": "^3.4.0"

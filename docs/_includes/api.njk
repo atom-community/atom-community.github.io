@@ -10,17 +10,26 @@
 ```{% endmarkdown %}
 {%- endmacro -%}
 
-{%- macro typeString(type) -%}
+{%- macro typeString(type, flags) -%}
   {%- if type.type == 'reflection' -%}
     {{ callSignature(type.declaration.signatures[0])  }}
-    {%- else -%}
-      {{ type.name }}
-      {%- if type.typeArguments -%}<
-        {%- for arg in type.typeArguments -%}
-          {{ arg.name }}
-          {{- ', ' if not loop.last -}}
-        {%- endfor -%}
-    >{%- endif -%}
+  {%- elif type.type == 'literal' -%}
+    "{{ type.value }}"
+  {%- elif type.type == 'union' -%}
+    {%- for item in type.types -%}
+      {%- if flags.isOptional and item.type == 'intrinsic' and item.name == 'undefined' -%}
+      {%- else -%}
+        {{ typeString(item) }}{{ '|' if not loop.last }}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- else -%}
+    {{ type.name }}
+    {%- if type.typeArguments -%}<
+      {%- for arg in type.typeArguments -%}
+        {{ arg.name }}
+        {{- ', ' if not loop.last -}}
+      {%- endfor -%}
+  >{%- endif -%}
   {%- endif -%}
 {%- endmacro -%}
 
@@ -32,9 +41,9 @@
     {%- endfor -%}
   >{%- endif -%}(
   {%- for param in sig.parameters -%}
-    {{ param.name }}: {{typeString(param.type)}}{{- ', ' if not loop.last -}}
+    {{ param.name }}: {{ typeString(param.type, param.flags) }}{{- ', ' if not loop.last -}}
   {%- endfor -%}
-  ){{ (' =>' if sig.name == '__type' else ':') | safe }} {{ typeString(sig.type) }}
+  ){{ (' =>' if sig.name == '__type' else ':') | safe }} {{ typeString(sig.type, sig.flags) }}
 {%- endmacro -%}
 
 {% block main %}
@@ -56,32 +65,84 @@
     {{ content | safe }}
 
     {%- for type in types -%}
-      <type-doc kind="type" data-name="{{ type.name }}">
-        <h2 slot="name">{{ type.name }}</h2>
-        {%- for property in type.children -%}
-          {%- if property.kindString == 'Property' -%}
+      <article class="type" data-name="{{ type.name }}">
+        <h3 slot="name">{{ type.name }}</h3>
+        {% markdown %}{{ type.comment.shortText }}{% endmarkdown %}
+
+        {% if type | getProperties | length %}
+          <h3>Properties</h3>
+          {%- for property in type | getProperties -%}
             <type-doc kind="property" data-name="{{ property.name }}">
               <span slot="name">
-                <h3>{{ property.name }}</h3>
+                <h4>{{ property.name }}</h4>
                 {% if property.flags.isOptional %}<span>(optional)</span>{% endif %}
               </span>
+              {% if property.type %}
+                <span slot="type">{{ codeBlock(typeString(property.type, property.flags)) }}</span>
+              {% endif %}
+              {% if property.comment.shortText %}
+                {% markdown %}{{ property.comment.shortText }}{% endmarkdown %}
+              {% endif %}
             </type-doc>
-          {%- endif -%}
-        {%- endfor -%}
-        {%- for method in type.children -%}
-          {%- if method.kindString == 'Method' -%}
-            <type-doc kind="method" data-name="{{ method.name }}">
-              <h3 slot="name">{{ method.name }}</h3>
-              {% for sig in method.signatures %}
-                {{ codeBlock(callSignature(sig)) }}
-              {% endfor %}
-            </type-doc>
-          {%- endif -%}
-        {%- endfor -%}
-        {% if type.type %}
-          <span slot="type">{{ codeBlock(type.type) }}</span>
+          {%- endfor -%}
         {% endif %}
-      </type-doc>
+
+        {% if type | getMethods | length %}
+          <h3>Methods</h3>
+          {%- for method in type | getMethods -%}
+            <type-doc kind="method"
+                data-method="{{ method.name }}"
+                data-name="{{ method.name }}">
+              <h4 slot="name">{{ method.name }}</h4>
+
+              {% if method.comment.shortText %}
+                {% markdown %}{{ method.comment.shortText }}{% endmarkdown %}
+              {% endif %}
+
+              {% for sig in method.signatures %}
+
+                {%- if sig.typeParameter -%}
+                  <h4>Type Parameters</h4>
+                  {%- for param in sig.typeParameter -%}
+                    {{ param.name }}{{- ', ' if not loop.last -}}
+                  {%- endfor -%}
+                {%- endif -%}
+
+                {% if sig.parameters %}
+                  <h4>Parameters</h4>
+                  {%- for param in sig.parameters -%}
+                    <type-doc kind="parameter" data-parameter="{{ param.name }}">
+                      <h5 slot="name">{{ param.name }}</h5>
+                      <span slot="type">
+                        {%- markdown -%}{{ codeBlock(typeString(param.type, param.flags)) }}{%- endmarkdown -%}
+                      </span>
+                      {%- markdown -%}{{ param.comment.shortText }}{%- endmarkdown -%}
+                    </type-doc>
+                  {%- endfor -%}
+                {% endif %}
+
+                <type-doc kind="return">
+                  <h4 slot="name">Returns</h5>
+                  <span slot="type">
+                    {% markdown %}{{ typeString(sig.type) }}{% endmarkdown %}
+                  </span>
+                  {%- markdown -%}{{ param.comment.shortText }}{%- endmarkdown -%}
+                </type-doc>
+              {% endfor %}
+
+            </type-doc>
+          {%- endfor -%}
+        {% endif %}
+
+        {# Return type #}
+        {% if type.type %}
+          <span slot="type">{{ codeBlock(typeString(type.type, type.flags)) }}</span>
+          {% if type.type.comment.shortText %}
+            {% markdown %}{{ type.type.comment.shortText }}{% endmarkdown %}
+          {% endif %}
+        {% endif %}
+
+      </article>
     {%- endfor -%}
 
     {% include 'partials/previousNext.njk' %}

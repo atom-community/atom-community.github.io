@@ -10,129 +10,131 @@ import {
 @customElement('type-doc')
 export class TypeDoc extends LitElement {
   static readonly styles = css`
-  :host {
-    position: relative;
-    max-width: 100%;
-    display: grid;
-    grid-template-areas: 'head' 'body';
-    grid-template-rows: min-content 1fr;
-    margin-bottom: 1rem;
-  }
+    :host {
+      position: relative;
+      max-width: 100%;
+      display: grid;
+      grid-template-areas: 'head' 'body';
+      grid-template-rows: min-content 1fr;
+      margin-bottom: 1rem;
+    }
 
-  .visually-hidden {
-    position: absolute;
-    clip: rect(1px, 1px, 1px, 1px);
-  }
+    .visually-hidden {
+      position: absolute;
+      clip: rect(1px, 1px, 1px, 1px);
+    }
 
-  header {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    flex-flow: row wrap;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-    background: var(--markdown-table-row-odd-background-color, #f6f8fa);
-    padding: 6px 10px;
-    transition: background 0.2s ease-in-out;
-  }
+    header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-flow: row wrap;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      background: var(--type-doc-header-background-color, var(--markdown-blockquote-color, #c9e3ff));
+      padding: 6px 10px;
+      transition: background 0.2s ease-in-out;
+    }
 
-  :host([data-inherited-from]) header {
-    justify-content: space-between;
-    overflow-x: hidden;
-  }
+    :host([data-inherited-from]) header {
+      justify-content: space-between;
+      overflow-x: hidden;
+    }
 
-  :host([data-inherited-from]:not([expanded])) header {
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
-    background: var(--markdown-syntax-background-color);
-  }
+    :host([data-inherited-from]:not([expanded])) header {
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
+      background: var(--markdown-syntax-background-color);
+    }
 
-  :host([data-inherited-from]) header ::slotted([slot="name"]) {
-    cursor: pointer;
-  }
+    :host([data-inherited-from]) header ::slotted([slot="name"]) {
+      cursor: pointer;
+    }
 
-  :host([data-inherited-from]) header ::slotted([slot="type"]) {
-    display: none !important;
-  }
+    :host([data-inherited-from]) header ::slotted([slot="type"]) {
+      display: none !important;
+    }
 
-  type-doc:not([data-inherited-from]) [slot="type"]::before {
-    content: 'type: ';
-  }
+    type-doc:not([data-inherited-from]) [slot="type"]::before {
+      content: 'type: ';
+    }
 
-  #inheritance {
-    margin-inline-start: auto;
-  }
+    #inheritance {
+      margin-inline-start: auto;
+    }
 
-  #inheritance button {
-    color: inherit;
-    background: none;
-    border: none;
-    margin-inline-end: 3px;
-  }
+    #inheritance button {
+      color: inherit;
+      background: none;
+      border: none;
+      margin-inline-end: 3px;
+    }
 
-  #inheritance button,
-  #inheritance button svg {
-    height: 24px;
-    width: 24px;
-    transform: rotate(0deg);
-    transition: transform 0.2s ease-in-out;
-  }
+    #inheritance button,
+    #inheritance button svg {
+      height: 24px;
+      width: 24px;
+      transform: rotate(0deg);
+      transition: transform 0.2s ease-in-out;
+    }
 
-  :host([expanded]) #inheritance button svg {
-    transform: rotate(180deg);
-  }
+    :host([expanded]) #inheritance button svg {
+      transform: rotate(180deg);
+    }
 
-  #body {
-    background: var(--markdown-syntax-background-color);
-    padding: 1rem 1.6rem;
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
-  }
+    #body {
+      background: var(--type-doc-body-background-color, #f6f8fa);
+      padding: 1rem 1.6rem;
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
+    }
 
-  #body ::slotted(p:last-child) {
-    margin: 0 !important;
-  }
+    #body ::slotted(p:last-child) {
+      margin: 0 !important;
+    }
 
-  #body ::slotted(h3) {
-    margin-top: 4px !important;
-  }
+    #body ::slotted(h3) {
+      margin-top: 4px !important;
+    }
 
-  #body ::slotted(.returns + p:last-child) {
-    float: right;
-  }
+    #body ::slotted(.returns + p:last-child) {
+      float: right;
+    }
 
-  /* nested type-doc */
-  #body ::slotted(type-doc) {
-    margin-bottom: 0;
-    background: transparent;
-    padding: 0.3rem 0.8rem;
-  }
+    /* nested type-doc */
+    #body ::slotted(type-doc) {
+      margin-bottom: 0;
+      background: transparent;
+      padding: 0.3rem 0.8rem;
+    }
 
-  :host([kind="return"]) header,
-  :host([kind="parameter"]) header {
-    background: none;
-    padding-left: 0;
-  }
+    :host([kind="return"]) header,
+    :host([kind="parameter"]) header {
+      background: none;
+      padding-left: 0;
+    }
 
-  :host([kind="return"]) #body,
-  :host([kind="parameter"]) #body {
-    padding: 0;
-  }
+    :host([kind="return"]) #body,
+    :host([kind="parameter"]) #body {
+      padding: 0;
+    }
 
-  #body,
-  header,
-  #body ::slotted(:not(type-doc)) {
-    max-width: 100%;
-  }
-
-  @media (max-width: 640px) {
     #body,
     header,
-    #body ::slotted(:not(type-doc):not(h2):not(h3)) {
-      overflow: auto;
+    #body ::slotted(:not(type-doc)) {
+      max-width: 100%;
     }
-  }
+
+    @media (max-width: 640px) {
+      #body,
+      header,
+      #body ::slotted(:not(type-doc):not(h2):not(h3)) {
+        overflow: auto;
+      }
+    }
   `;
+
+  declare shadowRoot: ShadowRoot;
 
   @property({ type: Boolean, reflect: true }) expanded = false;
 
@@ -173,7 +175,8 @@ export class TypeDoc extends LitElement {
 
   private cloneHeading() {
     const hidden = this.shadowRoot.querySelector(".visually-hidden");
-    for (const child of hidden.children) child.remove();
+    if (!hidden) return;
+    for (const child of Array.from(hidden.children)) child.remove();
     const heading = this.querySelector('[slot="name"]');
     if (!heading) return;
     hidden.append(heading.cloneNode(true));
