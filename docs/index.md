@@ -1,4 +1,5 @@
 ---
+title: Atom Community
 layout: home.njk
 slogan: Community Maintained Packages for Atom
 callToActionItems:
@@ -6,11 +7,64 @@ callToActionItems:
     href: /getting-started/
   - text: API
     href: /api/
+features:
+
+  - name: AutoComplete
+    slug: autocomplete
+    text: Once you have installed an IDE language package, this should work right away.
+
+  - name: Linter
+    slug: linter
+    text: "[linter](https://atom.io/packages/linter) and [linter-ui](https://atom.io/packages/linter-ui-default) work with ide packages, letting you know what's wrong in your file."
+
+  - name: Signature Help
+    slug: sig-help
+    text: "No more looking up API docs: automatically get function signature docs in your editor."
+
+  - name: DataTip
+    slug: datatip
+    text: "The docs you need, when you need them. Hover or cursor to a name to show floating data tips."
+
+  - name: Outline
+    slug: outline
+    text: Browse the structure of your code at a glance.
+
+  - name: Go to Definition
+    slug: definitions
+    text: Jump to a name's definition. Navigate large codebases with ease.
+
 ---
 
-# Atom Community
+<style data-helmet>
 
-## Objective
+  #features {
+    --feature-image-size: 180px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    column-gap: 100px;
+    row-gap: 40px;
+    color: var(--text-color);
+  }
+
+  #features article,
+  #features .screenshot {
+    display: grid;
+  }
+
+  #features .screenshot {
+    align-content: center;
+    width: var(--feature-image-size);
+    height: var(--feature-image-size);
+    overflow: hidden;
+    border-radius: 100%;
+    place-self: center;
+  }
+
+  #features .screenshot img {
+    height: var(--feature-image-size);
+  }
+</style>
 
 The original objective of the Facebook [Nuclide](https://nuclide.io) / [Atom-IDE](https://ide.atom.io) project has been to provide extension packages for the [Atom Editor](https://www.atom.io) to interact with custom Language Servers via the [Language Server Protocol](https://langserver.org) to enable IDE like functionality in our beloved editor.
 
@@ -20,36 +74,6 @@ The objective of this project is to take over the concepts and ideas in the orig
 
 We will start with the most important features, and iterate on them quickly to come on par with the functionality available in the atom-ide-ui package.
 
-
-## Atom IDE Community Packages
-
-### AutoComplete
-
-Once you have installed an IDE language package, this should work right away.
-
-![screenshot of autocomplete feature]({{ '/_assets/images/screenshot-autocomplete.png' | asset | url }})
-
-### [Signature Help](https://atom.io/packages/atom-ide-signature-help)
-
-A replacement of the signature help functionality from atom-ide-ui. When you're calling a function, it can help you understand the parameters or information about the function you’re calling. [More details](https://github.com/atom-ide-community/atom-ide-signature-help#atom-ide-signature-help)
-
-![screenshot of sig-help feature]({{ '/_assets/images/screenshot-sig-help.png' | asset | url }})
-
-### [Go to Definition](https://atom.io/packages/atom-ide-definitions)
-
-A replacement of the go to definition functionality from atom-ide-ui. [More details](https://github.com/atom-ide-community/atom-ide-definitions#atom-ide-definitions-package)
-
-### Linter / Linter-UI
-
-There is an existing [linter](https://atom.io/packages/linter) and [linter-ui](https://atom.io/packages/linter-ui-default) that is known to work with the existing ide-packages. It can be configured to only show linting errors per file, or for the whole project in its settings.
-
-![screenshot of linter feature]({{ '/_assets/images/screenshot-linter.png' | asset | url }})
-
-### [Outline](https://atom.io/packages/atom-ide-outline)
-
-A replacement of the outline functionality from atom-ide-ui. Presents symbols of an active text editor in a tree view. [More details](https://github.com/atom-ide-community/atom-ide-outline)
-
-![screenshot of outline feature]({{ '/_assets/images/screenshot-outline.png' | asset | url }})
 
 ## Roadmap
 
