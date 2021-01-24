@@ -30,7 +30,7 @@ type-doc > * {
 }
 
 type-doc[kind="method"] thead,
-type-doc[kind="parameter"] thead,
+type-doc[kind$="parameter"] thead,
 type-doc[kind="return"] thead {
   position: absolute;
   clip: rect(1px, 1px, 1px, 1px);

@@ -11,6 +11,8 @@
     }
   },
   "scripts": {
+    "prestart": "pnpm run typedoc",
+    "prebuild": "pnpm run typedoc",
     "postinstall": "patch-package",
     "start": "rocket start",
     "build": "rocket build",

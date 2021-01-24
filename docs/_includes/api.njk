@@ -4,6 +4,12 @@
   {% set types = api.packages[package] %}
 {% endif %}
 
+{% macro getTSDocMarkdown(type) %}
+{% markdown %}{{ type | getSummary }}{% endmarkdown %}
+{% markdown %}{{ type.comment.shortText }}{% endmarkdown %}
+{% markdown %}{{ type.comment.text }}{% endmarkdown %}
+{% endmacro %}
+
 {%- macro codeBlock(type, lang='ts') -%}
 {% markdown %}```{{ lang }}
 {{ type | safe }}
@@ -37,7 +43,7 @@
   {{ sig.name if sig.name != '__type' }}
   {%- if sig.typeParameter -%}<
     {%- for param in sig.typeParameter -%}
-    {{param.name}}{{- ', ' if not loop.last -}}
+    {{ param.name }}{{- ', ' if not loop.last -}}
     {%- endfor -%}
   >{%- endif -%}(
   {%- for param in sig.parameters -%}
@@ -66,8 +72,8 @@
 
     {%- for type in types -%}
       <article class="type" data-name="{{ type.name }}">
-        <h3 slot="name">{{ type.name }}</h3>
-        {% markdown %}{{ type.comment.shortText }}{% endmarkdown %}
+        <h3>{{ type.name }}</h3>
+        {{ getTSDocMarkdown(type) }}
 
         {% if type | getProperties | length %}
           <h3>Properties</h3>
@@ -80,9 +86,7 @@
               {% if property.type %}
                 <span slot="type">{{ codeBlock(typeString(property.type, property.flags)) }}</span>
               {% endif %}
-              {% if property.comment.shortText %}
-                {% markdown %}{{ property.comment.shortText }}{% endmarkdown %}
-              {% endif %}
+              {{ getTSDocMarkdown(property) }}
             </type-doc>
           {%- endfor -%}
         {% endif %}
@@ -95,16 +99,22 @@
                 data-name="{{ method.name }}">
               <h4 slot="name">{{ method.name }}</h4>
 
-              {% if method.comment.shortText %}
-                {% markdown %}{{ method.comment.shortText }}{% endmarkdown %}
-              {% endif %}
-
               {% for sig in method.signatures %}
+
+                {{ getTSDocMarkdown(sig) }}
 
                 {%- if sig.typeParameter -%}
                   <h4>Type Parameters</h4>
                   {%- for param in sig.typeParameter -%}
-                    {{ param.name }}{{- ', ' if not loop.last -}}
+                    <type-doc kind="type-parameter" data-parameter="{{ param.name }}">
+                      <h5 slot="name">{{ param.name }}</h5>
+                      {% if param.type %}
+                        <span slot="type">
+                          {%- markdown -%}{{ codeBlock(typeString(param.type, param.flags)) }}{%- endmarkdown -%}
+                        </span>
+                      {% endif %}
+                      {{ getTSDocMarkdown(param) }}
+                    </type-doc>
                   {%- endfor -%}
                 {%- endif -%}
 
@@ -116,17 +126,17 @@
                       <span slot="type">
                         {%- markdown -%}{{ codeBlock(typeString(param.type, param.flags)) }}{%- endmarkdown -%}
                       </span>
-                      {%- markdown -%}{{ param.comment.shortText }}{%- endmarkdown -%}
+                      {{ getTSDocMarkdown(param) }}
                     </type-doc>
                   {%- endfor -%}
                 {% endif %}
 
                 <type-doc kind="return">
-                  <h4 slot="name">Returns</h5>
+                  <h4 slot="name">Returns</h4>
                   <span slot="type">
-                    {% markdown %}{{ typeString(sig.type) }}{% endmarkdown %}
+                    {% markdown %}{{ codeBlock(typeString(sig.type)) }}{% endmarkdown %}
                   </span>
-                  {%- markdown -%}{{ param.comment.shortText }}{%- endmarkdown -%}
+                  {{ getTSDocMarkdown(param) }}
                 </type-doc>
               {% endfor %}
 
@@ -137,9 +147,7 @@
         {# Return type #}
         {% if type.type %}
           <span slot="type">{{ codeBlock(typeString(type.type, type.flags)) }}</span>
-          {% if type.type.comment.shortText %}
-            {% markdown %}{{ type.type.comment.shortText }}{% endmarkdown %}
-          {% endif %}
+          {{ getTSDocMarkdown(type.type) }}
         {% endif %}
 
       </article>

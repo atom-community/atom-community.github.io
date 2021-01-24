@@ -19,8 +19,9 @@ export default {
       md.use(prism);
       return md.render(content);
     });
-    eleventyConfig.addFilter('getProperties', (type) => type.children.filter(child => child.kindString === 'Property'))
-    eleventyConfig.addFilter('getMethods', (type) => type.children.filter(child => child.kindString === 'Method'))
+    eleventyConfig.addFilter('getProperties', x => x?.children.filter(child => child.kindString === 'Property'));
+    eleventyConfig.addFilter('getMethods', x => x?.children.filter(child => child.kindString === 'Method'));
+    eleventyConfig.addFilter('getSummary', x => x?.comment?.tags?.find?.(t => t.tag === 'summary')?.text);
     eleventyConfig.addPlugin(helmet);
     eleventyConfig.addPlugin(addWebComponentDefinitions, {
       quiet: true,

@@ -63,6 +63,7 @@ features:
 
   #features .screenshot img {
     height: var(--feature-image-size);
+    transform: scale(2, 2) translate(20px, -20px);
   }
 </style>
 

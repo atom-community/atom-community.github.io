@@ -103,19 +103,29 @@ export class TypeDoc extends LitElement {
 
     /* nested type-doc */
     #body ::slotted(type-doc) {
-      margin-bottom: 0;
+      margin-bottom: 0.6rem;
       background: transparent;
-      padding: 0.3rem 0.8rem;
+      padding: 0 0.8rem;
+    }
+
+    #body ::slotted(type-doc[kind$="parameter"]) {
+      border-inline-start: 4px solid var(--type-doc-header-background-color, var(--markdown-blockquote-color, #c9e3ff));
+    }
+
+    :host([kind$="parameter"]) header {
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-bottom: 3px;
     }
 
     :host([kind="return"]) header,
-    :host([kind="parameter"]) header {
+    :host([kind$="parameter"]) header {
       background: none;
       padding-left: 0;
     }
 
     :host([kind="return"]) #body,
-    :host([kind="parameter"]) #body {
+    :host([kind$="parameter"]) #body {
       padding: 0;
     }
 
