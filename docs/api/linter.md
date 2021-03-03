@@ -1,5 +1,5 @@
 ---
-layout: api.njk
+layout: layout-api.njk
 package: linter
 title: Linter
 eleventyNavigation:

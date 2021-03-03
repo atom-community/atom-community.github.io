@@ -1,14 +1,15 @@
 ---
 title: Atom Community
-layout: home.njk
+layout: layout-home.njk
 slogan: Community Maintained Packages for Atom
+
 callToActionItems:
   - text: Get Started
     href: /getting-started/
   - text: API
     href: /api/
-features:
 
+features:
   - name: AutoComplete
     slug: autocomplete
     text: Once you have installed an IDE language package, this should work right away.
@@ -62,8 +63,10 @@ features:
   }
 
   #features .screenshot img {
-    height: var(--feature-image-size);
-    transform: scale(2, 2) translate(20px, -20px);
+    transform: scale(2, 2) translate(40px);
+    height: auto;
+    min-height: var(--feature-image-size);
+    object-fit: cover;
   }
 </style>
 

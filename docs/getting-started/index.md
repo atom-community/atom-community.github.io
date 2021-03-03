@@ -1,5 +1,5 @@
 ---
-layout: with-sidebar.njk
+layout: layout-sidebar.njk
 ---
 # Getting Started
 

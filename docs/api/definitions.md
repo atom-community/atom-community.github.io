@@ -1,5 +1,5 @@
 ---
-layout: api.njk
+layout: layout-api.njk
 package: definitions
 title: Go to Definition
 eleventyNavigation:
@@ -10,5 +10,7 @@ links:
 ---
 
 A replacement of the go to definition functionality from atom-ide-ui.
+
+![screenshot of definitions feature]({{ '/_assets/images/screenshot-definitions.png' | asset | url }})
 
 ## API
