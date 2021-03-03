@@ -19,15 +19,17 @@ export default {
       md.use(prism);
       return md.render(content);
     });
-    eleventyConfig.addFilter('getProperties', x => x?.children.filter(child => child.kindString === 'Property'));
-    eleventyConfig.addFilter('getMethods', x => x?.children.filter(child => child.kindString === 'Method'));
+    eleventyConfig.addFilter('getProperties', x => (x?.children??[]).filter(child => child.kindString === 'Property'));
+    eleventyConfig.addFilter('getMethods', x => (x?.children??[]).filter(child => child.kindString === 'Method'));
     eleventyConfig.addFilter('getSummary', x => x?.comment?.tags?.find?.(t => t.tag === 'summary')?.text);
+    eleventyConfig.addFilter('json', x => `<json-viewer><script type="application/json">${typeof x === 'string' ? x : JSON.stringify(x)}</script></json-viewer>`);
     eleventyConfig.addPlugin(helmet);
     eleventyConfig.addPlugin(addWebComponentDefinitions, {
       quiet: true,
       singleScript: true,
       specifiers: {
         'type-doc': 'atom-community.github.io/components/type-doc',
+        'json-viewer': 'https://unpkg.com/@power-elements/json-viewer@2.1.1/json-viewer.js?module'
       },
     });
   },

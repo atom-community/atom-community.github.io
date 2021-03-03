@@ -9,6 +9,10 @@ module.exports = function () {
         name: 'GitHub',
         url: 'https://github.com/atom-community',
       },
+      {
+        name: 'Discord',
+        url: 'https://discord.gg/R4KV8jTVpS'
+      }
     ],
     gitSiteUrl: 'https://github.com/atom-community/atom-ide-base',
     gitBranch: 'master',
