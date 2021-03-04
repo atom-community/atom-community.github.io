@@ -4,6 +4,9 @@
 vendor/bundle
 node_modules
 package-lock.json
+api.js
+components/*.js
+tsconfig.tsbuildinfo
 
 ## Rocket ignore files (need to be the full relative path to the folders)
 _site-dev

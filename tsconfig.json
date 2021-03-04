@@ -9,7 +9,6 @@
     "noImplicitThis": true,
     "noFallthroughCasesInSwitch": true,
     "declaration": false,
-    "noEmit": true,
     "emitDecoratorMetadata": false,
     "experimentalDecorators": true,
     "incremental": true,
@@ -21,9 +20,9 @@
     "jsxFactory": "etch.dom",
     "lib": ["ES2018", "dom"],
     "target": "ES2018",
-    "allowJs": true,
+    "allowJs": false,
     "esModuleInterop": true,
-    "module": "commonjs",
+    "module": "ESNext",
     "moduleResolution": "node",
     "importHelpers": false
   }
