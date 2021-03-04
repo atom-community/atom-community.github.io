@@ -46,6 +46,7 @@ features:
     column-gap: 100px;
     row-gap: 40px;
     color: var(--text-color);
+    margin-bottom: 2em;
   }
 
   #features article,
