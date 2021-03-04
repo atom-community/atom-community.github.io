@@ -1,13 +1,10 @@
 # Atom Community Website
 
-Atom Community website powered by [jekyll](https://jekyllrb.com).
+Atom Community website powered by [rocket](rocket.modern-web.dev/).
 
 ## Development
 
-The easiest way to get started is using [Docker](https://www.docker.com).
-
-```console
-$ docker-compose up
 ```
-
-If you're not using Docker, see https://jekyllrb.com/docs/ for how to get started.
+pnpm install
+pnpm start
+```
