@@ -1,6 +1,8 @@
 # Atom Community Website
 
-Atom Community website powered by [rocket](rocket.modern-web.dev/).
+Atom Community website powered by [rocket](https://rocket.modern-web.dev/).
+
+Uses [TypeDoc](https://typedoc.org/) for introspection.
 
 ## Development
 
