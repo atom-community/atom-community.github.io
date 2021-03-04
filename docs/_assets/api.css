@@ -1,0 +1,21 @@
+#content-top a:not(.anchor) svg {
+  width: var(--header-link-size, 36px);
+  height: auto;
+}
+
+#content-top a:not(.anchor) {
+  margin-inline-start: 4px;
+}
+
+#content-top .title {
+  margin-inline-end: auto;
+}
+
+#content-top {
+  display: flex;
+  align-items: center;
+}
+
+body[layout='layout-api'] #sidebar {
+  display: block;
+}

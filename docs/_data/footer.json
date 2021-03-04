@@ -1,0 +1,33 @@
+[
+  {
+    "name": "Discover",
+    "children": [
+      {
+        "text": "Help and Feedback",
+        "href": "https://github.com/atom-community/atom/discussions"
+      }
+    ]
+  },
+  {
+    "name": "Follow",
+    "children": [
+      {
+        "text": "Github",
+        "href": "https://github.com/atom-community"
+      },
+      {
+        "text": "Discord",
+        "href": "https://discord.gg/R4KV8jTVpS"
+      }
+    ]
+  },
+  {
+    "name": "Support",
+    "children": [
+      {
+        "text": "Contribute",
+        "href": "https://github.com/atom-community/atom/discussions"
+      }
+    ]
+  }
+]

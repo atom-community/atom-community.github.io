@@ -1,0 +1,14 @@
+{% extends 'layout-default.njk' %}
+
+{% block main %}
+  <div id="content-wrapper">
+    <div class="content-area">
+      {% block sidebar %}
+        {% include 'partials/_layoutApi/sidebar.njk' %}
+      {% endblock sidebar %}
+      {% block content %}
+        {% include 'partials/_layoutApi/content.njk' %}
+      {% endblock content %}
+    </div>
+  </div>
+{% endblock main %}

@@ -1,5 +1,13 @@
-_site
 .sass-cache
 .jekyll-metadata
 .DS_Store
 vendor/bundle
+node_modules
+package-lock.json
+
+## Rocket ignore files (need to be the full relative path to the folders)
+_site-dev
+_site
+docs/_merged_data/
+docs/_merged_assets/
+docs/_merged_includes/

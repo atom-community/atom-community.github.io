@@ -1,0 +1,17 @@
+<div class="content-footer">
+  <p>
+    Caught a mistake or want to contribute to the documentation?
+    <a href="{{ site.gitSiteUrl }}/edit/{{ site.gitBranch }}/{{ page.inputPath }}">Edit this page on GitHub!</a>
+  </p>
+</div>
+
+<script type="module" async>
+  if (location.hash) {
+    const anchor = document.querySelector(location.hash)
+    const doc = anchor && anchor.closest('type-doc');
+    if (doc) {
+      doc.expanded = true;
+      doc.scrollIntoView();
+    }
+  }
+</script>

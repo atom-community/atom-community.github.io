@@ -1,0 +1,11 @@
+<section id="features">
+  {% for feature in features %}
+    <article>
+      <h3>{{ feature.name }}</h3>
+      {% markdown %}{{ feature.text | safe }}{% endmarkdown %}
+      <a class="screenshot" href="/api/{{ feature.slug }}/">
+        <img src="{{ ('_assets/images/screenshot-' + feature.slug + '.png') | asset | url }}" alt="Screenshot of {{ feature.name }} feature"/>
+      </a>
+    </article>
+  {% endfor %}
+</section>

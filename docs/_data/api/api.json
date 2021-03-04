@@ -1,0 +1,8533 @@
+{
+	"id": 0,
+	"name": "atom-community.github.io",
+	"kind": 0,
+	"kindString": "Project",
+	"flags": {},
+	"originalName": "",
+	"children": [
+		{
+			"id": 24,
+			"name": "BusyMessage",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"comment": {
+				"tags": [
+					{
+						"tag": "summary",
+						"text": "Represents a particular busy signal.\n"
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 28,
+					"name": "dispose",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"signatures": [
+						{
+							"id": 29,
+							"name": "dispose",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"tags": [
+									{
+										"tag": "summary",
+										"text": "Dispose of the signal when done to make it go away.\n"
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 25,
+					"name": "setTitle",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"signatures": [
+						{
+							"id": 26,
+							"name": "setTitle",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"tags": [
+									{
+										"tag": "summary",
+										"text": "Set or update the title of a signal."
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 27,
+									"name": "title",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"comment": {
+										"text": "New title for the signal.\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						28,
+						25
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/busy-signal.d.ts",
+					"line": 72,
+					"character": 28
+				}
+			]
+		},
+		{
+			"id": 1,
+			"name": "BusySignalOptions",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"children": [
+				{
+					"id": 4,
+					"name": "debounce",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "Debounce it? default = `true` for busy-signal, and `false` for action-required."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/busy-signal.d.ts",
+							"line": 20,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						]
+					}
+				},
+				{
+					"id": 5,
+					"name": "onDidClick",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "If `onClick` is set, then the tooltip will be clickable.",
+						"tags": [
+							{
+								"tag": "defaultvalue",
+								"text": "`null`\n"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/busy-signal.d.ts",
+							"line": 26,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "reflection",
+								"declaration": {
+									"id": 6,
+									"name": "__type",
+									"kind": 65536,
+									"kindString": "Type literal",
+									"flags": {
+										"isExternal": true
+									},
+									"signatures": [
+										{
+											"id": 7,
+											"name": "__type",
+											"kind": 4096,
+											"kindString": "Call signature",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "void"
+											}
+										}
+									]
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": 2,
+					"name": "onlyForFile",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "Can say that a busy signal will only appear when a given file is open.\nDefault = `null`, meaning the busy signal applies to all files."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/busy-signal.d.ts",
+							"line": 8,
+							"character": 13
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				},
+				{
+					"id": 8,
+					"name": "revealTooltip",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "If set to `true`, the busy signal tooltip will be immediately revealed\nwhen it first becomes visible (without explicit mouse interaction)."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/busy-signal.d.ts",
+							"line": 32,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						]
+					}
+				},
+				{
+					"id": 3,
+					"name": "waitingFor",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "Is user waiting for computer to finish a task? (traditional busy spinner)\nor is the computer waiting for user to finish a task? (action required)",
+						"tags": [
+							{
+								"tag": "defaultvalue",
+								"text": "`'computer'`\n"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/busy-signal.d.ts",
+							"line": 15,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "literal",
+								"value": "computer"
+							},
+							{
+								"type": "literal",
+								"value": "user"
+							}
+						]
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						4,
+						5,
+						2,
+						8,
+						3
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/busy-signal.d.ts",
+					"line": 3,
+					"character": 34
+				}
+			]
+		},
+		{
+			"id": 33,
+			"name": "BusySignalProvider",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"comment": {
+				"tags": [
+					{
+						"tag": "summary",
+						"text": "`busy-signal` service.\n"
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 34,
+					"name": "add",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"signatures": [
+						{
+							"id": 35,
+							"name": "add",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"tags": [
+									{
+										"tag": "summary",
+										"text": "Fires a `did-add` event."
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 36,
+									"name": "message",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"comment": {
+										"text": "Name of the signal to notify regarding its addition.\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 40,
+					"name": "clear",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"signatures": [
+						{
+							"id": 41,
+							"name": "clear",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"tags": [
+									{
+										"tag": "summary",
+										"text": "Fires a `did-clear` event."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 42,
+					"name": "dispose",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"signatures": [
+						{
+							"id": 43,
+							"name": "dispose",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"tags": [
+									{
+										"tag": "summary",
+										"text": "Fires a `did-dispose` event and disposes of subscriptions."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 37,
+					"name": "remove",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"signatures": [
+						{
+							"id": 38,
+							"name": "remove",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"tags": [
+									{
+										"tag": "summary",
+										"text": "Fires a `did-remove` event."
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 39,
+									"name": "message",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"comment": {
+										"text": "Name of the signal to notify regarding its removal.\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						34,
+						40,
+						42,
+						37
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/busy-signal.d.ts",
+					"line": 96,
+					"character": 35
+				}
+			]
+		},
+		{
+			"id": 30,
+			"name": "BusySignalRegistry",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"comment": {
+				"tags": [
+					{
+						"tag": "summary",
+						"text": "`busy-signal` service.\n"
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 31,
+					"name": "create",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"signatures": [
+						{
+							"id": 32,
+							"name": "create",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"tags": [
+									{
+										"tag": "summary",
+										"text": "Creates a `busy-signal` provider and adds it to the registry."
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"id": 33,
+								"name": "BusySignalProvider"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						31
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/busy-signal.d.ts",
+					"line": 88,
+					"character": 35
+				}
+			]
+		},
+		{
+			"id": 9,
+			"name": "BusySignalService",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"comment": {
+				"shortText": "`atom-ide-busy-signal` service."
+			},
+			"children": [
+				{
+					"id": 22,
+					"name": "dispose",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"signatures": [
+						{
+							"id": 23,
+							"name": "dispose",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"tags": [
+									{
+										"tag": "summary",
+										"text": "This is a no-op.\n\nWhen someone consumes the busy service, they get back a\nreference to the single shared instance, so disposing of it would be wrong.\n"
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 18,
+					"name": "reportBusy",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"signatures": [
+						{
+							"id": 19,
+							"name": "reportBusy",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"shortText": "Activates the busy signal. Set the title in the returned BusySignal\nobject (you can update the title multiple times) and dispose it when done."
+							},
+							"parameters": [
+								{
+									"id": 20,
+									"name": "title",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"comment": {
+										"text": "name of the busy signal to activate"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 21,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true,
+										"isOptional": true
+									},
+									"comment": {
+										"text": "options for this signal\n"
+									},
+									"type": {
+										"type": "reference",
+										"id": 1,
+										"name": "BusySignalOptions"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 24,
+								"name": "BusyMessage"
+							}
+						}
+					]
+				},
+				{
+					"id": 10,
+					"name": "reportBusyWhile",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"signatures": [
+						{
+							"id": 11,
+							"name": "reportBusyWhile",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"shortText": "Activates the busy signal with the given title and returns the promise\nfrom the provided callback.\nThe busy signal automatically deactivates when the returned promise\neither resolves or rejects.",
+								"returns": "A promise which resolves with the type of `f`\n"
+							},
+							"typeParameter": [
+								{
+									"id": 12,
+									"name": "T",
+									"kind": 131072,
+									"kindString": "Type parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"comment": {
+										"text": "return type of the async function"
+									}
+								}
+							],
+							"parameters": [
+								{
+									"id": 13,
+									"name": "title",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"comment": {
+										"text": "name of the busy signal to activate"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 14,
+									"name": "f",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"comment": {
+										"text": "Async function. When the promise resolves, the signal deactivates."
+									},
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 15,
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {
+												"isExternal": true
+											},
+											"signatures": [
+												{
+													"id": 16,
+													"name": "__type",
+													"kind": 4096,
+													"kindString": "Call signature",
+													"flags": {
+														"isExternal": true
+													},
+													"type": {
+														"type": "reference",
+														"typeArguments": [
+															{
+																"type": "reference",
+																"name": "T"
+															}
+														],
+														"name": "Promise"
+													}
+												}
+											]
+										}
+									}
+								},
+								{
+									"id": 17,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true,
+										"isOptional": true
+									},
+									"comment": {
+										"text": "options for this signal"
+									},
+									"type": {
+										"type": "reference",
+										"id": 1,
+										"name": "BusySignalOptions"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "reference",
+										"name": "T"
+									}
+								],
+								"name": "Promise"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						22,
+						18,
+						10
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/busy-signal.d.ts",
+					"line": 38,
+					"character": 34
+				}
+			]
+		},
+		{
+			"id": 51,
+			"name": "CodeAction",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"children": [
+				{
+					"id": 52,
+					"name": "apply",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"signatures": [
+						{
+							"id": 53,
+							"name": "apply",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"type": {
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "void"
+									}
+								],
+								"name": "Promise"
+							}
+						}
+					]
+				},
+				{
+					"id": 56,
+					"name": "dispose",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"signatures": [
+						{
+							"id": 57,
+							"name": "dispose",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 54,
+					"name": "getTitle",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"signatures": [
+						{
+							"id": 55,
+							"name": "getTitle",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"type": {
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "string"
+									}
+								],
+								"name": "Promise"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						52,
+						56,
+						54
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/code-actions.d.ts",
+					"line": 15,
+					"character": 27
+				}
+			]
+		},
+		{
+			"id": 66,
+			"name": "CodeActionFetcher",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"comment": {
+				"shortText": "atom-ide-base-code-actions provides a CodeActionFetcher which offers an API to\nrequest CodeActions from all CodeAction providers. For now, CodeActionFetcher\ncan only fetch CodeActions for a Diagnostic. In the future, this API can be\nextended to provide a stream of CodeActions based on the cursor position."
+			},
+			"children": [
+				{
+					"id": 67,
+					"name": "getCodeActionForDiagnostic",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/code-actions.d.ts",
+							"line": 38,
+							"character": 28
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 68,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {
+								"isExternal": true
+							},
+							"signatures": [
+								{
+									"id": 69,
+									"name": "__type",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 70,
+											"name": "diagnostic",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "reference",
+												"id": 45,
+												"name": "Diagnostic"
+											}
+										},
+										{
+											"id": 71,
+											"name": "editor",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "reference",
+												"name": "TextEditor"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "array",
+												"elementType": {
+													"type": "reference",
+													"id": 51,
+													"name": "CodeAction"
+												}
+											}
+										],
+										"name": "Promise"
+									}
+								}
+							]
+						}
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						67
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/code-actions.d.ts",
+					"line": 37,
+					"character": 34
+				}
+			]
+		},
+		{
+			"id": 58,
+			"name": "CodeActionProvider",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"children": [
+				{
+					"id": 59,
+					"name": "grammarScopes",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/code-actions.d.ts",
+							"line": 22,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "typeOperator",
+								"operator": "readonly",
+								"target": {
+									"type": "array",
+									"elementType": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": 60,
+					"name": "priority",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/code-actions.d.ts",
+							"line": 23,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 61,
+					"name": "getCodeActions",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"signatures": [
+						{
+							"id": 62,
+							"name": "getCodeActions",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"parameters": [
+								{
+									"id": 63,
+									"name": "editor",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "reference",
+										"name": "TextEditor"
+									}
+								},
+								{
+									"id": 64,
+									"name": "range",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "reference",
+										"name": "Range"
+									}
+								},
+								{
+									"id": 65,
+									"name": "diagnostics",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "reference",
+											"id": 45,
+											"name": "Diagnostic"
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "undefined"
+											},
+											{
+												"type": "literal",
+												"value": null
+											},
+											{
+												"type": "array",
+												"elementType": {
+													"type": "reference",
+													"id": 51,
+													"name": "CodeAction"
+												}
+											}
+										]
+									}
+								],
+								"name": "Promise"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						59,
+						60
+					]
+				},
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						61
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/code-actions.d.ts",
+					"line": 21,
+					"character": 35
+				}
+			]
+		},
+		{
+			"id": 72,
+			"name": "CodeHighlightProvider",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"children": [
+				{
+					"id": 74,
+					"name": "grammarScopes",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/code-highlight.d.ts",
+							"line": 5,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "typeOperator",
+						"operator": "readonly",
+						"target": {
+							"type": "array",
+							"elementType": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					}
+				},
+				{
+					"id": 73,
+					"name": "priority",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/code-highlight.d.ts",
+							"line": 4,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 75,
+					"name": "highlight",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"signatures": [
+						{
+							"id": 76,
+							"name": "highlight",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"parameters": [
+								{
+									"id": 77,
+									"name": "editor",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "reference",
+										"name": "TextEditor"
+									}
+								},
+								{
+									"id": 78,
+									"name": "bufferPosition",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "reference",
+										"name": "Point"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "undefined"
+											},
+											{
+												"type": "literal",
+												"value": null
+											},
+											{
+												"type": "array",
+												"elementType": {
+													"type": "reference",
+													"name": "Range"
+												}
+											}
+										]
+									}
+								],
+								"name": "Promise"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						74,
+						73
+					]
+				},
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						75
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/code-highlight.d.ts",
+					"line": 3,
+					"character": 38
+				}
+			]
+		},
+		{
+			"id": 336,
+			"name": "ConsoleApi",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"children": [
+				{
+					"id": 340,
+					"name": "append",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"signatures": [
+						{
+							"id": 341,
+							"name": "append",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"parameters": [
+								{
+									"id": 342,
+									"name": "message",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "reference",
+										"id": 358,
+										"name": "Message"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 343,
+					"name": "dispose",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"signatures": [
+						{
+							"id": 344,
+							"name": "dispose",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 348,
+					"name": "error",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"signatures": [
+						{
+							"id": 349,
+							"name": "error",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"parameters": [
+								{
+									"id": 350,
+									"name": "object",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 354,
+					"name": "info",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"signatures": [
+						{
+							"id": 355,
+							"name": "info",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"parameters": [
+								{
+									"id": 356,
+									"name": "object",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 345,
+					"name": "log",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"signatures": [
+						{
+							"id": 346,
+							"name": "log",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"parameters": [
+								{
+									"id": 347,
+									"name": "object",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 337,
+					"name": "setStatus",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"signatures": [
+						{
+							"id": 338,
+							"name": "setStatus",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"parameters": [
+								{
+									"id": 339,
+									"name": "status",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "reference",
+										"id": 357,
+										"name": "OutputProviderStatus"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 351,
+					"name": "warn",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"signatures": [
+						{
+							"id": 352,
+							"name": "warn",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"parameters": [
+								{
+									"id": 353,
+									"name": "object",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						340,
+						343,
+						348,
+						354,
+						345,
+						337,
+						351
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
+					"line": 10,
+					"character": 27
+				}
+			]
+		},
+		{
+			"id": 95,
+			"name": "DatatipProvider",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"children": [
+				{
+					"id": 103,
+					"name": "grammarScopes",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "Either pass this or `validForScope`"
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
+							"line": 41,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "typeOperator",
+								"operator": "readonly",
+								"target": {
+									"type": "array",
+									"elementType": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": 96,
+					"name": "priority",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
+							"line": 23,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 97,
+					"name": "providerName",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"comment": {
+						"shortText": "A unique name for the provider to be used for analytics.\nIt is recommended that it be the name of the provider's package."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
+							"line": 29,
+							"character": 14
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 98,
+					"name": "datatip",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"signatures": [
+						{
+							"id": 99,
+							"name": "datatip",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"parameters": [
+								{
+									"id": 100,
+									"name": "editor",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "reference",
+										"name": "TextEditor"
+									}
+								},
+								{
+									"id": 101,
+									"name": "bufferPosition",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "reference",
+										"name": "Point"
+									}
+								},
+								{
+									"id": 102,
+									"name": "mouseEvent",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true,
+										"isOptional": true
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "literal",
+												"value": null
+											},
+											{
+												"type": "reference",
+												"name": "MouseEvent"
+											}
+										]
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "undefined"
+											},
+											{
+												"type": "literal",
+												"value": null
+											},
+											{
+												"type": "reference",
+												"id": 125,
+												"name": "MarkedStringDatatip"
+											},
+											{
+												"type": "reference",
+												"id": 129,
+												"name": "ReactComponentDatatip"
+											}
+										]
+									}
+								],
+								"name": "Promise"
+							}
+						}
+					]
+				},
+				{
+					"id": 104,
+					"name": "validForScope",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"signatures": [
+						{
+							"id": 105,
+							"name": "validForScope",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"shortText": "Either pass `grammarScopes` or this function."
+							},
+							"parameters": [
+								{
+									"id": 106,
+									"name": "scopeName",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						103,
+						96,
+						97
+					]
+				},
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						98,
+						104
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
+					"line": 22,
+					"character": 32
+				}
+			]
+		},
+		{
+			"id": 79,
+			"name": "DatatipService",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"children": [
+				{
+					"id": 83,
+					"name": "addModifierProvider",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"signatures": [
+						{
+							"id": 84,
+							"name": "addModifierProvider",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"parameters": [
+								{
+									"id": 85,
+									"name": "provider",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "reference",
+										"id": 107,
+										"name": "ModifierDatatipProvider"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "DisposableLike"
+							}
+						}
+					]
+				},
+				{
+					"id": 80,
+					"name": "addProvider",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"signatures": [
+						{
+							"id": 81,
+							"name": "addProvider",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"parameters": [
+								{
+									"id": 82,
+									"name": "provider",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "reference",
+										"id": 95,
+										"name": "DatatipProvider"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "DisposableLike"
+							}
+						}
+					]
+				},
+				{
+					"id": 86,
+					"name": "createPinnedDataTip",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"signatures": [
+						{
+							"id": 87,
+							"name": "createPinnedDataTip",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"parameters": [
+								{
+									"id": 88,
+									"name": "datatip",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "reference",
+										"id": 135,
+										"name": "Datatip"
+									}
+								},
+								{
+									"id": 89,
+									"name": "editor",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "reference",
+										"name": "TextEditor"
+									}
+								},
+								{
+									"id": 90,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true,
+										"isOptional": true
+									},
+									"type": {
+										"type": "reference",
+										"id": 91,
+										"name": "PinnedDatatipOptions"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "DisposableLike"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						83,
+						80,
+						86
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
+					"line": 3,
+					"character": 31
+				}
+			]
+		},
+		{
+			"id": 137,
+			"name": "Definition",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"children": [
+				{
+					"id": 143,
+					"name": "language",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"comment": {
+						"shortText": "`language` may be used by consumers to identify the source of definitions."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/definitions.d.ts",
+							"line": 31,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 141,
+					"name": "name",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "Optional: `name` and `projectRoot` can be provided to display a more human-readable title\ninside of Hyperclick when there are multiple definitions."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/definitions.d.ts",
+							"line": 23,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				},
+				{
+					"id": 138,
+					"name": "path",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"comment": {
+						"shortText": "Path of the file in which the definition is located."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/definitions.d.ts",
+							"line": 8,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 139,
+					"name": "position",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"comment": {
+						"shortText": "First character of the definition's identifier.\ne.g. \"F\" in `class Foo {}`"
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/definitions.d.ts",
+							"line": 13,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Point"
+					}
+				},
+				{
+					"id": 142,
+					"name": "projectRoot",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "If provided, `projectRoot` will be used to display a relativized version of `path`."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/definitions.d.ts",
+							"line": 27,
+							"character": 13
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				},
+				{
+					"id": 140,
+					"name": "range",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "Optional: the range of the entire definition.\ne.g. \"c\" to \"}\" in `class Foo {}`"
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/definitions.d.ts",
+							"line": 18,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "reference",
+								"name": "Range"
+							}
+						]
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						143,
+						141,
+						138,
+						139,
+						142,
+						140
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/definitions.d.ts",
+					"line": 4,
+					"character": 27
+				}
+			]
+		},
+		{
+			"id": 157,
+			"name": "DefinitionPreviewProvider",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"children": [
+				{
+					"id": 158,
+					"name": "getDefinitionPreview",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"signatures": [
+						{
+							"id": 159,
+							"name": "getDefinitionPreview",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"parameters": [
+								{
+									"id": 160,
+									"name": "definition",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "reference",
+										"id": 137,
+										"name": "Definition"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "undefined"
+											},
+											{
+												"type": "literal",
+												"value": null
+											},
+											{
+												"type": "reflection",
+												"declaration": {
+													"id": 161,
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {
+														"isExternal": true
+													},
+													"children": [
+														{
+															"id": 163,
+															"name": "contents",
+															"kind": 1024,
+															"kindString": "Property",
+															"flags": {
+																"isExternal": true
+															},
+															"sources": [
+																{
+																	"fileName": "node_modules/atom-ide-base/types-packages/definitions.d.ts",
+																	"line": 73,
+																	"character": 16
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "string"
+															}
+														},
+														{
+															"id": 164,
+															"name": "encoding",
+															"kind": 1024,
+															"kindString": "Property",
+															"flags": {
+																"isExternal": true
+															},
+															"sources": [
+																{
+																	"fileName": "node_modules/atom-ide-base/types-packages/definitions.d.ts",
+																	"line": 74,
+																	"character": 16
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "string"
+															}
+														},
+														{
+															"id": 162,
+															"name": "mime",
+															"kind": 1024,
+															"kindString": "Property",
+															"flags": {
+																"isExternal": true
+															},
+															"sources": [
+																{
+																	"fileName": "node_modules/atom-ide-base/types-packages/definitions.d.ts",
+																	"line": 72,
+																	"character": 12
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "string"
+															}
+														}
+													],
+													"groups": [
+														{
+															"title": "Properties",
+															"kind": 1024,
+															"children": [
+																163,
+																164,
+																162
+															]
+														}
+													]
+												}
+											}
+										]
+									}
+								],
+								"name": "Promise"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						158
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/definitions.d.ts",
+					"line": 67,
+					"character": 42
+				}
+			]
+		},
+		{
+			"id": 147,
+			"name": "DefinitionProvider",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"comment": {
+				"shortText": "Provides definitions for a set of language grammars."
+			},
+			"children": [
+				{
+					"id": 152,
+					"name": "getDefinition",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"comment": {
+						"shortText": "Obtains the definition in an editor at the given point.\nThis should return null if no definition is available."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/definitions.d.ts",
+							"line": 64,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 153,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {
+								"isExternal": true
+							},
+							"signatures": [
+								{
+									"id": 154,
+									"name": "__type",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 155,
+											"name": "editor",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "reference",
+												"name": "TextEditor"
+											}
+										},
+										{
+											"id": 156,
+											"name": "position",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "reference",
+												"name": "Point"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "union",
+												"types": [
+													{
+														"type": "intrinsic",
+														"name": "undefined"
+													},
+													{
+														"type": "literal",
+														"value": null
+													},
+													{
+														"type": "reference",
+														"id": 144,
+														"name": "DefinitionQueryResult"
+													}
+												]
+											}
+										],
+										"name": "Promise"
+									}
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 150,
+					"name": "grammarScopes",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/definitions.d.ts",
+							"line": 58,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "typeOperator",
+						"operator": "readonly",
+						"target": {
+							"type": "array",
+							"elementType": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					}
+				},
+				{
+					"id": 148,
+					"name": "name",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/definitions.d.ts",
+							"line": 52,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 149,
+					"name": "priority",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"comment": {
+						"shortText": "If there are multiple providers for a given grammar,\nthe one with the highest priority will be used."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/definitions.d.ts",
+							"line": 57,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 151,
+					"name": "wordRegExp",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/definitions.d.ts",
+							"line": 59,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "literal",
+								"value": null
+							},
+							{
+								"type": "reference",
+								"name": "RegExp"
+							}
+						]
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						152,
+						150,
+						148,
+						149,
+						151
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/definitions.d.ts",
+					"line": 51,
+					"character": 35
+				}
+			]
+		},
+		{
+			"id": 144,
+			"name": "DefinitionQueryResult",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"comment": {
+				"shortText": "Definition queries supply a point.\nThe returned queryRange is the range within which the returned definition is valid.\nTypically queryRange spans the containing identifier around the query point.\n(If a null queryRange is returned, the range of the word containing the point is used.)"
+			},
+			"children": [
+				{
+					"id": 146,
+					"name": "definitions",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"comment": {
+						"shortText": "Must be non-empty."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/definitions.d.ts",
+							"line": 45,
+							"character": 13
+						}
+					],
+					"type": {
+						"type": "typeOperator",
+						"operator": "readonly",
+						"target": {
+							"type": "array",
+							"elementType": {
+								"type": "reference",
+								"id": 137,
+								"name": "Definition"
+							}
+						}
+					}
+				},
+				{
+					"id": 145,
+					"name": "queryRange",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/definitions.d.ts",
+							"line": 41,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "literal",
+								"value": null
+							},
+							{
+								"type": "typeOperator",
+								"operator": "readonly",
+								"target": {
+									"type": "array",
+									"elementType": {
+										"type": "reference",
+										"name": "Range"
+									}
+								}
+							}
+						]
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						146,
+						145
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/definitions.d.ts",
+					"line": 40,
+					"character": 38
+				}
+			]
+		},
+		{
+			"id": 45,
+			"name": "Diagnostic",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"children": [
+				{
+					"id": 48,
+					"name": "filePath",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/code-actions.d.ts",
+							"line": 10,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 46,
+					"name": "providerName",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/code-actions.d.ts",
+							"line": 8,
+							"character": 14
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 50,
+					"name": "range",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/code-actions.d.ts",
+							"line": 12,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Range"
+					}
+				},
+				{
+					"id": 49,
+					"name": "text",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/code-actions.d.ts",
+							"line": 11,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				},
+				{
+					"id": 47,
+					"name": "type",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/code-actions.d.ts",
+							"line": 9,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 44,
+						"name": "DiagnosticType"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						48,
+						46,
+						50,
+						49,
+						47
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/code-actions.d.ts",
+					"line": 7,
+					"character": 27
+				}
+			]
+		},
+		{
+			"id": 279,
+			"name": "FileCodeFormatProvider",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"children": [
+				{
+					"id": 280,
+					"name": "formatEntireFile",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/code-format.d.ts",
+							"line": 5,
+							"character": 18
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 281,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {
+								"isExternal": true
+							},
+							"signatures": [
+								{
+									"id": 282,
+									"name": "__type",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 283,
+											"name": "editor",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "reference",
+												"name": "TextEditor"
+											}
+										},
+										{
+											"id": 284,
+											"name": "range",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "reference",
+												"name": "Range"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "array",
+												"elementType": {
+													"type": "reference",
+													"id": 311,
+													"name": "TextEdit"
+												}
+											}
+										],
+										"name": "Promise"
+									}
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 286,
+					"name": "grammarScopes",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/code-format.d.ts",
+							"line": 7,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "intrinsic",
+							"name": "string"
+						}
+					}
+				},
+				{
+					"id": 285,
+					"name": "priority",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/code-format.d.ts",
+							"line": 6,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						280,
+						286,
+						285
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/code-format.d.ts",
+					"line": 4,
+					"character": 39
+				}
+			]
+		},
+		{
+			"id": 177,
+			"name": "FindReferencesData",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"children": [
+				{
+					"id": 179,
+					"name": "baseUri",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/find-references.d.ts",
+							"line": 31,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 180,
+					"name": "referencedSymbolName",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/find-references.d.ts",
+							"line": 32,
+							"character": 22
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 181,
+					"name": "references",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/find-references.d.ts",
+							"line": 33,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"id": 173,
+							"name": "Reference"
+						}
+					}
+				},
+				{
+					"id": 182,
+					"name": "title",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "defaults to 'Symbol References'"
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/find-references.d.ts",
+							"line": 37,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				},
+				{
+					"id": 178,
+					"name": "type",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/find-references.d.ts",
+							"line": 30,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": "data"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						179,
+						180,
+						181,
+						182,
+						178
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/find-references.d.ts",
+					"line": 29,
+					"character": 35
+				}
+			]
+		},
+		{
+			"id": 183,
+			"name": "FindReferencesError",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"children": [
+				{
+					"id": 185,
+					"name": "message",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/find-references.d.ts",
+							"line": 42,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 184,
+					"name": "type",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/find-references.d.ts",
+							"line": 41,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": "error"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						185,
+						184
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/find-references.d.ts",
+					"line": 40,
+					"character": 36
+				}
+			]
+		},
+		{
+			"id": 165,
+			"name": "FindReferencesProvider",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"children": [
+				{
+					"id": 169,
+					"name": "findReferences",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"signatures": [
+						{
+							"id": 170,
+							"name": "findReferences",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"shortText": "`findReferences` will only be called if `isEditorSupported` previously returned true\nfor the given Atom.TextEditor."
+							},
+							"parameters": [
+								{
+									"id": 171,
+									"name": "editor",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "reference",
+										"name": "TextEditor"
+									}
+								},
+								{
+									"id": 172,
+									"name": "position",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "reference",
+										"name": "Point"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "undefined"
+											},
+											{
+												"type": "literal",
+												"value": null
+											},
+											{
+												"type": "reference",
+												"id": 177,
+												"name": "FindReferencesData"
+											},
+											{
+												"type": "reference",
+												"id": 183,
+												"name": "FindReferencesError"
+											}
+										]
+									}
+								],
+								"name": "Promise"
+							}
+						}
+					]
+				},
+				{
+					"id": 166,
+					"name": "isEditorSupported",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"signatures": [
+						{
+							"id": 167,
+							"name": "isEditorSupported",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"shortText": "Return true if your provider supports finding references for the provided Atom.TextEditor."
+							},
+							"parameters": [
+								{
+									"id": 168,
+									"name": "editor",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "reference",
+										"name": "TextEditor"
+									}
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "boolean"
+									},
+									{
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "intrinsic",
+												"name": "boolean"
+											}
+										],
+										"name": "Promise"
+									}
+								]
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						169,
+						166
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/find-references.d.ts",
+					"line": 4,
+					"character": 39
+				}
+			]
+		},
+		{
+			"id": 187,
+			"name": "HyperclickProvider",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"children": [
+				{
+					"id": 195,
+					"name": "getSuggestion",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "Use this to provide a suggestion if it can have non-contiguous ranges.\nA primary use-case for this is Objective-C methods."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/hyperclick.d.ts",
+							"line": 20,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "reflection",
+								"declaration": {
+									"id": 196,
+									"name": "__type",
+									"kind": 65536,
+									"kindString": "Type literal",
+									"flags": {
+										"isExternal": true
+									},
+									"signatures": [
+										{
+											"id": 197,
+											"name": "__type",
+											"kind": 4096,
+											"kindString": "Call signature",
+											"flags": {
+												"isExternal": true
+											},
+											"parameters": [
+												{
+													"id": 198,
+													"name": "textEditor",
+													"kind": 32768,
+													"kindString": "Parameter",
+													"flags": {
+														"isExternal": true
+													},
+													"type": {
+														"type": "reference",
+														"name": "TextEditor"
+													}
+												},
+												{
+													"id": 199,
+													"name": "position",
+													"kind": 32768,
+													"kindString": "Parameter",
+													"flags": {
+														"isExternal": true
+													},
+													"type": {
+														"type": "reference",
+														"name": "Point"
+													}
+												}
+											],
+											"type": {
+												"type": "reference",
+												"typeArguments": [
+													{
+														"type": "union",
+														"types": [
+															{
+																"type": "intrinsic",
+																"name": "undefined"
+															},
+															{
+																"type": "literal",
+																"value": null
+															},
+															{
+																"type": "reference",
+																"id": 203,
+																"name": "HyperclickSuggestion"
+															}
+														]
+													}
+												],
+												"name": "Promise"
+											}
+										}
+									]
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": 188,
+					"name": "getSuggestionForWord",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "Use this to provide a suggestion for single-word matches.\nOptionally set `wordRegExp` to adjust word-matching."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/hyperclick.d.ts",
+							"line": 8,
+							"character": 22
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "reflection",
+								"declaration": {
+									"id": 189,
+									"name": "__type",
+									"kind": 65536,
+									"kindString": "Type literal",
+									"flags": {
+										"isExternal": true
+									},
+									"signatures": [
+										{
+											"id": 190,
+											"name": "__type",
+											"kind": 4096,
+											"kindString": "Call signature",
+											"flags": {
+												"isExternal": true
+											},
+											"parameters": [
+												{
+													"id": 191,
+													"name": "textEditor",
+													"kind": 32768,
+													"kindString": "Parameter",
+													"flags": {
+														"isExternal": true
+													},
+													"type": {
+														"type": "reference",
+														"name": "TextEditor"
+													}
+												},
+												{
+													"id": 192,
+													"name": "text",
+													"kind": 32768,
+													"kindString": "Parameter",
+													"flags": {
+														"isExternal": true
+													},
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												},
+												{
+													"id": 193,
+													"name": "range",
+													"kind": 32768,
+													"kindString": "Parameter",
+													"flags": {
+														"isExternal": true
+													},
+													"type": {
+														"type": "reference",
+														"name": "Range"
+													}
+												}
+											],
+											"type": {
+												"type": "reference",
+												"typeArguments": [
+													{
+														"type": "union",
+														"types": [
+															{
+																"type": "intrinsic",
+																"name": "undefined"
+															},
+															{
+																"type": "literal",
+																"value": null
+															},
+															{
+																"type": "reference",
+																"id": 203,
+																"name": "HyperclickSuggestion"
+															}
+														]
+													}
+												],
+												"name": "Promise"
+											}
+										}
+									]
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": 202,
+					"name": "grammarScopes",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "Optionally, limit the set of grammar scopes the provider should apply to."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/hyperclick.d.ts",
+							"line": 38,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "array",
+								"elementType": {
+									"type": "intrinsic",
+									"name": "string"
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": 201,
+					"name": "priority",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"comment": {
+						"shortText": "The higher this is, the more precedence the provider gets."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/hyperclick.d.ts",
+							"line": 33,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 200,
+					"name": "providerName",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "Must be unique. Used for analytics."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/hyperclick.d.ts",
+							"line": 28,
+							"character": 14
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				},
+				{
+					"id": 194,
+					"name": "wordRegExp",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/hyperclick.d.ts",
+							"line": 14,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "reference",
+								"name": "RegExp"
+							}
+						]
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						195,
+						188,
+						202,
+						201,
+						200,
+						194
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/hyperclick.d.ts",
+					"line": 3,
+					"character": 35
+				}
+			]
+		},
+		{
+			"id": 203,
+			"name": "HyperclickSuggestion",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"children": [
+				{
+					"id": 205,
+					"name": "callback",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"comment": {
+						"shortText": "The function to call when the underlined text is clicked."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/hyperclick.d.ts",
+							"line": 50,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "reflection",
+								"declaration": {
+									"id": 206,
+									"name": "__type",
+									"kind": 65536,
+									"kindString": "Type literal",
+									"flags": {
+										"isExternal": true
+									},
+									"signatures": [
+										{
+											"id": 207,
+											"name": "__type",
+											"kind": 4096,
+											"kindString": "Call signature",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "void"
+											}
+										}
+									]
+								}
+							},
+							{
+								"type": "array",
+								"elementType": {
+									"type": "reflection",
+									"declaration": {
+										"id": 208,
+										"name": "__type",
+										"kind": 65536,
+										"kindString": "Type literal",
+										"flags": {
+											"isExternal": true
+										},
+										"children": [
+											{
+												"id": 211,
+												"name": "callback",
+												"kind": 1024,
+												"kindString": "Property",
+												"flags": {
+													"isExternal": true
+												},
+												"sources": [
+													{
+														"fileName": "node_modules/atom-ide-base/types-packages/hyperclick.d.ts",
+														"line": 50,
+														"character": 79
+													}
+												],
+												"type": {
+													"type": "reflection",
+													"declaration": {
+														"id": 212,
+														"name": "__type",
+														"kind": 65536,
+														"kindString": "Type literal",
+														"flags": {
+															"isExternal": true
+														},
+														"signatures": [
+															{
+																"id": 213,
+																"name": "__type",
+																"kind": 4096,
+																"kindString": "Call signature",
+																"flags": {
+																	"isExternal": true
+																},
+																"type": {
+																	"type": "intrinsic",
+																	"name": "void"
+																}
+															}
+														]
+													}
+												}
+											},
+											{
+												"id": 209,
+												"name": "rightLabel",
+												"kind": 1024,
+												"kindString": "Property",
+												"flags": {
+													"isExternal": true,
+													"isOptional": true
+												},
+												"sources": [
+													{
+														"fileName": "node_modules/atom-ide-base/types-packages/hyperclick.d.ts",
+														"line": 50,
+														"character": 45
+													}
+												],
+												"type": {
+													"type": "union",
+													"types": [
+														{
+															"type": "intrinsic",
+															"name": "undefined"
+														},
+														{
+															"type": "intrinsic",
+															"name": "string"
+														}
+													]
+												}
+											},
+											{
+												"id": 210,
+												"name": "title",
+												"kind": 1024,
+												"kindString": "Property",
+												"flags": {
+													"isExternal": true
+												},
+												"sources": [
+													{
+														"fileName": "node_modules/atom-ide-base/types-packages/hyperclick.d.ts",
+														"line": 50,
+														"character": 61
+													}
+												],
+												"type": {
+													"type": "intrinsic",
+													"name": "string"
+												}
+											}
+										],
+										"groups": [
+											{
+												"title": "Properties",
+												"kind": 1024,
+												"children": [
+													211,
+													209,
+													210
+												]
+											}
+										]
+									}
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": 204,
+					"name": "range",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"comment": {
+						"shortText": "The range(s) to underline to provide as a visual cue for clicking."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/hyperclick.d.ts",
+							"line": 45,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "reference",
+								"name": "Range"
+							},
+							{
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"name": "Range"
+								}
+							}
+						]
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						205,
+						204
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/hyperclick.d.ts",
+					"line": 41,
+					"character": 37
+				}
+			]
+		},
+		{
+			"id": 117,
+			"name": "MarkdownMarkedString",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"comment": {
+				"shortText": "Borrowed from the LSP API."
+			},
+			"children": [
+				{
+					"id": 118,
+					"name": "type",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
+							"line": 64,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": "markdown"
+					}
+				},
+				{
+					"id": 119,
+					"name": "value",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
+							"line": 65,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						118,
+						119
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
+					"line": 63,
+					"character": 37
+				}
+			]
+		},
+		{
+			"id": 274,
+			"name": "MarkdownService",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"comment": {
+				"shortText": "the markdown service object"
+			},
+			"children": [
+				{
+					"id": 275,
+					"name": "render",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"signatures": [
+						{
+							"id": 276,
+							"name": "render",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"shortText": "function to render markdown for the given grammar",
+								"returns": "highlighted HTML\n"
+							},
+							"parameters": [
+								{
+									"id": 277,
+									"name": "markdownText",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"comment": {
+										"text": "markdown string to render"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 278,
+									"name": "grammar",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"comment": {
+										"text": "grammar to render the string with"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "string"
+									}
+								],
+								"name": "Promise"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						275
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/markdown-service.d.ts",
+					"line": 4,
+					"character": 32
+				}
+			]
+		},
+		{
+			"id": 125,
+			"name": "MarkedStringDatatip",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"children": [
+				{
+					"id": 126,
+					"name": "markedStrings",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
+							"line": 77,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"id": 124,
+							"name": "MarkedString"
+						}
+					}
+				},
+				{
+					"id": 128,
+					"name": "pinnable",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
+							"line": 79,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						]
+					}
+				},
+				{
+					"id": 127,
+					"name": "range",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
+							"line": 78,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Range"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						126,
+						128,
+						127
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
+					"line": 76,
+					"character": 36
+				}
+			]
+		},
+		{
+			"id": 267,
+			"name": "MarkupContent",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"children": [
+				{
+					"id": 268,
+					"name": "kind",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
+							"line": 47,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 266,
+						"name": "MarkupKind"
+					}
+				},
+				{
+					"id": 269,
+					"name": "value",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
+							"line": 48,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						268,
+						269
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
+					"line": 46,
+					"character": 30
+				}
+			]
+		},
+		{
+			"id": 358,
+			"name": "Message",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"children": [
+				{
+					"id": 362,
+					"name": "kind",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
+							"line": 26,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "literal",
+								"value": null
+							},
+							{
+								"type": "literal",
+								"value": "message"
+							},
+							{
+								"type": "literal",
+								"value": "request"
+							},
+							{
+								"type": "literal",
+								"value": "response"
+							}
+						]
+					}
+				},
+				{
+					"id": 360,
+					"name": "level",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
+							"line": 24,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 365,
+						"name": "Level"
+					}
+				},
+				{
+					"id": 363,
+					"name": "scopeName",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
+							"line": 27,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "literal",
+								"value": null
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				},
+				{
+					"id": 361,
+					"name": "tags",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
+							"line": 25,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "literal",
+								"value": null
+							},
+							{
+								"type": "array",
+								"elementType": {
+									"type": "intrinsic",
+									"name": "string"
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": 359,
+					"name": "text",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
+							"line": 23,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						362,
+						360,
+						363,
+						361,
+						359
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
+					"line": 22,
+					"character": 24
+				}
+			]
+		},
+		{
+			"id": 107,
+			"name": "ModifierDatatipProvider",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"children": [
+				{
+					"id": 109,
+					"name": "grammarScopes",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
+							"line": 49,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "array",
+								"elementType": {
+									"type": "intrinsic",
+									"name": "string"
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": 108,
+					"name": "priority",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
+							"line": 48,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 110,
+					"name": "providerName",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
+							"line": 50,
+							"character": 14
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 111,
+					"name": "modifierDatatip",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"signatures": [
+						{
+							"id": 112,
+							"name": "modifierDatatip",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"parameters": [
+								{
+									"id": 113,
+									"name": "editor",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "reference",
+										"name": "TextEditor"
+									}
+								},
+								{
+									"id": 114,
+									"name": "bufferPosition",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "reference",
+										"name": "Point"
+									}
+								},
+								{
+									"id": 115,
+									"name": "heldKeys",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "reference",
+												"id": 136,
+												"name": "ModifierKey"
+											}
+										],
+										"name": "Set"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "undefined"
+											},
+											{
+												"type": "literal",
+												"value": null
+											},
+											{
+												"type": "reference",
+												"id": 125,
+												"name": "MarkedStringDatatip"
+											},
+											{
+												"type": "reference",
+												"id": 129,
+												"name": "ReactComponentDatatip"
+											}
+										]
+									}
+								],
+								"name": "Promise"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						109,
+						108,
+						110
+					]
+				},
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						111
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
+					"line": 47,
+					"character": 40
+				}
+			]
+		},
+		{
+			"id": 295,
+			"name": "OnSaveCodeFormatProvider",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"children": [
+				{
+					"id": 296,
+					"name": "formatOnSave",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/code-format.d.ts",
+							"line": 17,
+							"character": 14
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 297,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {
+								"isExternal": true
+							},
+							"signatures": [
+								{
+									"id": 298,
+									"name": "__type",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 299,
+											"name": "editor",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "reference",
+												"name": "TextEditor"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "array",
+												"elementType": {
+													"type": "reference",
+													"id": 311,
+													"name": "TextEdit"
+												}
+											}
+										],
+										"name": "Promise"
+									}
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 301,
+					"name": "grammarScopes",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/code-format.d.ts",
+							"line": 19,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "intrinsic",
+							"name": "string"
+						}
+					}
+				},
+				{
+					"id": 300,
+					"name": "priority",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/code-format.d.ts",
+							"line": 18,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						296,
+						301,
+						300
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/code-format.d.ts",
+					"line": 16,
+					"character": 41
+				}
+			]
+		},
+		{
+			"id": 302,
+			"name": "OnTypeCodeFormatProvider",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"children": [
+				{
+					"id": 303,
+					"name": "formatAtPosition",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/code-format.d.ts",
+							"line": 23,
+							"character": 18
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 304,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {
+								"isExternal": true
+							},
+							"signatures": [
+								{
+									"id": 305,
+									"name": "__type",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 306,
+											"name": "editor",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "reference",
+												"name": "TextEditor"
+											}
+										},
+										{
+											"id": 307,
+											"name": "position",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "reference",
+												"name": "Point"
+											}
+										},
+										{
+											"id": 308,
+											"name": "character",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "array",
+												"elementType": {
+													"type": "reference",
+													"id": 311,
+													"name": "TextEdit"
+												}
+											}
+										],
+										"name": "Promise"
+									}
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 310,
+					"name": "grammarScopes",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/code-format.d.ts",
+							"line": 25,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "intrinsic",
+							"name": "string"
+						}
+					}
+				},
+				{
+					"id": 309,
+					"name": "priority",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/code-format.d.ts",
+							"line": 24,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						303,
+						310,
+						309
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/code-format.d.ts",
+					"line": 22,
+					"character": 41
+				}
+			]
+		},
+		{
+			"id": 237,
+			"name": "Outline",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"children": [
+				{
+					"id": 238,
+					"name": "outlineTrees",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
+							"line": 46,
+							"character": 14
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"id": 227,
+							"name": "OutlineTree"
+						}
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						238
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
+					"line": 45,
+					"character": 24
+				}
+			]
+		},
+		{
+			"id": 219,
+			"name": "OutlineProvider",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"children": [
+				{
+					"id": 222,
+					"name": "grammarScopes",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
+							"line": 10,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "typeOperator",
+						"operator": "readonly",
+						"target": {
+							"type": "array",
+							"elementType": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					}
+				},
+				{
+					"id": 220,
+					"name": "name",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
+							"line": 4,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 221,
+					"name": "priority",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"comment": {
+						"shortText": "If there are multiple providers for a given grammar, the one with the highest priority will be\nused."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
+							"line": 9,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 223,
+					"name": "updateOnEdit",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
+							"line": 11,
+							"character": 14
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						]
+					}
+				},
+				{
+					"id": 224,
+					"name": "getOutline",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"signatures": [
+						{
+							"id": 225,
+							"name": "getOutline",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"parameters": [
+								{
+									"id": 226,
+									"name": "editor",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "reference",
+										"name": "TextEditor"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "undefined"
+											},
+											{
+												"type": "literal",
+												"value": null
+											},
+											{
+												"type": "reference",
+												"id": 237,
+												"name": "Outline"
+											}
+										]
+									}
+								],
+								"name": "Promise"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						222,
+						220,
+						221,
+						223
+					]
+				},
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						224
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
+					"line": 3,
+					"character": 32
+				}
+			]
+		},
+		{
+			"id": 227,
+			"name": "OutlineTree",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"children": [
+				{
+					"id": 236,
+					"name": "children",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
+							"line": 42,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"id": 227,
+							"name": "OutlineTree"
+						}
+					}
+				},
+				{
+					"id": 234,
+					"name": "endPosition",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
+							"line": 40,
+							"character": 13
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "reference",
+								"name": "Point"
+							}
+						]
+					}
+				},
+				{
+					"id": 228,
+					"name": "icon",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "from Atom.Octicon or Atom.OcticonsPrivate (types not allowed over rpc so we use string)"
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
+							"line": 19,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				},
+				{
+					"id": 229,
+					"name": "kind",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "kind you can pass to the UI for theming"
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
+							"line": 23,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "literal",
+								"value": "string"
+							},
+							{
+								"type": "literal",
+								"value": "number"
+							},
+							{
+								"type": "literal",
+								"value": "boolean"
+							},
+							{
+								"type": "literal",
+								"value": "function"
+							},
+							{
+								"type": "literal",
+								"value": "file"
+							},
+							{
+								"type": "literal",
+								"value": "module"
+							},
+							{
+								"type": "literal",
+								"value": "namespace"
+							},
+							{
+								"type": "literal",
+								"value": "package"
+							},
+							{
+								"type": "literal",
+								"value": "class"
+							},
+							{
+								"type": "literal",
+								"value": "method"
+							},
+							{
+								"type": "literal",
+								"value": "property"
+							},
+							{
+								"type": "literal",
+								"value": "field"
+							},
+							{
+								"type": "literal",
+								"value": "constructor"
+							},
+							{
+								"type": "literal",
+								"value": "enum"
+							},
+							{
+								"type": "literal",
+								"value": "interface"
+							},
+							{
+								"type": "literal",
+								"value": "variable"
+							},
+							{
+								"type": "literal",
+								"value": "constant"
+							},
+							{
+								"type": "literal",
+								"value": "array"
+							}
+						]
+					}
+				},
+				{
+					"id": 235,
+					"name": "landingPosition",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
+							"line": 41,
+							"character": 17
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "reference",
+								"name": "Point"
+							}
+						]
+					}
+				},
+				{
+					"id": 230,
+					"name": "plainText",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "Must have `plainText` or the `tokenizedText` property. If both are present, `tokenizedText` is preferred."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
+							"line": 28,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				},
+				{
+					"id": 232,
+					"name": "representativeName",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "If user has atom-ide-base-outline-view.nameOnly then representativeName is used instead."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
+							"line": 37,
+							"character": 20
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				},
+				{
+					"id": 233,
+					"name": "startPosition",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
+							"line": 39,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Point"
+					}
+				},
+				{
+					"id": 231,
+					"name": "tokenizedText",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "Must have `plainText` or the `tokenizedText` property. If both are present, `tokenizedText` is preferred."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
+							"line": 32,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "reference",
+								"id": 244,
+								"name": "TokenizedText"
+							}
+						]
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						236,
+						234,
+						228,
+						229,
+						235,
+						230,
+						232,
+						233,
+						231
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
+					"line": 15,
+					"character": 28
+				}
+			]
+		},
+		{
+			"id": 91,
+			"name": "PinnedDatatipOptions",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"children": [
+				{
+					"id": 92,
+					"name": "position",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "Defaults to 'end-of-line'."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
+							"line": 13,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "literal",
+								"value": "end-of-line"
+							},
+							{
+								"type": "literal",
+								"value": "above-range"
+							}
+						]
+					}
+				},
+				{
+					"id": 93,
+					"name": "showRangeHighlight",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "Defaults to true."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
+							"line": 17,
+							"character": 20
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						]
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						92,
+						93
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
+					"line": 9,
+					"character": 37
+				}
+			]
+		},
+		{
+			"id": 214,
+			"name": "ProviderCommon",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"children": [
+				{
+					"id": 216,
+					"name": "grammarScopes",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "Omitting grammarScopes implies that the provider applies to all grammars."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/main.d.ts",
+							"line": 40,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "array",
+								"elementType": {
+									"type": "intrinsic",
+									"name": "string"
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": 215,
+					"name": "priority",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"comment": {
+						"shortText": "Providers with higher priorities will be preferred over lower ones."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/main.d.ts",
+							"line": 36,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						216,
+						215
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/main.d.ts",
+					"line": 32,
+					"character": 31
+				}
+			]
+		},
+		{
+			"id": 287,
+			"name": "RangeCodeFormatProvider",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"children": [
+				{
+					"id": 288,
+					"name": "formatCode",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/code-format.d.ts",
+							"line": 11,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 289,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {
+								"isExternal": true
+							},
+							"signatures": [
+								{
+									"id": 290,
+									"name": "__type",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 291,
+											"name": "editor",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "reference",
+												"name": "TextEditor"
+											}
+										},
+										{
+											"id": 292,
+											"name": "range",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "reference",
+												"name": "Range"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "array",
+												"elementType": {
+													"type": "reference",
+													"id": 311,
+													"name": "TextEdit"
+												}
+											}
+										],
+										"name": "Promise"
+									}
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 294,
+					"name": "grammarScopes",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/code-format.d.ts",
+							"line": 13,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "intrinsic",
+							"name": "string"
+						}
+					}
+				},
+				{
+					"id": 293,
+					"name": "priority",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/code-format.d.ts",
+							"line": 12,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						288,
+						294,
+						293
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/code-format.d.ts",
+					"line": 10,
+					"character": 40
+				}
+			]
+		},
+		{
+			"id": 129,
+			"name": "ReactComponentDatatip",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"children": [
+				{
+					"id": 130,
+					"name": "component",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"comment": {
+						"shortText": "React component"
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
+							"line": 88,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 131,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {
+								"isExternal": true
+							},
+							"signatures": [
+								{
+									"id": 132,
+									"name": "__type",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "reference",
+										"name": "Element"
+									}
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 134,
+					"name": "pinnable",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
+							"line": 90,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						]
+					}
+				},
+				{
+					"id": 133,
+					"name": "range",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
+							"line": 89,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Range"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						130,
+						134,
+						133
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
+					"line": 82,
+					"character": 38
+				}
+			]
+		},
+		{
+			"id": 315,
+			"name": "RefactorProvider",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"children": [
+				{
+					"id": 316,
+					"name": "grammarScopes",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/refactor.d.ts",
+							"line": 6,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "intrinsic",
+							"name": "string"
+						}
+					}
+				},
+				{
+					"id": 317,
+					"name": "priority",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/refactor.d.ts",
+							"line": 7,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 318,
+					"name": "rename",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"signatures": [
+						{
+							"id": 319,
+							"name": "rename",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"parameters": [
+								{
+									"id": 320,
+									"name": "editor",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "reference",
+										"name": "TextEditor"
+									}
+								},
+								{
+									"id": 321,
+									"name": "position",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "reference",
+										"name": "Point"
+									}
+								},
+								{
+									"id": 322,
+									"name": "newName",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "union",
+										"types": [
+											{
+												"type": "literal",
+												"value": null
+											},
+											{
+												"type": "reference",
+												"typeArguments": [
+													{
+														"type": "intrinsic",
+														"name": "string"
+													},
+													{
+														"type": "array",
+														"elementType": {
+															"type": "reference",
+															"id": 311,
+															"name": "TextEdit"
+														}
+													}
+												],
+												"name": "Map"
+											}
+										]
+									}
+								],
+								"name": "Promise"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						316,
+						317
+					]
+				},
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						318
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/refactor.d.ts",
+					"line": 5,
+					"character": 33
+				}
+			]
+		},
+		{
+			"id": 173,
+			"name": "Reference",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"children": [
+				{
+					"id": 175,
+					"name": "name",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"comment": {
+						"shortText": "name of calling method/function/symbol"
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/find-references.d.ts",
+							"line": 25,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "literal",
+								"value": null
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				},
+				{
+					"id": 176,
+					"name": "range",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/find-references.d.ts",
+							"line": 26,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Range"
+					}
+				},
+				{
+					"id": 174,
+					"name": "uri",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"comment": {
+						"shortText": "URI of the file path"
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/find-references.d.ts",
+							"line": 21,
+							"character": 5
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						175,
+						176,
+						174
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/find-references.d.ts",
+					"line": 17,
+					"character": 26
+				}
+			]
+		},
+		{
+			"id": 261,
+			"name": "Signature",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"children": [
+				{
+					"id": 263,
+					"name": "documentation",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
+							"line": 39,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							},
+							{
+								"type": "reference",
+								"id": 267,
+								"name": "MarkupContent"
+							}
+						]
+					}
+				},
+				{
+					"id": 262,
+					"name": "label",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
+							"line": 38,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 264,
+					"name": "parameters",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
+							"line": 40,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 270,
+									"name": "SignatureParameter"
+								}
+							}
+						]
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						263,
+						262,
+						264
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
+					"line": 37,
+					"character": 26
+				}
+			]
+		},
+		{
+			"id": 257,
+			"name": "SignatureHelp",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"children": [
+				{
+					"id": 260,
+					"name": "activeParameter",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
+							"line": 34,
+							"character": 17
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "literal",
+								"value": null
+							},
+							{
+								"type": "intrinsic",
+								"name": "number"
+							}
+						]
+					}
+				},
+				{
+					"id": 259,
+					"name": "activeSignature",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
+							"line": 33,
+							"character": 17
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "literal",
+								"value": null
+							},
+							{
+								"type": "intrinsic",
+								"name": "number"
+							}
+						]
+					}
+				},
+				{
+					"id": 258,
+					"name": "signatures",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
+							"line": 32,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"id": 261,
+							"name": "Signature"
+						}
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						260,
+						259,
+						258
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
+					"line": 31,
+					"character": 30
+				}
+			]
+		},
+		{
+			"id": 249,
+			"name": "SignatureHelpProvider",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"comment": {
+				"shortText": "Signature help is activated when:\n- upon keystroke, any provider with a matching grammar scope contains\n  the pressed key inside its triggerCharacters set\n- the signature-help:show command is manually activated",
+				"text": "Once signature help has been triggered, the provider will be queried immediately\nwith the current cursor position, and then repeatedly upon cursor movements\nuntil a null/empty signature is returned.\n\nReturned signatures will be displayed in a small datatip at the current cursor.\nThe highest-priority provider with a non-null result will be used.\n"
+			},
+			"children": [
+				{
+					"id": 251,
+					"name": "grammarScopes",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
+							"line": 20,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "typeOperator",
+						"operator": "readonly",
+						"target": {
+							"type": "array",
+							"elementType": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					}
+				},
+				{
+					"id": 250,
+					"name": "priority",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
+							"line": 19,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 252,
+					"name": "triggerCharacters",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "A set of characters that will trigger signature help when typed.\nIf a null/empty set is provided, only manual activation of the command works."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
+							"line": 26,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "string"
+									}
+								],
+								"name": "Set"
+							}
+						]
+					}
+				},
+				{
+					"id": 253,
+					"name": "getSignatureHelp",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"signatures": [
+						{
+							"id": 254,
+							"name": "getSignatureHelp",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"parameters": [
+								{
+									"id": 255,
+									"name": "editor",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "reference",
+										"name": "TextEditor"
+									}
+								},
+								{
+									"id": 256,
+									"name": "point",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "reference",
+										"name": "Point"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "undefined"
+											},
+											{
+												"type": "literal",
+												"value": null
+											},
+											{
+												"type": "reference",
+												"id": 257,
+												"name": "SignatureHelp"
+											}
+										]
+									}
+								],
+								"name": "Promise"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						251,
+						250,
+						252
+					]
+				},
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						253
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
+					"line": 18,
+					"character": 38
+				}
+			]
+		},
+		{
+			"id": 270,
+			"name": "SignatureParameter",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"children": [
+				{
+					"id": 272,
+					"name": "documentation",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
+							"line": 53,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							},
+							{
+								"type": "reference",
+								"id": 267,
+								"name": "MarkupContent"
+							}
+						]
+					}
+				},
+				{
+					"id": 271,
+					"name": "label",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
+							"line": 52,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "string"
+							},
+							{
+								"type": "tuple",
+								"elements": [
+									{
+										"type": "intrinsic",
+										"name": "number"
+									},
+									{
+										"type": "intrinsic",
+										"name": "number"
+									}
+								]
+							}
+						]
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						272,
+						271
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
+					"line": 51,
+					"character": 35
+				}
+			]
+		},
+		{
+			"id": 120,
+			"name": "SnippetMarkedString",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"children": [
+				{
+					"id": 122,
+					"name": "grammar",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
+							"line": 70,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Grammar"
+					}
+				},
+				{
+					"id": 121,
+					"name": "type",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
+							"line": 69,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": "snippet"
+					}
+				},
+				{
+					"id": 123,
+					"name": "value",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
+							"line": 71,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						122,
+						121,
+						123
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
+					"line": 68,
+					"character": 36
+				}
+			]
+		},
+		{
+			"id": 323,
+			"name": "SourceInfo",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"children": [
+				{
+					"id": 324,
+					"name": "id",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
+							"line": 2,
+							"character": 4
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 325,
+					"name": "name",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
+							"line": 3,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 326,
+					"name": "start",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
+							"line": 4,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "reflection",
+								"declaration": {
+									"id": 327,
+									"name": "__type",
+									"kind": 65536,
+									"kindString": "Type literal",
+									"flags": {
+										"isExternal": true
+									},
+									"signatures": [
+										{
+											"id": 328,
+											"name": "__type",
+											"kind": 4096,
+											"kindString": "Call signature",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "void"
+											}
+										}
+									]
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": 329,
+					"name": "stop",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
+							"line": 5,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "reflection",
+								"declaration": {
+									"id": 330,
+									"name": "__type",
+									"kind": 65536,
+									"kindString": "Type literal",
+									"flags": {
+										"isExternal": true
+									},
+									"signatures": [
+										{
+											"id": 331,
+											"name": "__type",
+											"kind": 4096,
+											"kindString": "Call signature",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "void"
+											}
+										}
+									]
+								}
+							}
+						]
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						324,
+						325,
+						326,
+						329
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
+					"line": 1,
+					"character": 27
+				}
+			]
+		},
+		{
+			"id": 311,
+			"name": "TextEdit",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"children": [
+				{
+					"id": 313,
+					"name": "newText",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/text-edit.d.ts",
+							"line": 5,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 312,
+					"name": "oldRange",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/text-edit.d.ts",
+							"line": 4,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Range"
+					}
+				},
+				{
+					"id": 314,
+					"name": "oldText",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "If included, this will be used to verify that the edit still applies cleanly."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/text-edit.d.ts",
+							"line": 7,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						313,
+						312,
+						314
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/text-edit.d.ts",
+					"line": 3,
+					"character": 25
+				}
+			]
+		},
+		{
+			"id": 241,
+			"name": "TextToken",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExternal": true
+			},
+			"children": [
+				{
+					"id": 242,
+					"name": "kind",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
+							"line": 84,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 240,
+						"name": "TokenKind"
+					}
+				},
+				{
+					"id": 243,
+					"name": "value",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
+							"line": 85,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						242,
+						243
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
+					"line": 83,
+					"character": 26
+				}
+			]
+		},
+		{
+			"id": 116,
+			"name": "AnyDatatipProvider",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExternal": true
+			},
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
+					"line": 58,
+					"character": 30
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "reference",
+						"id": 95,
+						"name": "DatatipProvider"
+					},
+					{
+						"type": "reference",
+						"id": 107,
+						"name": "ModifierDatatipProvider"
+					}
+				]
+			}
+		},
+		{
+			"id": 366,
+			"name": "Color",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExternal": true
+			},
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
+					"line": 32,
+					"character": 10
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "literal",
+						"value": "red"
+					},
+					{
+						"type": "literal",
+						"value": "orange"
+					},
+					{
+						"type": "literal",
+						"value": "yellow"
+					},
+					{
+						"type": "literal",
+						"value": "green"
+					},
+					{
+						"type": "literal",
+						"value": "blue"
+					},
+					{
+						"type": "literal",
+						"value": "purple"
+					},
+					{
+						"type": "literal",
+						"value": "violet"
+					},
+					{
+						"type": "literal",
+						"value": "rainbow"
+					}
+				]
+			}
+		},
+		{
+			"id": 332,
+			"name": "ConsoleService",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExternal": true
+			},
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
+					"line": 8,
+					"character": 26
+				}
+			],
+			"type": {
+				"type": "reflection",
+				"declaration": {
+					"id": 333,
+					"name": "__type",
+					"kind": 65536,
+					"kindString": "Type literal",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
+							"line": 8,
+							"character": 28
+						}
+					],
+					"signatures": [
+						{
+							"id": 334,
+							"name": "__type",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"parameters": [
+								{
+									"id": 335,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "reference",
+										"id": 323,
+										"name": "SourceInfo"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 336,
+								"name": "ConsoleApi"
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": 135,
+			"name": "Datatip",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExternal": true
+			},
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
+					"line": 93,
+					"character": 19
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "reference",
+						"id": 125,
+						"name": "MarkedStringDatatip"
+					},
+					{
+						"type": "reference",
+						"id": 129,
+						"name": "ReactComponentDatatip"
+					}
+				]
+			}
+		},
+		{
+			"id": 44,
+			"name": "DiagnosticType",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExternal": true
+			},
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/code-actions.d.ts",
+					"line": 5,
+					"character": 26
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "literal",
+						"value": "Error"
+					},
+					{
+						"type": "literal",
+						"value": "Warning"
+					},
+					{
+						"type": "literal",
+						"value": "Info"
+					}
+				]
+			}
+		},
+		{
+			"id": 186,
+			"name": "FindReferencesReturn",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExternal": true
+			},
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/find-references.d.ts",
+					"line": 45,
+					"character": 32
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "reference",
+						"id": 177,
+						"name": "FindReferencesData"
+					},
+					{
+						"type": "reference",
+						"id": 183,
+						"name": "FindReferencesError"
+					}
+				]
+			}
+		},
+		{
+			"id": 218,
+			"name": "IdeUri",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExternal": true
+			},
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/uri.d.ts",
+					"line": 1,
+					"character": 18
+				}
+			],
+			"type": {
+				"type": "intrinsic",
+				"name": "string"
+			}
+		},
+		{
+			"id": 365,
+			"name": "Level",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExternal": true
+			},
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
+					"line": 31,
+					"character": 17
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "reference",
+						"id": 364,
+						"name": "TaskLevelType"
+					},
+					{
+						"type": "reference",
+						"id": 366,
+						"name": "Color"
+					}
+				]
+			}
+		},
+		{
+			"id": 124,
+			"name": "MarkedString",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExternal": true
+			},
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
+					"line": 74,
+					"character": 24
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "reference",
+						"id": 117,
+						"name": "MarkdownMarkedString"
+					},
+					{
+						"type": "reference",
+						"id": 120,
+						"name": "SnippetMarkedString"
+					}
+				]
+			}
+		},
+		{
+			"id": 266,
+			"name": "MarkupKind",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExternal": true
+			},
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
+					"line": 44,
+					"character": 22
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "literal",
+						"value": "plaintext"
+					},
+					{
+						"type": "literal",
+						"value": "markdown"
+					}
+				]
+			}
+		},
+		{
+			"id": 367,
+			"name": "MessageKind",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExternal": true
+			},
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
+					"line": 34,
+					"character": 23
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "literal",
+						"value": "message"
+					},
+					{
+						"type": "literal",
+						"value": "request"
+					},
+					{
+						"type": "literal",
+						"value": "response"
+					}
+				]
+			}
+		},
+		{
+			"id": 136,
+			"name": "ModifierKey",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExternal": true
+			},
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
+					"line": 95,
+					"character": 23
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "literal",
+						"value": "metaKey"
+					},
+					{
+						"type": "literal",
+						"value": "shiftKey"
+					},
+					{
+						"type": "literal",
+						"value": "altKey"
+					},
+					{
+						"type": "literal",
+						"value": "ctrlKey"
+					}
+				]
+			}
+		},
+		{
+			"id": 239,
+			"name": "OutlineTreeKind",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExternal": true
+			},
+			"comment": {
+				"shortText": "Kind of outline tree - matches the names from the Language Server Protocol v2."
+			},
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
+					"line": 52,
+					"character": 27
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "literal",
+						"value": "file"
+					},
+					{
+						"type": "literal",
+						"value": "module"
+					},
+					{
+						"type": "literal",
+						"value": "namespace"
+					},
+					{
+						"type": "literal",
+						"value": "package"
+					},
+					{
+						"type": "literal",
+						"value": "class"
+					},
+					{
+						"type": "literal",
+						"value": "method"
+					},
+					{
+						"type": "literal",
+						"value": "property"
+					},
+					{
+						"type": "literal",
+						"value": "field"
+					},
+					{
+						"type": "literal",
+						"value": "constructor"
+					},
+					{
+						"type": "literal",
+						"value": "enum"
+					},
+					{
+						"type": "literal",
+						"value": "interface"
+					},
+					{
+						"type": "literal",
+						"value": "function"
+					},
+					{
+						"type": "literal",
+						"value": "variable"
+					},
+					{
+						"type": "literal",
+						"value": "constant"
+					},
+					{
+						"type": "literal",
+						"value": "string"
+					},
+					{
+						"type": "literal",
+						"value": "number"
+					},
+					{
+						"type": "literal",
+						"value": "boolean"
+					},
+					{
+						"type": "literal",
+						"value": "array"
+					}
+				]
+			}
+		},
+		{
+			"id": 357,
+			"name": "OutputProviderStatus",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExternal": true
+			},
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
+					"line": 20,
+					"character": 32
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "literal",
+						"value": "starting"
+					},
+					{
+						"type": "literal",
+						"value": "running"
+					},
+					{
+						"type": "literal",
+						"value": "stopped"
+					}
+				]
+			}
+		},
+		{
+			"id": 273,
+			"name": "ParameterInformation",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExternal": true
+			},
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
+					"line": 55,
+					"character": 32
+				}
+			],
+			"type": {
+				"type": "reference",
+				"id": 270,
+				"name": "SignatureParameter"
+			}
+		},
+		{
+			"id": 94,
+			"name": "PinnedDatatipPosition",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExternal": true
+			},
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
+					"line": 20,
+					"character": 33
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "literal",
+						"value": "end-of-line"
+					},
+					{
+						"type": "literal",
+						"value": "above-range"
+					}
+				]
+			}
+		},
+		{
+			"id": 217,
+			"name": "Provider",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExternal": true
+			},
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/main.d.ts",
+					"line": 43,
+					"character": 20
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "reference",
+						"id": 214,
+						"name": "ProviderCommon"
+					},
+					{
+						"type": "reference",
+						"id": 33,
+						"name": "BusySignalProvider"
+					},
+					{
+						"type": "reference",
+						"id": 58,
+						"name": "CodeActionProvider"
+					},
+					{
+						"type": "reference",
+						"id": 72,
+						"name": "CodeHighlightProvider"
+					},
+					{
+						"type": "reference",
+						"id": 116,
+						"name": "AnyDatatipProvider"
+					},
+					{
+						"type": "reference",
+						"id": 147,
+						"name": "DefinitionProvider"
+					},
+					{
+						"type": "reference",
+						"id": 165,
+						"name": "FindReferencesProvider"
+					},
+					{
+						"type": "reference",
+						"id": 187,
+						"name": "HyperclickProvider"
+					},
+					{
+						"type": "reference",
+						"id": 219,
+						"name": "OutlineProvider"
+					},
+					{
+						"type": "reference",
+						"id": 249,
+						"name": "SignatureHelpProvider"
+					}
+				]
+			}
+		},
+		{
+			"id": 245,
+			"name": "SignatureHelpRegistry",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExternal": true
+			},
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
+					"line": 3,
+					"character": 33
+				}
+			],
+			"type": {
+				"type": "reflection",
+				"declaration": {
+					"id": 246,
+					"name": "__type",
+					"kind": 65536,
+					"kindString": "Type literal",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
+							"line": 3,
+							"character": 35
+						}
+					],
+					"signatures": [
+						{
+							"id": 247,
+							"name": "__type",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"parameters": [
+								{
+									"id": 248,
+									"name": "provider",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "reference",
+										"id": 249,
+										"name": "SignatureHelpProvider"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "DisposableLike"
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": 265,
+			"name": "SignatureInformation",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExternal": true
+			},
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
+					"line": 42,
+					"character": 32
+				}
+			],
+			"type": {
+				"type": "reference",
+				"id": 261,
+				"name": "Signature"
+			}
+		},
+		{
+			"id": 364,
+			"name": "TaskLevelType",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExternal": true
+			},
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
+					"line": 30,
+					"character": 25
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "literal",
+						"value": "info"
+					},
+					{
+						"type": "literal",
+						"value": "log"
+					},
+					{
+						"type": "literal",
+						"value": "warning"
+					},
+					{
+						"type": "literal",
+						"value": "error"
+					},
+					{
+						"type": "literal",
+						"value": "debug"
+					},
+					{
+						"type": "literal",
+						"value": "success"
+					}
+				]
+			}
+		},
+		{
+			"id": 240,
+			"name": "TokenKind",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExternal": true
+			},
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
+					"line": 72,
+					"character": 21
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "literal",
+						"value": "keyword"
+					},
+					{
+						"type": "literal",
+						"value": "class-name"
+					},
+					{
+						"type": "literal",
+						"value": "constructor"
+					},
+					{
+						"type": "literal",
+						"value": "method"
+					},
+					{
+						"type": "literal",
+						"value": "param"
+					},
+					{
+						"type": "literal",
+						"value": "string"
+					},
+					{
+						"type": "literal",
+						"value": "whitespace"
+					},
+					{
+						"type": "literal",
+						"value": "plain"
+					},
+					{
+						"type": "literal",
+						"value": "type"
+					}
+				]
+			}
+		},
+		{
+			"id": 244,
+			"name": "TokenizedText",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExternal": true
+			},
+			"sources": [
+				{
+					"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
+					"line": 88,
+					"character": 25
+				}
+			],
+			"type": {
+				"type": "array",
+				"elementType": {
+					"type": "reference",
+					"id": 241,
+					"name": "TextToken"
+				}
+			}
+		}
+	],
+	"groups": [
+		{
+			"title": "Interfaces",
+			"kind": 256,
+			"children": [
+				24,
+				1,
+				33,
+				30,
+				9,
+				51,
+				66,
+				58,
+				72,
+				336,
+				95,
+				79,
+				137,
+				157,
+				147,
+				144,
+				45,
+				279,
+				177,
+				183,
+				165,
+				187,
+				203,
+				117,
+				274,
+				125,
+				267,
+				358,
+				107,
+				295,
+				302,
+				237,
+				219,
+				227,
+				91,
+				214,
+				287,
+				129,
+				315,
+				173,
+				261,
+				257,
+				249,
+				270,
+				120,
+				323,
+				311,
+				241
+			]
+		},
+		{
+			"title": "Type aliases",
+			"kind": 4194304,
+			"children": [
+				116,
+				366,
+				332,
+				135,
+				44,
+				186,
+				218,
+				365,
+				124,
+				266,
+				367,
+				136,
+				239,
+				357,
+				273,
+				94,
+				217,
+				245,
+				265,
+				364,
+				240,
+				244
+			]
+		}
+	],
+	"sources": [
+		{
+			"fileName": "api.ts",
+			"line": 1,
+			"character": 0
+		}
+	]
+}
