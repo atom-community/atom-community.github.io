@@ -1,0 +1,377 @@
+<!DOCTYPE html><html lang="en" dir="ltr"><head>
+  
+    
+
+  
+
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AutoComplete: Atom Community</title>
+<meta property="og:title" content="AutoComplete: Atom Community">
+
+<meta name="generator" content="rocket 0.1">
+<link rel="canonical" href="/api/autocomplete/">
+
+
+
+<meta name="description" content="Atom IDE features">
+<meta property="og:description" content="Atom IDE features">
+
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon-16x16.png">
+<link rel="manifest" href="../../assets/webmanifest.json">
+<link rel="mask-icon" href="../../assets/safari-pinned-tab.svg" color="#3f93ce">
+<meta name="msapplication-TileColor" content="#1d3557">
+<meta name="theme-color" content="#1d3557">
+
+  
+    <meta property="og:site_name" content="Atom Community">
+<meta property="og:type" content="website">
+
+<meta property="og:image" content="../../5c22e8c1.png">
+<meta property="og:url" content="/api/autocomplete/">
+
+<meta name="twitter:card" content="summary_large_image">
+
+  
+    <link rel="stylesheet" href="../../ee401ad0.css">
+<link rel="stylesheet" href="../../490f016e.css">
+<link rel="stylesheet" href="../../a0513237.css">
+<link rel="stylesheet" href="../../b8c01bc2.css">
+
+<link rel="stylesheet" href="../../674edd8f.css">
+<link rel="stylesheet" href="../../66113fa6.css">
+
+
+
+  
+    <noscript>&#x3C;link rel="stylesheet" href="/_merged_assets/_static/noscript.css"></noscript>
+
+  
+
+<link rel="preload" href="../../6aa23c15.js" as="script" crossorigin="anonymous">
+<link rel="preload" href="../../936c291e.js" as="script" crossorigin="anonymous">
+<link rel="preload" href="../../94d90def.js" as="script" crossorigin="anonymous">
+<link rel="preload" href="../../a6a27882.js" as="script" crossorigin="anonymous">
+<link rel="preload" href="../../81d5322c.js" as="script" crossorigin="anonymous">
+<link rel="preload" href="../../096b7430.js" as="script" crossorigin="anonymous">
+<link rel="preload" href="../../2dbe227f.js" as="script" crossorigin="anonymous">
+<link rel="preload" href="../../4d30c7b8.js" as="script" crossorigin="anonymous">
+</head>
+
+  
+
+  
+  <body layout="layout-api">
+  
+
+    
+      <header id="main-header">
+  <div class="content-area">
+    
+      <button id="mobile-menu-trigger" data-action="trigger-mobile-menu">
+	<span class="sr-only">Show Menu</span>
+	      <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon">
+        <path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path>
+      </svg>
+
+</button>
+
+    
+      
+	<a class="logo-link" href="/">
+  <img src="../../b11724ee.svg" alt="Atom Community Logo">
+  <span>Atom Community</span>
+</a>
+
+
+
+    
+      <rocket-search class="search" json-url="/_merged_assets/_static/rocket-search-index.json">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" style="width: 25px;">
+    <path d="M51.6 96.7c11 0 21-3.9 28.8-10.5l35 35c.8.8 1.8 1.2 2.9 1.2s2.1-.4 2.9-1.2c1.6-1.6 1.6-4.2 0-5.8l-35-35c6.5-7.8 10.5-17.9 10.5-28.8 0-24.9-20.2-45.1-45.1-45.1-24.8 0-45.1 20.3-45.1 45.1 0 24.9 20.3 45.1 45.1 45.1zm0-82c20.4 0 36.9 16.6 36.9 36.9C88.5 72 72 88.5 51.6 88.5S14.7 71.9 14.7 51.6c0-20.3 16.6-36.9 36.9-36.9z"></path>
+  </svg>
+</rocket-search>
+
+
+
+    
+      
+  <a href="/api/" class="active">API</a>
+  <a href="/getting-started/" class="">Getting Started</a>
+
+    
+      <launch-dark-switch class="light-dark-switch" label="Toggle darkmode">Toggle darkmode</launch-dark-switch>
+
+
+    
+      
+	<a class="social-link" href="https://github.com/atom-community" aria-label="Atom Community on GitHub" rel="noopener noreferrer" target="_blank">
+		<span class="sr-only">GitHub</span>
+		
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 16" fill="none">
+  <title>GitHub</title>
+  <path fill="currentColor" fill-rule="evenodd" d="M8.18391.249268C3.82241.249268.253906 3.81777.253906 8.17927c0 3.46933 2.279874 6.44313 5.451874 7.53353.3965.0991.49563-.1983.49563-.3965v-1.3878c-2.18075.4956-2.67638-.9912-2.67638-.9912-.3965-.8922-.89212-1.1895-.89212-1.1895-.69388-.4957.09912-.4957.09912-.4957.793.0992 1.1895.793 1.1895.793.69388 1.2887 1.88338.8922 2.27988.6939.09912-.4956.29737-.8921.49562-1.0904-1.78425-.1982-3.5685-.8921-3.5685-3.96496 0-.89212.29738-1.586.793-2.08162-.09912-.19825-.3965-.99125.09913-2.08163 0 0 .69387-.19825 2.18075.793.59475-.19825 1.28862-.29737 1.9825-.29737.69387 0 1.38775.09912 1.98249.29737 1.4869-.99125 2.1808-.793 2.1808-.793.3965 1.09038.1982 1.88338.0991 2.08163.4956.59475.793 1.28862.793 2.08162 0 3.07286-1.8834 3.66766-3.66764 3.86586.29737.3965.59474.8921.59474 1.586v2.1808c0 .1982.0991.4956.5948.3965 3.172-1.0904 5.4518-4.0642 5.4518-7.53353-.0991-4.3615-3.6676-7.930002-8.02909-7.930002z" clip-rule="evenodd"></path>
+</svg>
+
+		
+	</a>
+	<a class="social-link" href="https://discord.gg/R4KV8jTVpS" aria-label="Atom Community on Discord" rel="noopener noreferrer" target="_blank">
+		<span class="sr-only">Discord</span>
+		
+			<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+  <title>Discord</title>
+  <path d="m3.58 21.196h14.259l-.681-2.205 1.629 1.398 1.493 1.338 2.72 2.273v-21.525c-.068-1.338-1.22-2.475-2.648-2.475l-16.767.003c-1.427 0-2.585 1.139-2.585 2.477v16.24c0 1.411 1.156 2.476 2.58 2.476zm10.548-15.513-.033.012.012-.012zm-7.631 1.269c1.833-1.334 3.532-1.27 3.532-1.27l.137.135c-2.243.535-3.26 1.537-3.26 1.537s.272-.133.747-.336c3.021-1.188 6.32-1.102 9.374.402 0 0-1.019-.937-3.124-1.537l.186-.183c.291.001 1.831.055 3.479 1.26 0 0 1.844 3.15 1.844 7.02-.061-.074-1.144 1.666-3.931 1.726 0 0-.472-.534-.808-1 1.63-.468 2.24-1.404 2.24-1.404-.535.337-1.023.537-1.419.737-.609.268-1.219.4-1.828.535-2.884.468-4.503-.315-6.033-.936l-.523-.266s.609.936 2.174 1.404c-.411.469-.818 1.002-.818 1.002-2.786-.066-3.802-1.806-3.802-1.806 0-3.876 1.833-7.02 1.833-7.02z"></path>
+  <path d="m14.308 12.771c.711 0 1.29-.6 1.29-1.34 0-.735-.576-1.335-1.29-1.335v.003c-.708 0-1.288.598-1.29 1.338 0 .734.579 1.334 1.29 1.334z"></path>
+  <path d="m9.69 12.771c.711 0 1.29-.6 1.29-1.34 0-.735-.575-1.335-1.286-1.335l-.004.003c-.711 0-1.29.598-1.29 1.338 0 .734.579 1.334 1.29 1.334z"></path>
+</svg>
+
+		
+	</a>
+
+    
+  </div>
+</header>
+
+    
+
+    
+  <div id="content-wrapper">
+    <div class="content-area">
+      
+        <rocket-drawer id="sidebar">
+  <nav slot="content" id="sidebar-nav">
+    
+      <a class="logo-link" href="/">
+  <img src="../../b11724ee.svg" alt="Atom Community Logo">
+  <span>Atom Community</span>
+</a>
+
+
+    
+      <rocket-navigation>
+  <ul><li class="menu-item current"><a href="/api/autocomplete/">AutoComplete</a><ul><li class="menu-item anchor"><a href="/api/autocomplete/#api" class="anchor">API</a></li></ul></li>
+<li class="menu-item"><a href="/api/busy-signal/">Busy Signal</a></li>
+<li class="menu-item"><a href="/api/code-actions/">Code Actions</a><ul><li class="menu-item anchor"><a href="/api/code-actions/#api" class="anchor">API</a></li></ul></li>
+<li class="menu-item"><a href="/api/code-format/">Code Format</a><ul><li class="menu-item anchor"><a href="/api/code-format/#api" class="anchor">API</a></li></ul></li>
+<li class="menu-item"><a href="/api/code-highlight/">Code Highlight</a><ul><li class="menu-item anchor"><a href="/api/code-highlight/#api" class="anchor">API</a></li></ul></li>
+<li class="menu-item"><a href="/api/console/">Console</a><ul><li class="menu-item anchor"><a href="/api/console/#api" class="anchor">API</a></li></ul></li>
+<li class="menu-item"><a href="/api/datatip/">Datatip</a><ul><li class="menu-item anchor"><a href="/api/datatip/#api" class="anchor">API</a></li></ul></li>
+<li class="menu-item"><a href="/api/definitions/">Go to Definition</a><ul><li class="menu-item anchor"><a href="/api/definitions/#api" class="anchor">API</a></li></ul></li>
+<li class="menu-item"><a href="/api/find-references/">Find References</a><ul><li class="menu-item anchor"><a href="/api/find-references/#api" class="anchor">API</a></li></ul></li>
+<li class="menu-item"><a href="/api/hyperclick/">Hyperclick</a><ul><li class="menu-item anchor"><a href="/api/hyperclick/#api" class="anchor">API</a></li></ul></li>
+<li class="menu-item"><a href="/api/linter/">Linter</a><ul><li class="menu-item anchor"><a href="/api/linter/#api" class="anchor">API</a></li></ul></li>
+<li class="menu-item"><a href="/api/main/">Main</a><ul><li class="menu-item anchor"><a href="/api/main/#api" class="anchor">API</a></li></ul></li>
+<li class="menu-item"><a href="/api/markdown-service/">Markdown Service</a><ul><li class="menu-item anchor"><a href="/api/markdown-service/#api" class="anchor">API</a></li></ul></li>
+<li class="menu-item"><a href="/api/outline/">Outline</a><ul><li class="menu-item anchor"><a href="/api/outline/#api" class="anchor">API</a></li></ul></li>
+<li class="menu-item"><a href="/api/refactor/">Refactor</a><ul><li class="menu-item anchor"><a href="/api/refactor/#api" class="anchor">API</a></li></ul></li>
+<li class="menu-item"><a href="/api/sig-help/">Signature Help</a><ul><li class="menu-item anchor"><a href="/api/sig-help/#api" class="anchor">API</a></li></ul></li>
+<li class="menu-item"><a href="/api/text-edit/">Text Edit</a><ul><li class="menu-item anchor"><a href="/api/text-edit/#api" class="anchor">API</a></li></ul></li>
+<li class="menu-item"><a href="/api/uri/">URI</a><ul><li class="menu-item anchor"><a href="/api/uri/#api" class="anchor">API</a></li></ul></li></ul>
+  <div class="sidebar-bottom">
+  <hr>
+  <launch-dark-switch class="light-dark-switch" label="Toggle darkmode">Toggle darkmode</launch-dark-switch>
+
+
+  <a href="https://github.com/atom-community/atom-ide-base/issues">Help and Feedback</a>
+</div>
+
+</rocket-navigation>
+
+    
+  </nav>
+</rocket-drawer>
+
+      
+      
+        <main class="markdown-body">
+  
+    <h1 id="content-top">
+  <a class="anchor" href="#content-top">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
+      <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+    </svg>
+  </a>
+  <span class="title">AutoComplete</span>
+  
+    <a href="https://atom.io/packages/autocomplete-plus" target="_blank" rel="noreferrer noopener">
+      <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="atom-logo-a" x1="50%" x2="50%" y1="3.961%" y2="100%">
+      <stop offset="0%" stop-color="#FDFDFD"></stop>
+      <stop offset="100%" stop-color="#CBCBCB"></stop>
+    </linearGradient>
+    <linearGradient id="atom-logo-b" x1="50%" x2="50%" y1="3.961%" y2="100%">
+      <stop offset="0%" stop-color="#B2E198"></stop>
+      <stop offset="100%" stop-color="#04A171"></stop>
+    </linearGradient>
+  </defs>
+  <circle cx="128" cy="128" r="127.858" fill="url(#atom-logo-a)"></circle>
+  <circle cx="127.858" cy="128.142" r="116.907" fill="url(#atom-logo-b)"></circle>
+  <path fill="#F2F8F6" d="M100.453 110.097a221.782 221.782 0 00-3.988 6.382 164.44 164.44 0 01-3.684-11.377c3.73-.535 7.695-.957 11.874-1.249a224.887 224.887 0 00-4.202 6.244zm103.138 7.475c-4.132-3.967-10.04-7.602-17.558-10.804-14.926-6.356-34.918-10.474-56.295-11.595a234.82 234.82 0 00-7.529-.277C138.53 75.415 154.292 65.05 163.472 64.7c1.944-.074 3.576.31 4.854 1.141 4.296 2.792 5.488 11.453 3.189 23.166a4.267 4.267 0 008.373 1.644c3.953-20.137-1.576-28.497-6.911-31.965-2.785-1.81-6.093-2.655-9.83-2.513-14.12.536-33.904 15.592-51.956 38.803-7.148.247-14.038.864-20.483 1.827a106.106 106.106 0 01-1.625-9.522c-1.619-13.344.367-22.816 5.312-25.337.794-.405 1.662-.639 2.654-.713 4.418-.332 10.652 2.637 17.542 8.359a4.267 4.267 0 005.452-6.565c-8.85-7.35-16.8-10.817-23.633-10.303-2.112.158-4.095.703-5.892 1.62-4.593 2.342-7.732 6.828-9.33 13.331-1.368 5.57-1.562 12.513-.576 20.636.39 3.213.96 6.556 1.695 9.998-5.04 1.062-9.71 2.356-13.897 3.869-18.316 6.616-22.544 15.337-22.866 21.488-.308 5.876 2.7 14.62 18.775 22.91a4.267 4.267 0 003.911-7.583c-9.247-4.77-14.41-10.193-14.165-14.88.346-6.605 11.417-13.596 30.274-17.535 1.747 6.309 3.99 12.861 6.68 19.505-6.777 12.723-11.722 25.262-14.286 36.416-1.833 7.97-2.369 14.89-1.592 20.567.906 6.63 3.558 11.418 7.881 14.228 2.205 1.433 5.176 2.553 9.079 2.553 5.658 0 13.275-2.357 23.343-9.538a4.267 4.267 0 10-4.955-6.948c-9.925 7.08-18.454 9.613-22.816 6.778-4.652-3.023-5.633-12.642-2.624-25.728 1.995-8.678 5.555-18.296 10.383-28.21a220.995 220.995 0 003.283 6.731c9.717 19.087 21.612 35.694 33.494 46.762 5.984 5.573 11.708 9.497 17.011 11.663 3.218 1.314 6.24 1.971 9.045 1.971 2.596 0 5.008-.563 7.216-1.69 4.43-2.259 7.511-6.52 9.157-12.665 1.41-5.263 1.726-11.827.942-19.512-1.543-15.11-7.253-33.539-16.077-51.891a4.267 4.267 0 00-7.69 3.697c8.407 17.485 13.833 34.908 15.278 49.06 1.27 12.447-.78 21.31-5.486 23.71-4.942 2.52-13.756-1.438-23.58-10.588-11.17-10.404-22.43-26.168-31.706-44.388a210.555 210.555 0 01-5.851-12.483 210.936 210.936 0 017.143-11.836 213.301 213.301 0 017.877-11.333c.7-.01 1.405-.017 2.115-.019 3.664-.012 7.592.09 11.688.305 20.404 1.07 39.368 4.95 53.399 10.925 12.34 5.256 19.534 11.704 19.244 17.25-.246 4.708-5.967 9.575-15.696 13.352a4.267 4.267 0 003.088 7.955c16.905-6.563 20.821-14.967 21.13-20.861.27-5.151-2.04-10.111-6.865-14.743z"></path>
+  <path fill="#F1F8F3" d="M119.194 129.133c0 5.153 4.174 9.33 9.323 9.33s9.323-4.177 9.323-9.33c0-5.154-4.174-9.331-9.323-9.331s-9.323 4.177-9.323 9.33"></path>
+</svg>
+
+    </a>
+  
+    <a href="https://github.com/atom-community/autocomplete-plus" target="_blank" rel="noreferrer noopener">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 16" fill="none">
+  <title>GitHub</title>
+  <path fill="currentColor" fill-rule="evenodd" d="M8.18391.249268C3.82241.249268.253906 3.81777.253906 8.17927c0 3.46933 2.279874 6.44313 5.451874 7.53353.3965.0991.49563-.1983.49563-.3965v-1.3878c-2.18075.4956-2.67638-.9912-2.67638-.9912-.3965-.8922-.89212-1.1895-.89212-1.1895-.69388-.4957.09912-.4957.09912-.4957.793.0992 1.1895.793 1.1895.793.69388 1.2887 1.88338.8922 2.27988.6939.09912-.4956.29737-.8921.49562-1.0904-1.78425-.1982-3.5685-.8921-3.5685-3.96496 0-.89212.29738-1.586.793-2.08162-.09912-.19825-.3965-.99125.09913-2.08163 0 0 .69387-.19825 2.18075.793.59475-.19825 1.28862-.29737 1.9825-.29737.69387 0 1.38775.09912 1.98249.29737 1.4869-.99125 2.1808-.793 2.1808-.793.3965 1.09038.1982 1.88338.0991 2.08163.4956.59475.793 1.28862.793 2.08162 0 3.07286-1.8834 3.66766-3.66764 3.86586.29737.3965.59474.8921.59474 1.586v2.1808c0 .1982.0991.4956.5948.3965 3.172-1.0904 5.4518-4.0642 5.4518-7.53353-.0991-4.3615-3.6676-7.930002-8.02909-7.930002z" clip-rule="evenodd"></path>
+</svg>
+
+    </a>
+  
+</h1>
+
+<p>Once you have installed an IDE language package, this should work right away.</p>
+<p><img src="../../ac857a8f.png" alt="screenshot of datatip feature"></p>
+<h2 id="api"><a class="anchor" href="#api"><svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>API</h2>
+
+  
+    
+
+  
+
+  
+    <div class="content-footer">
+  <p>
+    Caught a mistake or want to contribute to the documentation?
+    <a href="https://github.com/atom-community/atom-ide-base/edit/master/./docs/api/autocomplete.md">Edit this page on GitHub!</a>
+  </p>
+</div>
+
+
+
+  
+</main>
+
+      
+    </div>
+  </div>
+
+
+    
+      <footer id="main-footer">
+  
+    
+
+  
+    <div id="footer-menu">
+  <div class="content-area">
+    
+      <nav>
+        <h3>Discover</h3>
+        <ul>
+          
+            <li>
+              <a href="https://github.com/atom-community/atom/discussions">Help and Feedback</a>
+            </li>
+          
+        </ul>
+      </nav>
+    
+      <nav>
+        <h3>Follow</h3>
+        <ul>
+          
+            <li>
+              <a href="https://github.com/atom-community">Github</a>
+            </li>
+          
+            <li>
+              <a href="https://discord.gg/R4KV8jTVpS">Discord</a>
+            </li>
+          
+        </ul>
+      </nav>
+    
+      <nav>
+        <h3>Support</h3>
+        <ul>
+          
+            <li>
+              <a href="https://github.com/atom-community/atom/discussions">Contribute</a>
+            </li>
+          
+        </ul>
+      </nav>
+    
+  </div>
+</div>
+
+  
+</footer>
+
+    
+
+    
+  
+
+
+
+  <script>
+  async function serviceWorkerUpdate() {
+  if ('serviceWorker' in navigator) {
+    const oldReg = await navigator.serviceWorker.getRegistration();
+    let oldSwState;
+    if (oldReg && oldReg.active) {
+      oldSwState = oldReg.active.state;
+    }
+
+    let refreshing;
+
+    navigator.serviceWorker.addEventListener('controllerchange', async () => {
+      if (refreshing) {
+        return;
+      }
+
+      const newReg = await navigator.serviceWorker.getRegistration();
+      let newSwState;
+      if (newReg && newReg.active) {
+        newSwState = newReg.active.state;
+      }
+
+      if (oldSwState === 'activated' && newSwState === 'activating') {
+        refreshing = true;
+        window.location.reload();
+      }
+    });
+  }
+}
+
+serviceWorkerUpdate();
+
+</script>
+
+
+  
+
+
+
+  
+
+<script inject-service-worker="">
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker
+          .register('../../service-worker.js')
+          .then(function() {
+            console.log('ServiceWorker registered from "../../service-worker.js".');
+          })
+          .catch(function(err) {
+            console.log('ServiceWorker registration failed: ', err);
+          });
+      });
+    }
+  </script>
+<script type="module" src="../../6aa23c15.js"></script>
+<script type="module" src="../../81d5322c.js"></script>
+<script type="module" src="../../096b7430.js"></script>
+<script type="module" src="../../4d30c7b8.js"></script>
+
+</body></html>
