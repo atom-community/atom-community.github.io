@@ -1,5 +1,5 @@
 ---
-layout: layout-api.njk
+layout: layout-api
 package: sig-help
 title: Signature Help
 eleventyNavigation:

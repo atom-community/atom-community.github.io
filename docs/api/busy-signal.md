@@ -1,5 +1,5 @@
 ---
-layout: layout-api.njk
+layout: layout-api
 package: busy-signal
 title: Busy Signal
 eleventyNavigation:

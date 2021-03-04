@@ -1,5 +1,5 @@
 ---
-layout: layout-api.njk
+layout: layout-api
 package: definitions
 title: Go to Definition
 eleventyNavigation:

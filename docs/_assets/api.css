@@ -15,3 +15,7 @@
   display: flex;
   align-items: center;
 }
+
+body[layout='layout-api'] #sidebar {
+  display: block;
+}
