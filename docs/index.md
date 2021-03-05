@@ -82,4 +82,4 @@ We will start with the most important features, and iterate on them quickly to c
 
 ## Roadmap
 
-We have published our current roadmap on [Github](https://github.com/atom-ide-community/atom-ide-community.github.io/issues/3#issue-424527067) for you to check and provide feedback to us.
+We have published our current roadmap on [Github](https://github.com/atom-community/atom-community.github.io/issues/3#issue-424527067) for you to check and provide feedback to us.
