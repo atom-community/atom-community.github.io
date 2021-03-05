@@ -6,7 +6,7 @@ eleventyNavigation:
   key: Go to Definition
 links:
   atom: https://atom.io/packages/atom-ide-definitions
-  github: https://github.com/atom-ide-community/atom-ide-definitions#atom-ide-definitions-package
+  github: https://github.com/atom-community/atom-ide-definitions#atom-ide-definitions-package
 ---
 
 A replacement of the go to definition functionality from atom-ide-ui.

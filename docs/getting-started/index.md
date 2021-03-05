@@ -19,6 +19,6 @@ So far, there have been a few features from the original atom-ide-ui package tha
 
 2. Install the [Busy-Signal](https://atom.io/packages/busy-signal) package that is uses by some of the existing ide-packages to show running background tasks
 
-3. Install any of the [community packages](https://atom.io/users/atom-ide-community) listed below.
+3. Install any of the [community packages](https://atom.io/users/atom-community) listed below.
 
 4. Enjoy!
