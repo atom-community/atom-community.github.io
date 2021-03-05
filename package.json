@@ -11,8 +11,8 @@
     }
   },
   "scripts": {
-    "prestart": "pnpm run typedoc",
-    "prebuild": "pnpm run tsc && pnpm run typedoc",
+    "prestart": "npm run typedoc",
+    "prebuild": "npm run tsc && npm run typedoc",
     "postinstall": "patch-package",
     "start": "rocket start",
     "build": "rocket build",
