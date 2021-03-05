@@ -14,9 +14,9 @@ module.exports = function () {
         url: 'https://discord.gg/R4KV8jTVpS'
       }
     ],
-    gitSiteUrl: 'https://github.com/atom-community/atom-ide-base',
+    gitSiteUrl: 'https://github.com/atom-community/atom-community.github.io',
     gitBranch: 'master',
-    helpUrl: 'https://github.com/atom-community/atom-ide-base/issues',
+    helpUrl: 'https://github.com/atom-community/atom-community.github.io/issues',
     logoAlt: 'Atom Community Logo',
     iconColorMaskIcon: '#3f93ce',
     iconColorMsapplicationTileColor: '#1d3557',
