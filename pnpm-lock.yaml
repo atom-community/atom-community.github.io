@@ -4,6 +4,7 @@ dependencies:
   '@rocket/core': 0.1.1
   '@rocket/launch': 0.4.0
   '@rocket/search': 0.3.0
+  lit-element: 2.4.0
 devDependencies:
   '@types/atom': 1.40.7
   '@types/markdown-it': 12.0.1
@@ -19,6 +20,7 @@ devDependencies:
   markdown-it: 12.0.4
   markdown-it-prism: 2.1.4
   patch-package: 6.4.4
+  plugins-manager: 0.2.0
   rollup-plugin-esbuild: 2.6.1
   typedoc: 0.20.28_typescript@4.2.2
   typedoc-plugin-markdown: 3.6.0_typedoc@0.20.28
@@ -6538,7 +6540,6 @@ packages:
     resolution:
       integrity: sha512-gQR3WpIgNIKwBMVLkpMUeR3e1/E1y42bqDQZfql+kDeXd8COYfM8PQA4X6y7a8u9Ua9FHmsrrmirW2vHs45hWg==
   /plugins-manager/0.2.0:
-    dev: false
     resolution:
       integrity: sha512-Ff943FKka9MVLwXLDwJiw32mAHgk64IGca2i2m9ebsP1qJP8O8z4V1GRRdCu8ptuOXpUsYZFZg0AKOgeURblTg==
   /portfinder/1.0.28:
@@ -8987,9 +8988,11 @@ specifiers:
   eleventy-plugin-helmet: ^0.2.2
   eslint: ^7.21.0
   eslint-config-atomic: ^1.12.2
+  lit-element: ^2.4.0
   markdown-it: ^12.0.4
   markdown-it-prism: ^2.1.4
   patch-package: ^6.4.4
+  plugins-manager: ^0.2.0
   rollup-plugin-esbuild: ^2.6.1
   typedoc: ^0.20.28
   typedoc-plugin-markdown: ^3.6.0
