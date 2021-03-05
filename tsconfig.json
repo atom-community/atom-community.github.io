@@ -17,7 +17,6 @@
     "preserveSymlinks": true,
     "removeComments": true,
     "jsx": "react",
-    "jsxFactory": "etch.dom",
     "lib": ["ES2018", "dom"],
     "target": "ES2018",
     "allowJs": false,
