@@ -51,17 +51,17 @@
     "@web/dev-server-esbuild": "^0.2.11",
     "atom": "^1.4.1",
     "atom-ide-base": "^2.4.0",
-    "eleventy-plugin-add-web-component-definitions": "^2.0.1",
+    "eleventy-plugin-add-web-component-definitions": "^2.0.2",
     "eleventy-plugin-helmet": "^0.2.2",
     "eslint": "^7.21.0",
     "eslint-config-atomic": "^1.12.2",
     "markdown-it": "^12.0.4",
-    "markdown-it-prism": "^2.1.4",
-    "patch-package": "^6.4.4",
+    "markdown-it-prism": "^2.1.6",
+    "patch-package": "^6.4.5",
     "plugins-manager": "^0.2.0",
     "rollup-plugin-esbuild": "^2.6.1",
-    "typedoc": "^0.20.28",
+    "typedoc": "^0.20.30",
     "typedoc-plugin-markdown": "^3.6.0",
-    "typescript": "^4.2.2"
+    "typescript": "^4.2.3"
   }
 }
