@@ -15,6 +15,7 @@ export default {
   presets: [rocketLaunch(), rocketSearch()],
   markdownTemplateEngine: "njk",
   eleventy(eleventyConfig) {
+    eleventyConfig.addPassthroughCopy(`./**/CNAME`);
     eleventyConfig.addPairedShortcode('markdown', function markdown(content) {
       const md = new markdownIt({ html: true });
       md.use(prism);
