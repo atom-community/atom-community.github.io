@@ -185,10 +185,10 @@ export class TypeDoc extends LitElement {
 
   private cloneHeading() {
     const hidden = this.shadowRoot.querySelector(".visually-hidden");
-    if (!hidden) return;
-    for (const child of Array.from(hidden.children)) child.remove();
+    if (!hidden) {return;}
+    for (const child of Array.from(hidden.children)) {child.remove();}
     const heading = this.querySelector('[slot="name"]');
-    if (!heading) return;
+    if (!heading) {return;}
     hidden.append(heading.cloneNode(true));
   }
 

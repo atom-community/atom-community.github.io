@@ -10,10 +10,12 @@ import prism from 'markdown-it-prism';
 import addWebComponentDefinitions from 'eleventy-plugin-add-web-component-definitions';
 import helmet from 'eleventy-plugin-helmet';
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
   presets: [rocketLaunch(), rocketSearch()],
   markdownTemplateEngine: "njk",
   eleventy(eleventyConfig) {
+    eleventyConfig.addPassthroughCopy(`./**/CNAME`);
     eleventyConfig.addPairedShortcode('markdown', function markdown(content) {
       const md = new markdownIt({ html: true });
       md.use(prism);
