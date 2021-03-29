@@ -3,7 +3,7 @@ dependencies:
   '@rocket/cli': 0.6.0
   '@rocket/core': 0.1.2
   '@rocket/launch': 0.4.0
-  '@rocket/search': 0.3.1
+  '@rocket/search': 0.3.2
   lit-element: 2.4.0
 devDependencies:
   '@types/atom': 1.40.7
@@ -1281,7 +1281,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-fLqTN6paasJUzzhJYJey6fZ5LqociipD2/Rf0dtZ98BtddDXRuy41nDFe89wWQjz+xD66boOsQ/LkC+7t60M5w==
-  /@rocket/search/0.3.1:
+  /@rocket/search/0.3.2:
     dependencies:
       '@lion/combobox': 0.1.24
       '@open-wc/scoped-elements': 1.3.3
@@ -1291,7 +1291,7 @@ packages:
       sax-wasm: 2.0.0
     dev: false
     resolution:
-      integrity: sha512-9C9N1LwcvAbdxmO6fAAoFxaq3BpG5qMPYNRGQb1LCZl6Lvu50pQDCKNESS07/SHaOH6xN5OtU9BoGB9bVvG02w==
+      integrity: sha512-l7N5EASAblHf+7FYGJtpcRQpa3Xh0WJf1Q5czdV2oh6/j1OCOHdKzKqaczqnxtskHLHjtopoPkvRf3azTh1M5g==
   /@rollup/plugin-babel/5.3.0:
     dependencies:
       '@babel/helper-module-imports': 7.12.13
@@ -8970,7 +8970,7 @@ specifiers:
   '@rocket/cli': ^0.6.0
   '@rocket/core': ^0.1.2
   '@rocket/launch': ^0.4.0
-  '@rocket/search': ^0.3.1
+  '@rocket/search': ^0.3.2
   '@types/atom': ^1.40.7
   '@types/markdown-it': ^12.0.1
   '@types/prismjs': ^1.16.3
