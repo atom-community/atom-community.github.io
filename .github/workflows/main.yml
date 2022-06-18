@@ -18,7 +18,7 @@ jobs:
           fetch-depth: 0
 
       - name: Commit lint ✨
-        uses: wagoid/commitlint-github-action@v2
+        uses: wagoid/commitlint-github-action@v5
 
       - uses: atom-community/action-setup-atom@v1
       - name: Setup PNPM
