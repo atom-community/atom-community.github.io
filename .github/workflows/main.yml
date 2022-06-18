@@ -22,7 +22,7 @@ jobs:
 
       - uses: atom-community/action-setup-atom@v1
       - name: Setup PNPM
-        uses: pnpm/action-setup@v1.2.1
+        uses: pnpm/action-setup@v2.2.2
         with:
           version: latest
 
