@@ -13,5 +13,4 @@ A replacement of the outline functionality from atom-ide-ui. Presents symbols of
 
 ![screenshot of outline feature]({{ '/_assets/images/screenshot-outline.png' | asset | url }})
 
-
 ## API

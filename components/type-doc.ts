@@ -1,20 +1,13 @@
-import {
-  LitElement,
-  css,
-  customElement,
-  html,
-  TemplateResult,
-  property
-} from 'lit-element';
+import { LitElement, css, customElement, html, TemplateResult, property } from "lit-element"
 
-@customElement('type-doc')
+@customElement("type-doc")
 export class TypeDoc extends LitElement {
   static readonly styles = css`
     :host {
       position: relative;
       max-width: 100%;
       display: grid;
-      grid-template-areas: 'head' 'body';
+      grid-template-areas: "head" "body";
       grid-template-rows: min-content 1fr;
       margin-bottom: 1rem;
     }
@@ -56,7 +49,7 @@ export class TypeDoc extends LitElement {
     }
 
     type-doc:not([data-inherited-from]) [slot="type"]::before {
-      content: 'type: ';
+      content: "type: ";
     }
 
     #inheritance {
@@ -142,15 +135,15 @@ export class TypeDoc extends LitElement {
         overflow: auto;
       }
     }
-  `;
+  `
 
-  declare shadowRoot: ShadowRoot;
+  declare shadowRoot: ShadowRoot
 
-  @property({ type: Boolean, reflect: true }) expanded = false;
+  @property({ type: Boolean, reflect: true }) expanded = false
 
   render(): TemplateResult {
-    const isInherited = this.hasAttribute('data-inherited-from');
-    const { expanded } = this;
+    const isInherited = this.hasAttribute("data-inherited-from")
+    const { expanded } = this
     return html`
       <header>
         <span aria-hidden="true" @click="${this.toggleInherited}" @slotchange="${this.cloneHeading}">
@@ -161,14 +154,16 @@ export class TypeDoc extends LitElement {
         <slot name="type"></slot>
         <span id="inheritance" ?hidden="${!isInherited}">
           <slot name="inheritance"></slot>
-          <button id="toggle"
-              aria-label="Toggle details"
-              aria-expanded="${expanded}"
-              aria-controls="body"
-              @click="${this.toggleInherited}">
+          <button
+            id="toggle"
+            aria-label="Toggle details"
+            aria-expanded="${expanded}"
+            aria-controls="body"
+            @click="${this.toggleInherited}"
+          >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path d="M0 0h24v24H0z" fill="none"/>
-              <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" fill="currentColor"/>
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" fill="currentColor" />
             </svg>
           </button>
         </span>
@@ -176,23 +171,29 @@ export class TypeDoc extends LitElement {
       <article id="body" ?hidden="${isInherited && !expanded}">
         <slot></slot>
       </article>
-    `;
+    `
   }
 
   firstUpdated() {
-    this.cloneHeading();
+    this.cloneHeading()
   }
 
   private cloneHeading() {
-    const hidden = this.shadowRoot.querySelector(".visually-hidden");
-    if (!hidden) {return;}
-    for (const child of Array.from(hidden.children)) {child.remove();}
-    const heading = this.querySelector('[slot="name"]');
-    if (!heading) {return;}
-    hidden.append(heading.cloneNode(true));
+    const hidden = this.shadowRoot.querySelector(".visually-hidden")
+    if (!hidden) {
+      return
+    }
+    for (const child of Array.from(hidden.children)) {
+      child.remove()
+    }
+    const heading = this.querySelector('[slot="name"]')
+    if (!heading) {
+      return
+    }
+    hidden.append(heading.cloneNode(true))
   }
 
   private toggleInherited() {
-    this.expanded = !this.expanded;
+    this.expanded = !this.expanded
   }
 }

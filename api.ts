@@ -1,1 +1,1 @@
-export * from 'atom-ide-base';
+export * from "atom-ide-base"

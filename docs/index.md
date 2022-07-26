@@ -33,7 +33,6 @@ features:
   - name: Go to Definition
     slug: definitions
     text: Jump to a name's definition. Navigate large codebases with ease.
-
 ---
 
 <style data-helmet>
@@ -78,7 +77,6 @@ The original package was made of various "subpackages" that provide the overall 
 The objective of this project is to take over the concepts and ideas in the original atom-ide-ui package, but provide individual extensions that can be developed, released and installed independently.
 
 We will start with the most important features, and iterate on them quickly to come on par with the functionality available in the atom-ide-ui package.
-
 
 ## Roadmap
 

@@ -58,11 +58,11 @@ type-doc[data-inherited-from] header {
 }
 
 type-doc:not([data-inherited-from]) [slot="type"]::before {
-  content: 'type: ';
+  content: "type: ";
 }
 
 type-doc [slot="attribute"]::before {
-  content: 'attr: ';
+  content: "attr: ";
 }
 
 type-doc [slot="attribute"]::before,
@@ -87,11 +87,7 @@ type-doc[kind="method"] [slot="name"] {
   --mono: 1;
 
   font-family: Recursive, monospace;
-  font-variation-settings:
-    "MONO" var(--mono, 1),
-    "CASL" var(--casl, 0),
-    "wght" var(--wght, 500),
-    "slnt" var(--slnt, 0),
+  font-variation-settings: "MONO" var(--mono, 1), "CASL" var(--casl, 0), "wght" var(--wght, 500), "slnt" var(--slnt, 0),
     "CRSV" var(--CRSV, 0.5);
   margin: 0;
   grid-column: 1 / 2;

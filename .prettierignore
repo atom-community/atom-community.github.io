@@ -14,3 +14,4 @@ _site
 docs/_merged_data/
 docs/_merged_assets/
 docs/_merged_includes/
+docs/_data/api/api.json

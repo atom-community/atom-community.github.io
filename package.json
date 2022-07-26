@@ -2,7 +2,16 @@
   "name": "atom-community.github.io",
   "version": "1.0.0",
   "description": "Atom Community website powered by [rocket](https://rocket.modern-web.dev).",
-  "main": "rocket.config.js",
+  "homepage": "https://github.com/atom-community/atom-community.github.io#readme",
+  "bugs": {
+    "url": "https://github.com/atom-community/atom-community.github.io/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atom-community/atom-community.github.io.git"
+  },
+  "license": "ISC",
+  "author": "",
   "type": "module",
   "exports": {
     "./components/*": {
@@ -10,31 +19,22 @@
       "default": "./components/*.js"
     }
   },
+  "main": "rocket.config.js",
   "scripts": {
-    "clean": "shx rm -rf ./_site* ./docs/_merged_*",
-    "prestart": "npm run typedoc",
-    "postinstall": "patch-package",
-    "start": "rocket start",
     "build": "npm run clean && npm run tsc && npm run typedoc && rocket build",
-    "tsc": "tsc",
-    "typedoc": "typedoc --json docs/_data/api/api.json --entryPoints api.ts",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "shx rm -rf ./_site* ./docs/_merged_*",
     "format": "prettier --write .",
-    "test.format": "prettier . --check",
+    "postinstall": "patch-package",
     "lint": "eslint . --fix",
-    "test.lint": "eslint ."
+    "prestart": "npm run typedoc",
+    "start": "rocket start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test.format": "prettier . --check",
+    "test.lint": "eslint .",
+    "tsc": "tsc",
+    "typedoc": "typedoc --json docs/_data/api/api.json --entryPoints api.ts"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/atom-community/atom-community.github.io.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/atom-community/atom-community.github.io/issues"
-  },
-  "homepage": "https://github.com/atom-community/atom-community.github.io#readme",
+  "prettier": "prettier-config-atomic",
   "dependencies": {
     "@rocket/blog": "^0.3.0",
     "@rocket/cli": "^0.6.0",
@@ -59,10 +59,12 @@
     "markdown-it-prism": "^2.1.6",
     "patch-package": "^6.4.7",
     "plugins-manager": "^0.2.1",
+    "prettier-config-atomic": "^3.0.10",
     "rollup-plugin-esbuild": "^3.0.2",
     "shx": "^0.3.4",
     "typedoc": "^0.20.35",
     "typedoc-plugin-markdown": "^3.6.0",
     "typescript": "^4.2.3"
-  }
+  },
+  "keywords": []
 }

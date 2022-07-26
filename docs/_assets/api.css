@@ -16,6 +16,6 @@
   align-items: center;
 }
 
-body[layout='layout-api'] #sidebar {
+body[layout="layout-api"] #sidebar {
   display: block;
 }
