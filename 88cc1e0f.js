@@ -21,14 +21,16 @@ import{e,L as t,h as o}from"./94d90def.js";
         <slot name="type"></slot>
         <span id="inheritance" ?hidden="${0}">
           <slot name="inheritance"></slot>
-          <button id="toggle"
-              aria-label="Toggle details"
-              aria-expanded="${0}"
-              aria-controls="body"
-              @click="${0}">
+          <button
+            id="toggle"
+            aria-label="Toggle details"
+            aria-expanded="${0}"
+            aria-controls="body"
+            @click="${0}"
+          >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path d="M0 0h24v24H0z" fill="none"/>
-              <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" fill="currentColor"/>
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" fill="currentColor" />
             </svg>
           </button>
         </span>
@@ -41,7 +43,7 @@ import{e,L as t,h as o}from"./94d90def.js";
       position: relative;
       max-width: 100%;
       display: grid;
-      grid-template-areas: 'head' 'body';
+      grid-template-areas: "head" "body";
       grid-template-rows: min-content 1fr;
       margin-bottom: 1rem;
     }
@@ -83,7 +85,7 @@ import{e,L as t,h as o}from"./94d90def.js";
     }
 
     type-doc:not([data-inherited-from]) [slot="type"]::before {
-      content: 'type: ';
+      content: "type: ";
     }
 
     #inheritance {
