@@ -57,6 +57,9 @@ jobs:
           pnpm install
           pnpm run build
 
+      - name: Format ✨
+        run: pnpm test.format
+
       - name: Lint ✨
         run: pnpm test.lint
 
