@@ -20,8 +20,8 @@ importers:
       eslint: ^8.20.0
       eslint-config-atomic: ^1.18.1
       lit-element: ^3.2.2
-      markdown-it: ^12.0.4
-      markdown-it-prism: ^2.1.6
+      markdown-it: ^13.0.1
+      markdown-it-prism: ^2.2.4
       plugins-manager: ^0.2.1
       prettier-config-atomic: ^3.0.10
       rollup-plugin-esbuild: ^3.0.2
@@ -48,8 +48,8 @@ importers:
       eleventy-plugin-helmet: 0.2.2
       eslint: 8.20.0
       eslint-config-atomic: 1.18.1
-      markdown-it: 12.0.4
-      markdown-it-prism: 2.1.6
+      markdown-it: 13.0.1
+      markdown-it-prism: 2.2.4
       plugins-manager: 0.2.1
       prettier-config-atomic: 3.0.10
       rollup-plugin-esbuild: 3.0.2
@@ -2969,7 +2969,7 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001196
+      caniuse-lite: 1.0.30001370
       colorette: 1.2.2
       electron-to-chromium: 1.3.682
       escalade: 3.1.1
@@ -3049,10 +3049,6 @@ packages:
   /camelcase/6.2.0:
     resolution: {integrity: sha512-c7wVvbw3f37nuobQNtgsgG9POC9qMbNuMQmTCqZv23b6MIz0fcYpBiOlv9gEN/hdLdnZTDQhg6e9Dq5M1vKvfg==}
     engines: {node: '>=10'}
-    dev: true
-
-  /caniuse-lite/1.0.30001196:
-    resolution: {integrity: sha512-CPvObjD3ovWrNBaXlAIGWmg2gQQuJ5YhuciUOjPRox6hIQttu8O+b51dx6VIpIY9ESd2d0Vac1RKpICdG4rGUg==}
     dev: true
 
   /caniuse-lite/1.0.30001370:
@@ -3964,10 +3960,6 @@ packages:
 
   /entities/2.0.3:
     resolution: {integrity: sha512-MyoZ0jgnLvB2X3Lg5HqpFmn1kybDiIfEQmKzTb5apr51Rb+T3KdmMiqa70T+bhGnyv7bQ6WMj2QMHpGMmlrUYQ==}
-    dev: true
-
-  /entities/2.1.0:
-    resolution: {integrity: sha512-hCx1oky9PFrJ611mf0ifBLBRW8lUUVRlFolb5gWRfIELabBlbp9xZvrqZLZAs+NxFnbfQoeGd8wDkygjg7U85w==}
     dev: true
 
   /entities/2.2.0:
@@ -5936,8 +5928,8 @@ packages:
       uc.micro: 1.0.6
     dev: true
 
-  /linkify-it/3.0.2:
-    resolution: {integrity: sha512-gDBO4aHNZS6coiZCKVhSNh43F9ioIL4JwRjLZPkoLIY4yZFwg264Y5lu2x6rb1Js42Gh6Yqm2f6L2AJcnkzinQ==}
+  /linkify-it/4.0.1:
+    resolution: {integrity: sha512-C7bfi1UZmoj8+PQx22XyeXCuBlokoyWQL5pWSP+EI6nzRylyThouddufc2c1NDIcP9k5agmN9fLpA7VNJfIiqw==}
     dependencies:
       uc.micro: 1.0.6
     dev: true
@@ -6070,11 +6062,11 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /markdown-it-prism/2.1.6:
-    resolution: {integrity: sha512-fuo5lq36A6kzb882vCsvdyh4HUzpwdfNkAl92cr+MjUO0Q9foz/7MZ/RpKRBlZSwt86LmPlW7ubaEwf4C+0b3g==}
+  /markdown-it-prism/2.2.4:
+    resolution: {integrity: sha512-7oQVppKjiZqVQo7s7eLTIs3o/0hdvqAWDW8lvRel6eUCGD4iXjKbSZjvdHZFA2ZnCkQUF47kbvtWZDVQrv7zyQ==}
     engines: {node: '>=6.0.0'}
     dependencies:
-      prismjs: 1.23.0
+      prismjs: 1.28.0
     dev: true
 
   /markdown-it/10.0.0:
@@ -6088,13 +6080,13 @@ packages:
       uc.micro: 1.0.6
     dev: true
 
-  /markdown-it/12.0.4:
-    resolution: {integrity: sha512-34RwOXZT8kyuOJy25oJNJoulO8L0bTHYWXcdZBYZqFnjIy3NgjeoM3FmPXIOFQ26/lSHYMr8oc62B6adxXcb3Q==}
+  /markdown-it/13.0.1:
+    resolution: {integrity: sha512-lTlxriVoy2criHP0JKRhO2VDG9c2ypWCsT237eDiLqi09rmbKoUetyGHq2uOIRoRS//kfoJckS0eUzzkDR+k2Q==}
     hasBin: true
     dependencies:
       argparse: 2.0.1
-      entities: 2.1.0
-      linkify-it: 3.0.2
+      entities: 3.0.1
+      linkify-it: 4.0.1
       mdurl: 1.0.1
       uc.micro: 1.0.6
     dev: true
@@ -6246,7 +6238,7 @@ packages:
     dev: true
 
   /mdurl/1.0.1:
-    resolution: {integrity: sha1-/oWy7HWlkDfyrf7BAP1sYBdhFS4=}
+    resolution: {integrity: sha512-/sKlQJCBYVY9Ers9hqzKou4H6V5UWc/M59TH2dvkt+84itfnq7uFOMLpOiOS4ujvHP4etln18fmIxA5R5fll0g==}
     dev: true
 
   /media-typer/0.3.0:
@@ -7197,10 +7189,9 @@ packages:
       clipboard: 2.0.7
     dev: true
 
-  /prismjs/1.23.0:
-    resolution: {integrity: sha512-c29LVsqOaLbBHuIbsTxaKENh1N2EQBOHaWv7gkHN4dgRbxSREqDnDbtFJYdpPauS4YCplMSNCABQ6Eeor69bAA==}
-    optionalDependencies:
-      clipboard: 2.0.7
+  /prismjs/1.28.0:
+    resolution: {integrity: sha512-8aaXdYvl1F7iC7Xm1spqSaY/OJBpYW3v+KJ+F17iYxvdc8sfjW194COK5wVhMZX45tGteiBQgdvD/nhxcRwylw==}
+    engines: {node: '>=6'}
     dev: true
 
   /process-nextick-args/2.0.1:
