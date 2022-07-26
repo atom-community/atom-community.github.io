@@ -26,6 +26,7 @@ importers:
       patch-package: ^6.4.7
       plugins-manager: ^0.2.1
       rollup-plugin-esbuild: ^3.0.2
+      shx: ^0.3.4
       typedoc: ^0.20.35
       typedoc-plugin-markdown: ^3.6.0
       typescript: ^4.2.3
@@ -53,6 +54,7 @@ importers:
       patch-package: 6.4.7
       plugins-manager: 0.2.1
       rollup-plugin-esbuild: 3.0.2
+      shx: 0.3.4
       typedoc: 0.20.35_typescript@4.2.3
       typedoc-plugin-markdown: 3.6.0_typedoc@0.20.35
       typescript: 4.2.3
@@ -2468,7 +2470,7 @@ packages:
     dev: false
 
   /balanced-match/1.0.0:
-    resolution: {integrity: sha1-ibTRmasr7kneFk6gK4nORi1xt2c=}
+    resolution: {integrity: sha512-9Y0g0Q8rmSt+H33DfKv7FOc3v+iRI+o1lbzt8jGcIosYW37IIW/2XVYq5NPdmaD5NQ59Nk26Kl/vZbwW9Fr8vg==}
 
   /base64-arraybuffer/0.1.4:
     resolution: {integrity: sha1-mBjHngWbE1X5fgQooBfIOOkLqBI=}
@@ -4144,7 +4146,7 @@ packages:
       universalify: 2.0.0
 
   /fs.realpath/1.0.0:
-    resolution: {integrity: sha1-FQStJSMVjKpA20onh8sBQRmU6k8=}
+    resolution: {integrity: sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==}
 
   /fsevents/2.3.2:
     resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
@@ -4588,13 +4590,13 @@ packages:
     dev: false
 
   /inflight/1.0.6:
-    resolution: {integrity: sha1-Sb1jMdfQLQwJvJEKEHW6gWW1bfk=}
+    resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
     dependencies:
       once: 1.4.0
       wrappy: 1.0.2
 
   /inherits/2.0.3:
-    resolution: {integrity: sha1-Yzwsg+PaQqUC9SRmAiSA9CCCYd4=}
+    resolution: {integrity: sha512-x00IRNXNy63jwGkJmzPigoySHbaqpNuzKbBOmzK+g2OdZpQ9w+sxCN+VSB3ja7IAge2OP2qpfxTjeNcyjmW1uw==}
 
   /inherits/2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
@@ -5781,7 +5783,7 @@ packages:
       ee-first: 1.1.1
 
   /once/1.4.0:
-    resolution: {integrity: sha1-WDsap3WWHUsROsF9nFC6753Xa9E=}
+    resolution: {integrity: sha512-lNaJgI+2Q5URQBkccEKHTQOPaXdUxnZZElQTZY0MFUAuaEqe1E+Nyvgdz/aIyNi6Z9MzO5dv1H8n58/GELp3+w==}
     dependencies:
       wrappy: 1.0.2
 
@@ -5987,7 +5989,7 @@ packages:
     dev: false
 
   /path-is-absolute/1.0.1:
-    resolution: {integrity: sha1-F0uSaHNVNP+8es5r9TpanhtcX18=}
+    resolution: {integrity: sha512-AVbw3UJ2e9bq64vSaS9Am0fje1Pa8pbGqTTsmXfaIiMpnr5DlDhfJOuLj9Sf95ZPVDAUerDfEk88MPmPe7UCQg==}
     engines: {node: '>=0.10.0'}
 
   /path-is-inside/1.0.2:
@@ -6438,7 +6440,7 @@ packages:
       picomatch: 2.2.2
 
   /rechoir/0.6.2:
-    resolution: {integrity: sha1-hSBLVNuoLVdC4oyWdW70OvUOM4Q=}
+    resolution: {integrity: sha512-HFM8rkZ+i3zrV+4LQjwQ0W+ez98pApMGM3HUrN04j3CqzPOzl9nmP15Y8YXNm8QHGv/eacOVEjqhmWpkRV0NAw==}
     engines: {node: '>= 0.10'}
     dependencies:
       resolve: 1.20.0
@@ -6945,13 +6947,23 @@ packages:
     dev: true
 
   /shelljs/0.3.0:
-    resolution: {integrity: sha1-NZbmMHp4FUT1kfN9phg2DzHbV7E=}
+    resolution: {integrity: sha512-Ny0KN4dyT8ZSCE0frtcbAJGoM/HTArpyPkeli1/00aYfm0sbD/Gk/4x7N2DP9QKGpBsiQH7n6rpm1L79RtviEQ==}
     engines: {node: '>=0.8.0'}
     hasBin: true
     dev: true
 
   /shelljs/0.8.4:
     resolution: {integrity: sha512-7gk3UZ9kOfPLIAbslLzyWeGiEqx9e3rxwZM0KE6EL8GlGwjym9Mrlx5/p33bWTu9YG6vcS4MBxYZDHYr5lr8BQ==}
+    engines: {node: '>=4'}
+    hasBin: true
+    dependencies:
+      glob: 7.1.6
+      interpret: 1.4.0
+      rechoir: 0.6.2
+    dev: true
+
+  /shelljs/0.8.5:
+    resolution: {integrity: sha512-TiwcRcrkhHvbrZbnRcFYMLl30Dfov3HKqzp5tO5b4pt6G/SezKcYhmDg15zXVBswHmctSAQKznqNW2LO5tTDow==}
     engines: {node: '>=4'}
     hasBin: true
     dependencies:
@@ -6972,6 +6984,15 @@ packages:
     dependencies:
       hash-string: 1.0.0
     dev: false
+
+  /shx/0.3.4:
+    resolution: {integrity: sha512-N6A9MLVqjxZYcVn8hLmtneQWIJtp8IKzMP4eMnx+nqkvXoqinUPCbUFLp2UcWTEIUONhlk0ewxr/jaVGlc+J+g==}
+    engines: {node: '>=6'}
+    hasBin: true
+    dependencies:
+      minimist: 1.2.5
+      shelljs: 0.8.5
+    dev: true
 
   /side-channel/1.0.4:
     resolution: {integrity: sha512-q5XPytqFEIKHkGdiMIrY10mvLRvnQh42/+GoBlFW3b2LXLE2xxJpZFdm94we0BaoV3RwJyGqg5wS7epxTv0Zvw==}
@@ -8119,7 +8140,7 @@ packages:
     dev: false
 
   /wrappy/1.0.2:
-    resolution: {integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=}
+    resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
 
   /ws/7.4.4:
     resolution: {integrity: sha512-Qm8k8ojNQIMx7S+Zp8u/uHOx7Qazv3Yv4q68MiWWWOJhiwG5W3x7iqmRtJo8xxrciZUY4vRxUTJCKuRnF28ZZw==}
