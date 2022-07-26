@@ -4,10 +4,10 @@ on:
   pull_request:
   push:
     branches:
-      - master   # Only on master now
+      - master
 
 jobs:
-  Lint:
+  Build:
     if: "!contains(github.event.head_commit.message, '[skip ci]')"
     runs-on: ubuntu-latest
     steps:
@@ -18,30 +18,6 @@ jobs:
       - name: Commit lint ✨
         uses: wagoid/commitlint-github-action@v5
 
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-
-      - name: Setup PNPM
-        uses: pnpm/action-setup@v2.2.2
-        with:
-          version: latest
-
-      - name: Install dependencies
-        run: pnpm install
-
-      # - name: Format ✨
-      #   run: pnpm test.format
-
-      - name: Lint ✨
-        run: pnpm test.lint
-
-  build-and-deploy:
-    needs: [Lint]
-    if: github.ref == 'refs/heads/master' &&
-      github.event.repository.fork == false
-    runs-on: ubuntu-latest
-    steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
 
@@ -59,7 +35,11 @@ jobs:
           pnpm install
           pnpm run build
 
+      - name: Lint ✨
+        run: pnpm test.lint
+
       - name: Deploy 🚀
+        if: github.ref == 'refs/heads/master' && github.event.repository.fork == false
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
           branch: gh-pages # The branch the action should deploy to.
