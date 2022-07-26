@@ -22,7 +22,7 @@ jobs:
 
       - uses: actions/setup-node@v3
         with:
-          node-version: lts
+          node-version: 16
 
       - uses: atom-community/action-setup-atom@v1
       - name: Setup PNPM
@@ -50,7 +50,7 @@ jobs:
 
       - uses: actions/setup-node@v3
         with:
-          node-version: lts
+          node-version: 16
 
       - name: Setup PNPM
         uses: pnpm/action-setup@master
