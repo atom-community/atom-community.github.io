@@ -41,7 +41,7 @@ jobs:
             ~/AppData/Local/pnpm/store/
           key: "cache-OS:${{ matrix.os }}-Node:${{ matrix.node }}-${{ matrix.pnpm }}-${{ hashFiles('./.npmrc') }}-${{ hashFiles('./package.json') }}"
           restore-keys: |
-            "cache-OS:${{ matrix.os }}-Node:${{ matrix.node }}-${{ matrix.pnpm }}"
+            "cache-OS:${{ matrix.os }}-Node:${{ matrix.node }}-${{ matrix.pnpm }}-"
 
       - uses: actions/setup-node@v3
         with:
