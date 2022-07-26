@@ -24,7 +24,6 @@ jobs:
         with:
           node-version: 16
 
-      - uses: atom-community/action-setup-atom@v1
       - name: Setup PNPM
         uses: pnpm/action-setup@v2.2.2
         with:
