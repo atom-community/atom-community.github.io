@@ -13,10 +13,9 @@
   "scripts": {
     "clean": "shx rm -rf ./_site* ./docs/_merged_*",
     "prestart": "npm run typedoc",
-    "prebuild": "npm run tsc && npm run typedoc",
     "postinstall": "patch-package",
     "start": "rocket start",
-    "build": "rocket build",
+    "build": "npm run clean && npm run tsc && npm run typedoc && rocket build",
     "tsc": "tsc",
     "typedoc": "typedoc --json docs/_data/api/api.json --entryPoints api.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
