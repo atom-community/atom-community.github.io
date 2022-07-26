@@ -48,7 +48,7 @@
     "@types/markdown-it": "^12.2.3",
     "@types/prismjs": "^1.26.0",
     "@types/react": "^18.0.15",
-    "@web/dev-server-esbuild": "^0.2.11",
+    "@web/dev-server-esbuild": "^0.3.1",
     "eleventy-plugin-add-web-component-definitions": "^2.1.2",
     "eleventy-plugin-helmet": "^0.2.2",
     "eslint": "^8.20.0",
@@ -57,12 +57,17 @@
     "markdown-it-prism": "^2.2.4",
     "plugins-manager": "^0.2.1",
     "prettier-config-atomic": "^3.0.10",
-    "rollup-plugin-esbuild": "^3.0.2",
+    "rollup-plugin-esbuild": "^4.9.1",
     "servor": "^4.0.2",
     "shx": "^0.3.4",
     "typedoc": "^0.23.9",
     "typedoc-plugin-markdown": "^3.13.4",
     "typescript": "^4.7.4"
   },
-  "keywords": []
+  "keywords": [],
+  "pnpm": {
+    "overrides": {
+      "recursive-copy": "2.0.14"
+    }
+  }
 }
