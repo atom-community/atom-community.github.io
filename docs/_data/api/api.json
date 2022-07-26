@@ -1,7 +1,7 @@
 {
 	"id": 0,
 	"name": "atom-community.github.io",
-	"kind": 0,
+	"kind": 1,
 	"kindString": "Project",
 	"flags": {},
 	"originalName": "",
@@ -15,10 +15,16 @@
 				"isExternal": true
 			},
 			"comment": {
-				"tags": [
+				"summary": [],
+				"blockTags": [
 					{
-						"tag": "summary",
-						"text": "Represents a particular busy signal."
+						"tag": "@summary",
+						"content": [
+							{
+								"kind": "text",
+								"text": "Represents a particular busy signal."
+							}
+						]
 					}
 				]
 			},
@@ -31,6 +37,13 @@
 					"flags": {
 						"isExternal": true
 					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/busy-signal.d.ts",
+							"line": 76,
+							"character": 2
+						}
+					],
 					"signatures": [
 						{
 							"id": 34,
@@ -41,10 +54,16 @@
 								"isExternal": true
 							},
 							"comment": {
-								"tags": [
+								"summary": [],
+								"blockTags": [
 									{
-										"tag": "summary",
-										"text": "Dispose of the signal when done to make it go away."
+										"tag": "@summary",
+										"content": [
+											{
+												"kind": "text",
+												"text": "Dispose of the signal when done to make it go away."
+											}
+										]
 									}
 								]
 							},
@@ -63,6 +82,13 @@
 					"flags": {
 						"isExternal": true
 					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/busy-signal.d.ts",
+							"line": 73,
+							"character": 2
+						}
+					],
 					"signatures": [
 						{
 							"id": 31,
@@ -73,10 +99,16 @@
 								"isExternal": true
 							},
 							"comment": {
-								"tags": [
+								"summary": [],
+								"blockTags": [
 									{
-										"tag": "summary",
-										"text": "Set or update the title of a signal.\n"
+										"tag": "@summary",
+										"content": [
+											{
+												"kind": "text",
+												"text": "Set or update the title of a signal."
+											}
+										]
 									}
 								]
 							},
@@ -90,7 +122,12 @@
 										"isExternal": true
 									},
 									"comment": {
-										"text": "New title for the signal."
+										"summary": [
+											{
+												"kind": "text",
+												"text": "New title for the signal."
+											}
+										]
 									},
 									"type": {
 										"type": "intrinsic",
@@ -109,7 +146,6 @@
 			"groups": [
 				{
 					"title": "Methods",
-					"kind": 2048,
 					"children": [
 						33,
 						30
@@ -120,7 +156,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/busy-signal.d.ts",
 					"line": 68,
-					"character": 28
+					"character": 17
 				}
 			]
 		},
@@ -143,13 +179,34 @@
 						"isOptional": true
 					},
 					"comment": {
-						"shortText": "Debounce it? default = `true` for busy-signal, and `false` for action-required."
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Debounce it? default = "
+							},
+							{
+								"kind": "code",
+								"text": "`true`"
+							},
+							{
+								"kind": "text",
+								"text": " for busy-signal, and "
+							},
+							{
+								"kind": "code",
+								"text": "`false`"
+							},
+							{
+								"kind": "text",
+								"text": " for action-required."
+							}
+						]
 					},
 					"sources": [
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/busy-signal.d.ts",
 							"line": 19,
-							"character": 10
+							"character": 2
 						}
 					],
 					"type": {
@@ -166,20 +223,11 @@
 						"isExternal": true,
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "If `onClick` is set, then the tooltip will be clickable.",
-						"tags": [
-							{
-								"tag": "default",
-								"text": "`null`\n"
-							}
-						]
-					},
 					"sources": [
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/busy-signal.d.ts",
 							"line": 26,
-							"character": 12
+							"character": 2
 						}
 					],
 					"type": {
@@ -192,6 +240,13 @@
 							"flags": {
 								"isExternal": true
 							},
+							"sources": [
+								{
+									"fileName": "node_modules/atom-ide-base/types-packages/busy-signal.d.ts",
+									"line": 26,
+									"character": 15
+								}
+							],
 							"signatures": [
 								{
 									"id": 12,
@@ -200,6 +255,33 @@
 									"kindString": "Call signature",
 									"flags": {
 										"isExternal": true
+									},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "If "
+											},
+											{
+												"kind": "code",
+												"text": "`onClick`"
+											},
+											{
+												"kind": "text",
+												"text": " is set, then the tooltip will be clickable."
+											}
+										],
+										"blockTags": [
+											{
+												"tag": "@default",
+												"content": [
+													{
+														"kind": "code",
+														"text": "`null`"
+													}
+												]
+											}
+										]
 									},
 									"type": {
 										"type": "intrinsic",
@@ -220,13 +302,26 @@
 						"isOptional": true
 					},
 					"comment": {
-						"shortText": "Can say that a busy signal will only appear when a given file is open. Default = `null`, meaning the busy signal\napplies to all files."
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Can say that a busy signal will only appear when a given file is open. Default = "
+							},
+							{
+								"kind": "code",
+								"text": "`null`"
+							},
+							{
+								"kind": "text",
+								"text": ", meaning the busy signal\napplies to all files."
+							}
+						]
 					},
 					"sources": [
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/busy-signal.d.ts",
 							"line": 8,
-							"character": 13
+							"character": 2
 						}
 					],
 					"type": {
@@ -244,13 +339,26 @@
 						"isOptional": true
 					},
 					"comment": {
-						"shortText": "If set to `true`, the busy signal tooltip will be immediately revealed when it first becomes visible (without\nexplicit mouse interaction)."
+						"summary": [
+							{
+								"kind": "text",
+								"text": "If set to "
+							},
+							{
+								"kind": "code",
+								"text": "`true`"
+							},
+							{
+								"kind": "text",
+								"text": ", the busy signal tooltip will be immediately revealed when it first becomes visible (without\nexplicit mouse interaction)."
+							}
+						]
 					},
 					"sources": [
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/busy-signal.d.ts",
 							"line": 32,
-							"character": 15
+							"character": 2
 						}
 					],
 					"type": {
@@ -268,11 +376,21 @@
 						"isOptional": true
 					},
 					"comment": {
-						"shortText": "Is user waiting for computer to finish a task? (traditional busy spinner) or is the computer waiting for user to\nfinish a task? (action required)",
-						"tags": [
+						"summary": [
 							{
-								"tag": "default",
-								"text": "`'computer'`\n"
+								"kind": "text",
+								"text": "Is user waiting for computer to finish a task? (traditional busy spinner) or is the computer waiting for user to\nfinish a task? (action required)"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@default",
+								"content": [
+									{
+										"kind": "code",
+										"text": "`'computer'`"
+									}
+								]
 							}
 						]
 					},
@@ -280,7 +398,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/busy-signal.d.ts",
 							"line": 16,
-							"character": 12
+							"character": 2
 						}
 					],
 					"type": {
@@ -288,11 +406,11 @@
 						"types": [
 							{
 								"type": "literal",
-								"value": "computer"
+								"value": "user"
 							},
 							{
 								"type": "literal",
-								"value": "user"
+								"value": "computer"
 							}
 						]
 					}
@@ -301,7 +419,6 @@
 			"groups": [
 				{
 					"title": "Properties",
-					"kind": 1024,
 					"children": [
 						9,
 						10,
@@ -315,7 +432,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/busy-signal.d.ts",
 					"line": 3,
-					"character": 34
+					"character": 17
 				}
 			]
 		},
@@ -328,10 +445,20 @@
 				"isExternal": true
 			},
 			"comment": {
-				"tags": [
+				"summary": [],
+				"blockTags": [
 					{
-						"tag": "summary",
-						"text": "`busy-signal` service."
+						"tag": "@summary",
+						"content": [
+							{
+								"kind": "code",
+								"text": "`busy-signal`"
+							},
+							{
+								"kind": "text",
+								"text": " service."
+							}
+						]
 					}
 				]
 			},
@@ -344,6 +471,13 @@
 					"flags": {
 						"isExternal": true
 					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/busy-signal.d.ts",
+							"line": 91,
+							"character": 2
+						}
+					],
 					"signatures": [
 						{
 							"id": 40,
@@ -354,10 +488,24 @@
 								"isExternal": true
 							},
 							"comment": {
-								"tags": [
+								"summary": [],
+								"blockTags": [
 									{
-										"tag": "summary",
-										"text": "Fires a `did-add` event.\n"
+										"tag": "@summary",
+										"content": [
+											{
+												"kind": "text",
+												"text": "Fires a "
+											},
+											{
+												"kind": "code",
+												"text": "`did-add`"
+											},
+											{
+												"kind": "text",
+												"text": " event."
+											}
+										]
 									}
 								]
 							},
@@ -371,7 +519,12 @@
 										"isExternal": true
 									},
 									"comment": {
-										"text": "Name of the signal to notify regarding its addition."
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Name of the signal to notify regarding its addition."
+											}
+										]
 									},
 									"type": {
 										"type": "intrinsic",
@@ -394,6 +547,13 @@
 					"flags": {
 						"isExternal": true
 					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/busy-signal.d.ts",
+							"line": 100,
+							"character": 2
+						}
+					],
 					"signatures": [
 						{
 							"id": 46,
@@ -404,10 +564,24 @@
 								"isExternal": true
 							},
 							"comment": {
-								"tags": [
+								"summary": [],
+								"blockTags": [
 									{
-										"tag": "summary",
-										"text": "Fires a `did-clear` event."
+										"tag": "@summary",
+										"content": [
+											{
+												"kind": "text",
+												"text": "Fires a "
+											},
+											{
+												"kind": "code",
+												"text": "`did-clear`"
+											},
+											{
+												"kind": "text",
+												"text": " event."
+											}
+										]
 									}
 								]
 							},
@@ -426,6 +600,13 @@
 					"flags": {
 						"isExternal": true
 					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/busy-signal.d.ts",
+							"line": 103,
+							"character": 2
+						}
+					],
 					"signatures": [
 						{
 							"id": 48,
@@ -436,10 +617,24 @@
 								"isExternal": true
 							},
 							"comment": {
-								"tags": [
+								"summary": [],
+								"blockTags": [
 									{
-										"tag": "summary",
-										"text": "Fires a `did-dispose` event and disposes of subscriptions."
+										"tag": "@summary",
+										"content": [
+											{
+												"kind": "text",
+												"text": "Fires a "
+											},
+											{
+												"kind": "code",
+												"text": "`did-dispose`"
+											},
+											{
+												"kind": "text",
+												"text": " event and disposes of subscriptions."
+											}
+										]
 									}
 								]
 							},
@@ -458,6 +653,13 @@
 					"flags": {
 						"isExternal": true
 					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/busy-signal.d.ts",
+							"line": 97,
+							"character": 2
+						}
+					],
 					"signatures": [
 						{
 							"id": 43,
@@ -468,10 +670,24 @@
 								"isExternal": true
 							},
 							"comment": {
-								"tags": [
+								"summary": [],
+								"blockTags": [
 									{
-										"tag": "summary",
-										"text": "Fires a `did-remove` event.\n"
+										"tag": "@summary",
+										"content": [
+											{
+												"kind": "text",
+												"text": "Fires a "
+											},
+											{
+												"kind": "code",
+												"text": "`did-remove`"
+											},
+											{
+												"kind": "text",
+												"text": " event."
+											}
+										]
 									}
 								]
 							},
@@ -485,7 +701,12 @@
 										"isExternal": true
 									},
 									"comment": {
-										"text": "Name of the signal to notify regarding its removal."
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Name of the signal to notify regarding its removal."
+											}
+										]
 									},
 									"type": {
 										"type": "intrinsic",
@@ -504,7 +725,6 @@
 			"groups": [
 				{
 					"title": "Methods",
-					"kind": 2048,
 					"children": [
 						39,
 						45,
@@ -517,7 +737,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/busy-signal.d.ts",
 					"line": 86,
-					"character": 35
+					"character": 17
 				}
 			]
 		},
@@ -530,10 +750,20 @@
 				"isExternal": true
 			},
 			"comment": {
-				"tags": [
+				"summary": [],
+				"blockTags": [
 					{
-						"tag": "summary",
-						"text": "`busy-signal` service."
+						"tag": "@summary",
+						"content": [
+							{
+								"kind": "code",
+								"text": "`busy-signal`"
+							},
+							{
+								"kind": "text",
+								"text": " service."
+							}
+						]
 					}
 				]
 			},
@@ -546,6 +776,13 @@
 					"flags": {
 						"isExternal": true
 					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/busy-signal.d.ts",
+							"line": 82,
+							"character": 2
+						}
+					],
 					"signatures": [
 						{
 							"id": 37,
@@ -556,17 +793,33 @@
 								"isExternal": true
 							},
 							"comment": {
-								"tags": [
+								"summary": [],
+								"blockTags": [
 									{
-										"tag": "summary",
-										"text": "Creates a `busy-signal` provider and adds it to the registry."
+										"tag": "@summary",
+										"content": [
+											{
+												"kind": "text",
+												"text": "Creates a "
+											},
+											{
+												"kind": "code",
+												"text": "`busy-signal`"
+											},
+											{
+												"kind": "text",
+												"text": " provider and adds it to the registry."
+											}
+										]
 									}
 								]
 							},
 							"type": {
 								"type": "reference",
 								"id": 38,
-								"name": "BusySignalProvider"
+								"name": "BusySignalProvider",
+								"qualifiedName": "BusySignalProvider",
+								"package": "atom-ide-base"
 							}
 						}
 					]
@@ -575,7 +828,6 @@
 			"groups": [
 				{
 					"title": "Methods",
-					"kind": 2048,
 					"children": [
 						36
 					]
@@ -585,7 +837,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/busy-signal.d.ts",
 					"line": 80,
-					"character": 35
+					"character": 17
 				}
 			]
 		},
@@ -598,7 +850,16 @@
 				"isExternal": true
 			},
 			"comment": {
-				"shortText": "`atom-ide-busy-signal` service."
+				"summary": [
+					{
+						"kind": "code",
+						"text": "`atom-ide-busy-signal`"
+					},
+					{
+						"kind": "text",
+						"text": " service."
+					}
+				]
 			},
 			"children": [
 				{
@@ -609,6 +870,13 @@
 					"flags": {
 						"isExternal": true
 					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/busy-signal.d.ts",
+							"line": 64,
+							"character": 2
+						}
+					],
 					"signatures": [
 						{
 							"id": 28,
@@ -619,10 +887,16 @@
 								"isExternal": true
 							},
 							"comment": {
-								"tags": [
+								"summary": [],
+								"blockTags": [
 									{
-										"tag": "summary",
-										"text": "This is a no-op.\n\nWhen someone consumes the busy service, they get back a\nreference to the single shared instance, so disposing of it would be wrong.\n"
+										"tag": "@summary",
+										"content": [
+											{
+												"kind": "text",
+												"text": "This is a no-op.\n\nWhen someone consumes the busy service, they get back a\nreference to the single shared instance, so disposing of it would be wrong."
+											}
+										]
 									}
 								]
 							},
@@ -641,6 +915,13 @@
 					"flags": {
 						"isExternal": true
 					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/busy-signal.d.ts",
+							"line": 56,
+							"character": 2
+						}
+					],
 					"signatures": [
 						{
 							"id": 24,
@@ -651,7 +932,12 @@
 								"isExternal": true
 							},
 							"comment": {
-								"shortText": "Activates the busy signal. Set the title in the returned BusySignal object (you can update the title multiple\ntimes) and dispose it when done."
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Activates the busy signal. Set the title in the returned BusySignal object (you can update the title multiple\ntimes) and dispose it when done."
+									}
+								]
 							},
 							"parameters": [
 								{
@@ -663,7 +949,12 @@
 										"isExternal": true
 									},
 									"comment": {
-										"text": "Name of the busy signal to activate"
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Name of the busy signal to activate"
+											}
+										]
 									},
 									"type": {
 										"type": "intrinsic",
@@ -680,19 +971,28 @@
 										"isOptional": true
 									},
 									"comment": {
-										"text": "Options for this signal\n"
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Options for this signal"
+											}
+										]
 									},
 									"type": {
 										"type": "reference",
 										"id": 6,
-										"name": "BusySignalOptions"
+										"name": "BusySignalOptions",
+										"qualifiedName": "BusySignalOptions",
+										"package": "atom-ide-base"
 									}
 								}
 							],
 							"type": {
 								"type": "reference",
 								"id": 29,
-								"name": "BusyMessage"
+								"name": "BusyMessage",
+								"qualifiedName": "BusyMessage",
+								"package": "atom-ide-base"
 							}
 						}
 					]
@@ -705,6 +1005,13 @@
 					"flags": {
 						"isExternal": true
 					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/busy-signal.d.ts",
+							"line": 47,
+							"character": 2
+						}
+					],
 					"signatures": [
 						{
 							"id": 16,
@@ -715,8 +1022,27 @@
 								"isExternal": true
 							},
 							"comment": {
-								"shortText": "Activates the busy signal with the given title and returns the promise from the provided callback. The busy signal\nautomatically deactivates when the returned promise either resolves or rejects.",
-								"returns": "A promise which resolves with the type of `f`\n"
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Activates the busy signal with the given title and returns the promise from the provided callback. The busy signal\nautomatically deactivates when the returned promise either resolves or rejects."
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@returns",
+										"content": [
+											{
+												"kind": "text",
+												"text": "A promise which resolves with the type of "
+											},
+											{
+												"kind": "code",
+												"text": "`f`"
+											}
+										]
+									}
+								]
 							},
 							"typeParameter": [
 								{
@@ -728,7 +1054,12 @@
 										"isExternal": true
 									},
 									"comment": {
-										"text": "Return type of the async function"
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Return type of the async function"
+											}
+										]
 									}
 								}
 							],
@@ -742,7 +1073,12 @@
 										"isExternal": true
 									},
 									"comment": {
-										"text": "Name of the busy signal to activate"
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Name of the busy signal to activate"
+											}
+										]
 									},
 									"type": {
 										"type": "intrinsic",
@@ -758,7 +1094,12 @@
 										"isExternal": true
 									},
 									"comment": {
-										"text": "Async function. When the promise resolves, the signal deactivates."
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Async function. When the promise resolves, the signal deactivates."
+											}
+										]
 									},
 									"type": {
 										"type": "reflection",
@@ -770,6 +1111,13 @@
 											"flags": {
 												"isExternal": true
 											},
+											"sources": [
+												{
+													"fileName": "node_modules/atom-ide-base/types-packages/busy-signal.d.ts",
+													"line": 47,
+													"character": 39
+												}
+											],
 											"signatures": [
 												{
 													"id": 21,
@@ -784,10 +1132,15 @@
 														"typeArguments": [
 															{
 																"type": "reference",
-																"name": "T"
+																"id": 17,
+																"name": "T",
+																"qualifiedName": "T",
+																"package": "atom-ide-base"
 															}
 														],
-														"name": "Promise"
+														"name": "Promise",
+														"qualifiedName": "Promise",
+														"package": ".pnpm"
 													}
 												}
 											]
@@ -804,12 +1157,19 @@
 										"isOptional": true
 									},
 									"comment": {
-										"text": "Options for this signal"
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Options for this signal"
+											}
+										]
 									},
 									"type": {
 										"type": "reference",
 										"id": 6,
-										"name": "BusySignalOptions"
+										"name": "BusySignalOptions",
+										"qualifiedName": "BusySignalOptions",
+										"package": "atom-ide-base"
 									}
 								}
 							],
@@ -818,10 +1178,15 @@
 								"typeArguments": [
 									{
 										"type": "reference",
-										"name": "T"
+										"id": 17,
+										"name": "T",
+										"qualifiedName": "T",
+										"package": "atom-ide-base"
 									}
 								],
-								"name": "Promise"
+								"name": "Promise",
+								"qualifiedName": "Promise",
+								"package": ".pnpm"
 							}
 						}
 					]
@@ -830,7 +1195,6 @@
 			"groups": [
 				{
 					"title": "Methods",
-					"kind": 2048,
 					"children": [
 						27,
 						23,
@@ -842,7 +1206,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/busy-signal.d.ts",
 					"line": 36,
-					"character": 34
+					"character": 17
 				}
 			]
 		},
@@ -867,7 +1231,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/call-hierarchy.d.ts",
 							"line": 16,
-							"character": 6
+							"character": 2
 						}
 					],
 					"type": {
@@ -875,7 +1239,9 @@
 						"elementType": {
 							"type": "reference",
 							"id": 69,
-							"name": "CallHierarchyItem"
+							"name": "CallHierarchyItem",
+							"qualifiedName": "CallHierarchyItem",
+							"package": "atom-ide-base"
 						}
 					}
 				},
@@ -891,12 +1257,15 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/call-hierarchy.d.ts",
 							"line": 15,
-							"character": 6
+							"character": 2
 						}
 					],
 					"type": {
 						"type": "reference",
-						"name": "T"
+						"id": 68,
+						"name": "T",
+						"qualifiedName": "CallHierarchy.T",
+						"package": "atom-ide-base"
 					}
 				},
 				{
@@ -907,6 +1276,13 @@
 					"flags": {
 						"isExternal": true
 					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/call-hierarchy.d.ts",
+							"line": 18,
+							"character": 2
+						}
+					],
 					"signatures": [
 						{
 							"id": 66,
@@ -917,7 +1293,12 @@
 								"isExternal": true
 							},
 							"comment": {
-								"shortText": "Returns CallHierarchy data about the i-th CallHierarchyItem."
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Returns CallHierarchy data about the i-th CallHierarchyItem."
+									}
+								]
 							},
 							"parameters": [
 								{
@@ -943,13 +1324,20 @@
 										"typeArguments": [
 											{
 												"type": "reference",
-												"name": "T"
+												"id": 68,
+												"name": "T",
+												"qualifiedName": "CallHierarchy.T",
+												"package": "atom-ide-base"
 											}
 										],
-										"name": "CallHierarchy"
+										"name": "CallHierarchy",
+										"qualifiedName": "CallHierarchy",
+										"package": "atom-ide-base"
 									}
 								],
-								"name": "Promise"
+								"name": "Promise",
+								"qualifiedName": "Promise",
+								"package": ".pnpm"
 							}
 						}
 					]
@@ -958,7 +1346,6 @@
 			"groups": [
 				{
 					"title": "Properties",
-					"kind": 1024,
 					"children": [
 						64,
 						63
@@ -966,7 +1353,6 @@
 				},
 				{
 					"title": "Methods",
-					"kind": 2048,
 					"children": [
 						65
 					]
@@ -976,10 +1362,10 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/call-hierarchy.d.ts",
 					"line": 14,
-					"character": 23
+					"character": 10
 				}
 			],
-			"typeParameter": [
+			"typeParameters": [
 				{
 					"id": 68,
 					"name": "T",
@@ -991,7 +1377,9 @@
 					"type": {
 						"type": "reference",
 						"id": 49,
-						"name": "CallHierarchyType"
+						"name": "CallHierarchyType",
+						"qualifiedName": "CallHierarchyType",
+						"package": "atom-ide-base"
 					}
 				}
 			]
@@ -1018,7 +1406,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/call-hierarchy.d.ts",
 							"line": 27,
-							"character": 8
+							"character": 2
 						}
 					],
 					"type": {
@@ -1036,13 +1424,18 @@
 						"isOptional": true
 					},
 					"comment": {
-						"shortText": "Same as the icon of outline.d.ts"
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Same as the icon of outline.d.ts"
+							}
+						]
 					},
 					"sources": [
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/call-hierarchy.d.ts",
 							"line": 25,
-							"character": 6
+							"character": 2
 						}
 					],
 					"type": {
@@ -1062,7 +1455,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/call-hierarchy.d.ts",
 							"line": 23,
-							"character": 6
+							"character": 2
 						}
 					],
 					"type": {
@@ -1082,7 +1475,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/call-hierarchy.d.ts",
 							"line": 22,
-							"character": 6
+							"character": 2
 						}
 					],
 					"type": {
@@ -1102,12 +1495,14 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/call-hierarchy.d.ts",
 							"line": 28,
-							"character": 7
+							"character": 2
 						}
 					],
 					"type": {
 						"type": "reference",
-						"name": "Range"
+						"name": "Range",
+						"qualifiedName": "Range",
+						"package": "@types/atom"
 					}
 				},
 				{
@@ -1122,12 +1517,14 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/call-hierarchy.d.ts",
 							"line": 29,
-							"character": 16
+							"character": 2
 						}
 					],
 					"type": {
 						"type": "reference",
-						"name": "Range"
+						"name": "Range",
+						"qualifiedName": "Range",
+						"package": "@types/atom"
 					}
 				},
 				{
@@ -1142,7 +1539,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/call-hierarchy.d.ts",
 							"line": 26,
-							"character": 6
+							"character": 2
 						}
 					],
 					"type": {
@@ -1157,7 +1554,6 @@
 			"groups": [
 				{
 					"title": "Properties",
-					"kind": 1024,
 					"children": [
 						74,
 						72,
@@ -1173,7 +1569,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/call-hierarchy.d.ts",
 					"line": 21,
-					"character": 27
+					"character": 10
 				}
 			]
 		},
@@ -1198,7 +1594,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/call-hierarchy.d.ts",
 							"line": 9,
-							"character": 15
+							"character": 2
 						}
 					],
 					"type": {
@@ -1225,7 +1621,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/call-hierarchy.d.ts",
 							"line": 7,
-							"character": 6
+							"character": 2
 						}
 					],
 					"type": {
@@ -1245,7 +1641,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/call-hierarchy.d.ts",
 							"line": 8,
-							"character": 10
+							"character": 2
 						}
 					],
 					"type": {
@@ -1261,6 +1657,13 @@
 					"flags": {
 						"isExternal": true
 					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/call-hierarchy.d.ts",
+							"line": 10,
+							"character": 2
+						}
+					],
 					"signatures": [
 						{
 							"id": 55,
@@ -1281,7 +1684,9 @@
 									},
 									"type": {
 										"type": "reference",
-										"name": "TextEditor"
+										"name": "TextEditor",
+										"qualifiedName": "TextEditor",
+										"package": "@types/atom"
 									}
 								},
 								{
@@ -1294,7 +1699,9 @@
 									},
 									"type": {
 										"type": "reference",
-										"name": "Point"
+										"name": "Point",
+										"qualifiedName": "Point",
+										"package": "@types/atom"
 									}
 								}
 							],
@@ -1317,12 +1724,16 @@
 														"value": "incoming"
 													}
 												],
-												"name": "CallHierarchy"
+												"name": "CallHierarchy",
+												"qualifiedName": "CallHierarchy",
+												"package": "atom-ide-base"
 											}
 										]
 									}
 								],
-								"name": "Promise"
+								"name": "Promise",
+								"qualifiedName": "Promise",
+								"package": ".pnpm"
 							}
 						}
 					]
@@ -1335,6 +1746,13 @@
 					"flags": {
 						"isExternal": true
 					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/call-hierarchy.d.ts",
+							"line": 11,
+							"character": 2
+						}
+					],
 					"signatures": [
 						{
 							"id": 59,
@@ -1355,7 +1773,9 @@
 									},
 									"type": {
 										"type": "reference",
-										"name": "TextEditor"
+										"name": "TextEditor",
+										"qualifiedName": "TextEditor",
+										"package": "@types/atom"
 									}
 								},
 								{
@@ -1368,7 +1788,9 @@
 									},
 									"type": {
 										"type": "reference",
-										"name": "Point"
+										"name": "Point",
+										"qualifiedName": "Point",
+										"package": "@types/atom"
 									}
 								}
 							],
@@ -1391,12 +1813,16 @@
 														"value": "outgoing"
 													}
 												],
-												"name": "CallHierarchy"
+												"name": "CallHierarchy",
+												"qualifiedName": "CallHierarchy",
+												"package": "atom-ide-base"
 											}
 										]
 									}
 								],
-								"name": "Promise"
+								"name": "Promise",
+								"qualifiedName": "Promise",
+								"package": ".pnpm"
 							}
 						}
 					]
@@ -1405,7 +1831,6 @@
 			"groups": [
 				{
 					"title": "Properties",
-					"kind": 1024,
 					"children": [
 						53,
 						51,
@@ -1414,7 +1839,6 @@
 				},
 				{
 					"title": "Methods",
-					"kind": 2048,
 					"children": [
 						54,
 						58
@@ -1425,7 +1849,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/call-hierarchy.d.ts",
 					"line": 6,
-					"character": 38
+					"character": 17
 				}
 			]
 		},
@@ -1446,6 +1870,13 @@
 					"flags": {
 						"isExternal": true
 					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/code-actions.d.ts",
+							"line": 16,
+							"character": 2
+						}
+					],
 					"signatures": [
 						{
 							"id": 87,
@@ -1463,7 +1894,9 @@
 										"name": "void"
 									}
 								],
-								"name": "Promise"
+								"name": "Promise",
+								"qualifiedName": "Promise",
+								"package": ".pnpm"
 							}
 						}
 					]
@@ -1476,6 +1909,13 @@
 					"flags": {
 						"isExternal": true
 					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/code-actions.d.ts",
+							"line": 18,
+							"character": 2
+						}
+					],
 					"signatures": [
 						{
 							"id": 91,
@@ -1500,6 +1940,13 @@
 					"flags": {
 						"isExternal": true
 					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/code-actions.d.ts",
+							"line": 17,
+							"character": 2
+						}
+					],
 					"signatures": [
 						{
 							"id": 89,
@@ -1517,7 +1964,9 @@
 										"name": "string"
 									}
 								],
-								"name": "Promise"
+								"name": "Promise",
+								"qualifiedName": "Promise",
+								"package": ".pnpm"
 							}
 						}
 					]
@@ -1526,7 +1975,6 @@
 			"groups": [
 				{
 					"title": "Methods",
-					"kind": 2048,
 					"children": [
 						86,
 						90,
@@ -1538,7 +1986,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/code-actions.d.ts",
 					"line": 15,
-					"character": 27
+					"character": 17
 				}
 			]
 		},
@@ -1551,7 +1999,12 @@
 				"isExternal": true
 			},
 			"comment": {
-				"shortText": "Atom-ide-base-code-actions provides a CodeActionFetcher which offers an API to request CodeActions from all\nCodeAction providers. For now, CodeActionFetcher can only fetch CodeActions for a Diagnostic. In the future, this API\ncan be extended to provide a stream of CodeActions based on the cursor position."
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Atom-ide-base-code-actions provides a CodeActionFetcher which offers an API to request CodeActions from all\nCodeAction providers. For now, CodeActionFetcher can only fetch CodeActions for a Diagnostic. In the future, this API\ncan be extended to provide a stream of CodeActions based on the cursor position."
+					}
+				]
 			},
 			"children": [
 				{
@@ -1566,7 +2019,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/code-actions.d.ts",
 							"line": 37,
-							"character": 28
+							"character": 2
 						}
 					],
 					"type": {
@@ -1579,6 +2032,13 @@
 							"flags": {
 								"isExternal": true
 							},
+							"sources": [
+								{
+									"fileName": "node_modules/atom-ide-base/types-packages/code-actions.d.ts",
+									"line": 37,
+									"character": 30
+								}
+							],
 							"signatures": [
 								{
 									"id": 103,
@@ -1600,7 +2060,9 @@
 											"type": {
 												"type": "reference",
 												"id": 79,
-												"name": "Diagnostic"
+												"name": "Diagnostic",
+												"qualifiedName": "Diagnostic",
+												"package": "atom-ide-base"
 											}
 										},
 										{
@@ -1613,7 +2075,9 @@
 											},
 											"type": {
 												"type": "reference",
-												"name": "TextEditor"
+												"name": "TextEditor",
+												"qualifiedName": "TextEditor",
+												"package": "@types/atom"
 											}
 										}
 									],
@@ -1625,11 +2089,15 @@
 												"elementType": {
 													"type": "reference",
 													"id": 85,
-													"name": "CodeAction"
+													"name": "CodeAction",
+													"qualifiedName": "CodeAction",
+													"package": "atom-ide-base"
 												}
 											}
 										],
-										"name": "Promise"
+										"name": "Promise",
+										"qualifiedName": "Promise",
+										"package": ".pnpm"
 									}
 								}
 							]
@@ -1640,7 +2108,6 @@
 			"groups": [
 				{
 					"title": "Properties",
-					"kind": 1024,
 					"children": [
 						101
 					]
@@ -1650,7 +2117,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/code-actions.d.ts",
 					"line": 36,
-					"character": 34
+					"character": 17
 				}
 			]
 		},
@@ -1676,7 +2143,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/code-actions.d.ts",
 							"line": 22,
-							"character": 15
+							"character": 2
 						}
 					],
 					"type": {
@@ -1703,7 +2170,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/code-actions.d.ts",
 							"line": 23,
-							"character": 10
+							"character": 2
 						}
 					],
 					"type": {
@@ -1719,6 +2186,13 @@
 					"flags": {
 						"isExternal": true
 					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/code-actions.d.ts",
+							"line": 24,
+							"character": 2
+						}
+					],
 					"signatures": [
 						{
 							"id": 96,
@@ -1739,7 +2213,9 @@
 									},
 									"type": {
 										"type": "reference",
-										"name": "TextEditor"
+										"name": "TextEditor",
+										"qualifiedName": "TextEditor",
+										"package": "@types/atom"
 									}
 								},
 								{
@@ -1752,7 +2228,9 @@
 									},
 									"type": {
 										"type": "reference",
-										"name": "Range"
+										"name": "Range",
+										"qualifiedName": "Range",
+										"package": "@types/atom"
 									}
 								},
 								{
@@ -1768,7 +2246,9 @@
 										"elementType": {
 											"type": "reference",
 											"id": 79,
-											"name": "Diagnostic"
+											"name": "Diagnostic",
+											"qualifiedName": "Diagnostic",
+											"package": "atom-ide-base"
 										}
 									}
 								}
@@ -1792,13 +2272,17 @@
 												"elementType": {
 													"type": "reference",
 													"id": 85,
-													"name": "CodeAction"
+													"name": "CodeAction",
+													"qualifiedName": "CodeAction",
+													"package": "atom-ide-base"
 												}
 											}
 										]
 									}
 								],
-								"name": "Promise"
+								"name": "Promise",
+								"qualifiedName": "Promise",
+								"package": ".pnpm"
 							}
 						}
 					]
@@ -1807,7 +2291,6 @@
 			"groups": [
 				{
 					"title": "Properties",
-					"kind": 1024,
 					"children": [
 						93,
 						94
@@ -1815,7 +2298,6 @@
 				},
 				{
 					"title": "Methods",
-					"kind": 2048,
 					"children": [
 						95
 					]
@@ -1825,7 +2307,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/code-actions.d.ts",
 					"line": 21,
-					"character": 35
+					"character": 17
 				}
 			]
 		},
@@ -1850,7 +2332,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/code-highlight.d.ts",
 							"line": 5,
-							"character": 15
+							"character": 2
 						}
 					],
 					"type": {
@@ -1877,7 +2359,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/code-highlight.d.ts",
 							"line": 4,
-							"character": 10
+							"character": 2
 						}
 					],
 					"type": {
@@ -1893,6 +2375,13 @@
 					"flags": {
 						"isExternal": true
 					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/code-highlight.d.ts",
+							"line": 6,
+							"character": 2
+						}
+					],
 					"signatures": [
 						{
 							"id": 110,
@@ -1913,7 +2402,9 @@
 									},
 									"type": {
 										"type": "reference",
-										"name": "TextEditor"
+										"name": "TextEditor",
+										"qualifiedName": "TextEditor",
+										"package": "@types/atom"
 									}
 								},
 								{
@@ -1926,7 +2417,9 @@
 									},
 									"type": {
 										"type": "reference",
-										"name": "Point"
+										"name": "Point",
+										"qualifiedName": "Point",
+										"package": "@types/atom"
 									}
 								}
 							],
@@ -1948,13 +2441,17 @@
 												"type": "array",
 												"elementType": {
 													"type": "reference",
-													"name": "Range"
+													"name": "Range",
+													"qualifiedName": "Range",
+													"package": "@types/atom"
 												}
 											}
 										]
 									}
 								],
-								"name": "Promise"
+								"name": "Promise",
+								"qualifiedName": "Promise",
+								"package": ".pnpm"
 							}
 						}
 					]
@@ -1963,7 +2460,6 @@
 			"groups": [
 				{
 					"title": "Properties",
-					"kind": 1024,
 					"children": [
 						108,
 						107
@@ -1971,7 +2467,6 @@
 				},
 				{
 					"title": "Methods",
-					"kind": 2048,
 					"children": [
 						109
 					]
@@ -1981,7 +2476,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/code-highlight.d.ts",
 					"line": 3,
-					"character": 38
+					"character": 17
 				}
 			]
 		},
@@ -2002,6 +2497,13 @@
 					"flags": {
 						"isExternal": true
 					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
+							"line": 12,
+							"character": 2
+						}
+					],
 					"signatures": [
 						{
 							"id": 372,
@@ -2023,7 +2525,9 @@
 									"type": {
 										"type": "reference",
 										"id": 389,
-										"name": "Message"
+										"name": "Message",
+										"qualifiedName": "Message",
+										"package": "atom-ide-base"
 									}
 								}
 							],
@@ -2042,6 +2546,13 @@
 					"flags": {
 						"isExternal": true
 					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
+							"line": 13,
+							"character": 2
+						}
+					],
 					"signatures": [
 						{
 							"id": 375,
@@ -2066,6 +2577,13 @@
 					"flags": {
 						"isExternal": true
 					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
+							"line": 15,
+							"character": 2
+						}
+					],
 					"signatures": [
 						{
 							"id": 380,
@@ -2105,6 +2623,13 @@
 					"flags": {
 						"isExternal": true
 					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
+							"line": 17,
+							"character": 2
+						}
+					],
 					"signatures": [
 						{
 							"id": 386,
@@ -2144,6 +2669,13 @@
 					"flags": {
 						"isExternal": true
 					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
+							"line": 14,
+							"character": 2
+						}
+					],
 					"signatures": [
 						{
 							"id": 377,
@@ -2183,6 +2715,13 @@
 					"flags": {
 						"isExternal": true
 					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
+							"line": 11,
+							"character": 2
+						}
+					],
 					"signatures": [
 						{
 							"id": 369,
@@ -2204,7 +2743,9 @@
 									"type": {
 										"type": "reference",
 										"id": 388,
-										"name": "OutputProviderStatus"
+										"name": "OutputProviderStatus",
+										"qualifiedName": "OutputProviderStatus",
+										"package": "atom-ide-base"
 									}
 								}
 							],
@@ -2223,6 +2764,13 @@
 					"flags": {
 						"isExternal": true
 					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
+							"line": 16,
+							"character": 2
+						}
+					],
 					"signatures": [
 						{
 							"id": 383,
@@ -2258,7 +2806,6 @@
 			"groups": [
 				{
 					"title": "Methods",
-					"kind": 2048,
 					"children": [
 						371,
 						374,
@@ -2274,7 +2821,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
 					"line": 10,
-					"character": 27
+					"character": 17
 				}
 			]
 		},
@@ -2297,13 +2844,22 @@
 						"isOptional": true
 					},
 					"comment": {
-						"shortText": "Either pass this or `validForScope`"
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Either pass this or "
+							},
+							{
+								"kind": "code",
+								"text": "`validForScope`"
+							}
+						]
 					},
 					"sources": [
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
 							"line": 31,
-							"character": 15
+							"character": 2
 						}
 					],
 					"type": {
@@ -2330,7 +2886,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
 							"line": 19,
-							"character": 10
+							"character": 2
 						}
 					],
 					"type": {
@@ -2347,13 +2903,18 @@
 						"isExternal": true
 					},
 					"comment": {
-						"shortText": "A unique name for the provider to be used for analytics. It is recommended that it be the name of the provider's package."
+						"summary": [
+							{
+								"kind": "text",
+								"text": "A unique name for the provider to be used for analytics. It is recommended that it be the name of the provider's package."
+							}
+						]
 					},
 					"sources": [
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
 							"line": 22,
-							"character": 14
+							"character": 2
 						}
 					],
 					"type": {
@@ -2369,6 +2930,13 @@
 					"flags": {
 						"isExternal": true
 					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
+							"line": 23,
+							"character": 2
+						}
+					],
 					"signatures": [
 						{
 							"id": 133,
@@ -2389,7 +2957,9 @@
 									},
 									"type": {
 										"type": "reference",
-										"name": "TextEditor"
+										"name": "TextEditor",
+										"qualifiedName": "TextEditor",
+										"package": "@types/atom"
 									}
 								},
 								{
@@ -2402,7 +2972,9 @@
 									},
 									"type": {
 										"type": "reference",
-										"name": "Point"
+										"name": "Point",
+										"qualifiedName": "Point",
+										"package": "@types/atom"
 									}
 								},
 								{
@@ -2423,7 +2995,9 @@
 											},
 											{
 												"type": "reference",
-												"name": "MouseEvent"
+												"name": "MouseEvent",
+												"qualifiedName": "MouseEvent",
+												"package": ".pnpm"
 											}
 										]
 									}
@@ -2446,12 +3020,16 @@
 											{
 												"type": "reference",
 												"id": 169,
-												"name": "Datatip"
+												"name": "Datatip",
+												"qualifiedName": "Datatip",
+												"package": "atom-ide-base"
 											}
 										]
 									}
 								],
-								"name": "Promise"
+								"name": "Promise",
+								"qualifiedName": "Promise",
+								"package": ".pnpm"
 							}
 						}
 					]
@@ -2465,6 +3043,13 @@
 						"isExternal": true,
 						"isOptional": true
 					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
+							"line": 34,
+							"character": 2
+						}
+					],
 					"signatures": [
 						{
 							"id": 139,
@@ -2475,7 +3060,20 @@
 								"isExternal": true
 							},
 							"comment": {
-								"shortText": "Either pass `grammarScopes` or this function."
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Either pass "
+									},
+									{
+										"kind": "code",
+										"text": "`grammarScopes`"
+									},
+									{
+										"kind": "text",
+										"text": " or this function."
+									}
+								]
 							},
 							"parameters": [
 								{
@@ -2503,7 +3101,6 @@
 			"groups": [
 				{
 					"title": "Properties",
-					"kind": 1024,
 					"children": [
 						137,
 						130,
@@ -2512,7 +3109,6 @@
 				},
 				{
 					"title": "Methods",
-					"kind": 2048,
 					"children": [
 						132,
 						138
@@ -2523,7 +3119,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
 					"line": 18,
-					"character": 32
+					"character": 17
 				}
 			]
 		},
@@ -2545,6 +3141,13 @@
 						"isExternal": true,
 						"isOptional": true
 					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
+							"line": 5,
+							"character": 2
+						}
+					],
 					"signatures": [
 						{
 							"id": 118,
@@ -2566,13 +3169,17 @@
 									"type": {
 										"type": "reference",
 										"id": 141,
-										"name": "ModifierDatatipProvider"
+										"name": "ModifierDatatipProvider",
+										"qualifiedName": "ModifierDatatipProvider",
+										"package": "atom-ide-base"
 									}
 								}
 							],
 							"type": {
 								"type": "reference",
-								"name": "DisposableLike"
+								"name": "DisposableLike",
+								"qualifiedName": "DisposableLike",
+								"package": "@types/atom"
 							}
 						}
 					]
@@ -2585,6 +3192,13 @@
 					"flags": {
 						"isExternal": true
 					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
+							"line": 4,
+							"character": 2
+						}
+					],
 					"signatures": [
 						{
 							"id": 115,
@@ -2606,13 +3220,17 @@
 									"type": {
 										"type": "reference",
 										"id": 129,
-										"name": "DatatipProvider"
+										"name": "DatatipProvider",
+										"qualifiedName": "DatatipProvider",
+										"package": "atom-ide-base"
 									}
 								}
 							],
 							"type": {
 								"type": "reference",
-								"name": "DisposableLike"
+								"name": "DisposableLike",
+								"qualifiedName": "DisposableLike",
+								"package": "@types/atom"
 							}
 						}
 					]
@@ -2626,6 +3244,13 @@
 						"isExternal": true,
 						"isOptional": true
 					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
+							"line": 6,
+							"character": 2
+						}
+					],
 					"signatures": [
 						{
 							"id": 121,
@@ -2647,7 +3272,9 @@
 									"type": {
 										"type": "reference",
 										"id": 169,
-										"name": "Datatip"
+										"name": "Datatip",
+										"qualifiedName": "Datatip",
+										"package": "atom-ide-base"
 									}
 								},
 								{
@@ -2660,7 +3287,9 @@
 									},
 									"type": {
 										"type": "reference",
-										"name": "TextEditor"
+										"name": "TextEditor",
+										"qualifiedName": "TextEditor",
+										"package": "@types/atom"
 									}
 								},
 								{
@@ -2675,13 +3304,17 @@
 									"type": {
 										"type": "reference",
 										"id": 125,
-										"name": "PinnedDatatipOptions"
+										"name": "PinnedDatatipOptions",
+										"qualifiedName": "PinnedDatatipOptions",
+										"package": "atom-ide-base"
 									}
 								}
 							],
 							"type": {
 								"type": "reference",
-								"name": "DisposableLike"
+								"name": "DisposableLike",
+								"qualifiedName": "DisposableLike",
+								"package": "@types/atom"
 							}
 						}
 					]
@@ -2690,7 +3323,6 @@
 			"groups": [
 				{
 					"title": "Methods",
-					"kind": 2048,
 					"children": [
 						117,
 						114,
@@ -2702,7 +3334,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
 					"line": 3,
-					"character": 31
+					"character": 17
 				}
 			]
 		},
@@ -2724,13 +3356,22 @@
 						"isExternal": true
 					},
 					"comment": {
-						"shortText": "`language` may be used by consumers to identify the source of definitions."
+						"summary": [
+							{
+								"kind": "code",
+								"text": "`language`"
+							},
+							{
+								"kind": "text",
+								"text": " may be used by consumers to identify the source of definitions."
+							}
+						]
 					},
 					"sources": [
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/definitions.d.ts",
 							"line": 19,
-							"character": 10
+							"character": 2
 						}
 					],
 					"type": {
@@ -2748,13 +3389,34 @@
 						"isOptional": true
 					},
 					"comment": {
-						"shortText": "Optional: `name` and `projectRoot` can be provided to display a more human-readable title inside of Hyperclick when\nthere are multiple definitions."
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Optional: "
+							},
+							{
+								"kind": "code",
+								"text": "`name`"
+							},
+							{
+								"kind": "text",
+								"text": " and "
+							},
+							{
+								"kind": "code",
+								"text": "`projectRoot`"
+							},
+							{
+								"kind": "text",
+								"text": " can be provided to display a more human-readable title inside of Hyperclick when\nthere are multiple definitions."
+							}
+						]
 					},
 					"sources": [
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/definitions.d.ts",
 							"line": 15,
-							"character": 6
+							"character": 2
 						}
 					],
 					"type": {
@@ -2771,13 +3433,18 @@
 						"isExternal": true
 					},
 					"comment": {
-						"shortText": "Path of the file in which the definition is located."
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Path of the file in which the definition is located."
+							}
+						]
 					},
 					"sources": [
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/definitions.d.ts",
 							"line": 6,
-							"character": 6
+							"character": 2
 						}
 					],
 					"type": {
@@ -2794,18 +3461,29 @@
 						"isExternal": true
 					},
 					"comment": {
-						"shortText": "First character of the definition's identifier. e.g. \"F\" in `class Foo {}`"
+						"summary": [
+							{
+								"kind": "text",
+								"text": "First character of the definition's identifier. e.g. \"F\" in "
+							},
+							{
+								"kind": "code",
+								"text": "`class Foo {}`"
+							}
+						]
 					},
 					"sources": [
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/definitions.d.ts",
 							"line": 8,
-							"character": 10
+							"character": 2
 						}
 					],
 					"type": {
 						"type": "reference",
-						"name": "Point"
+						"name": "Point",
+						"qualifiedName": "Point",
+						"package": "@types/atom"
 					}
 				},
 				{
@@ -2818,13 +3496,34 @@
 						"isOptional": true
 					},
 					"comment": {
-						"shortText": "If provided, `projectRoot` will be used to display a relativized version of `path`."
+						"summary": [
+							{
+								"kind": "text",
+								"text": "If provided, "
+							},
+							{
+								"kind": "code",
+								"text": "`projectRoot`"
+							},
+							{
+								"kind": "text",
+								"text": " will be used to display a relativized version of "
+							},
+							{
+								"kind": "code",
+								"text": "`path`"
+							},
+							{
+								"kind": "text",
+								"text": "."
+							}
+						]
 					},
 					"sources": [
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/definitions.d.ts",
 							"line": 17,
-							"character": 13
+							"character": 2
 						}
 					],
 					"type": {
@@ -2842,25 +3541,35 @@
 						"isOptional": true
 					},
 					"comment": {
-						"shortText": "Optional: the range of the entire definition. e.g. \"c\" to \"}\" in `class Foo {}`"
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Optional: the range of the entire definition. e.g. \"c\" to \"}\" in "
+							},
+							{
+								"kind": "code",
+								"text": "`class Foo {}`"
+							}
+						]
 					},
 					"sources": [
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/definitions.d.ts",
 							"line": 10,
-							"character": 7
+							"character": 2
 						}
 					],
 					"type": {
 						"type": "reference",
-						"name": "Range"
+						"name": "Range",
+						"qualifiedName": "Range",
+						"package": "@types/atom"
 					}
 				}
 			],
 			"groups": [
 				{
 					"title": "Properties",
-					"kind": 1024,
 					"children": [
 						177,
 						175,
@@ -2875,7 +3584,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/definitions.d.ts",
 					"line": 4,
-					"character": 27
+					"character": 17
 				}
 			]
 		},
@@ -2896,6 +3605,13 @@
 					"flags": {
 						"isExternal": true
 					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/definitions.d.ts",
+							"line": 45,
+							"character": 2
+						}
+					],
 					"signatures": [
 						{
 							"id": 193,
@@ -2917,7 +3633,9 @@
 									"type": {
 										"type": "reference",
 										"id": 171,
-										"name": "Definition"
+										"name": "Definition",
+										"qualifiedName": "Definition",
+										"package": "atom-ide-base"
 									}
 								}
 							],
@@ -2958,7 +3676,7 @@
 																{
 																	"fileName": "node_modules/atom-ide-base/types-packages/definitions.d.ts",
 																	"line": 48,
-																	"character": 16
+																	"character": 8
 																}
 															],
 															"type": {
@@ -2978,7 +3696,7 @@
 																{
 																	"fileName": "node_modules/atom-ide-base/types-packages/definitions.d.ts",
 																	"line": 49,
-																	"character": 16
+																	"character": 8
 																}
 															],
 															"type": {
@@ -2998,7 +3716,7 @@
 																{
 																	"fileName": "node_modules/atom-ide-base/types-packages/definitions.d.ts",
 																	"line": 47,
-																	"character": 12
+																	"character": 8
 																}
 															],
 															"type": {
@@ -3010,12 +3728,18 @@
 													"groups": [
 														{
 															"title": "Properties",
-															"kind": 1024,
 															"children": [
 																197,
 																198,
 																196
 															]
+														}
+													],
+													"sources": [
+														{
+															"fileName": "node_modules/atom-ide-base/types-packages/definitions.d.ts",
+															"line": 46,
+															"character": 6
 														}
 													]
 												}
@@ -3023,7 +3747,9 @@
 										]
 									}
 								],
-								"name": "Promise"
+								"name": "Promise",
+								"qualifiedName": "Promise",
+								"package": ".pnpm"
 							}
 						}
 					]
@@ -3032,7 +3758,6 @@
 			"groups": [
 				{
 					"title": "Methods",
-					"kind": 2048,
 					"children": [
 						192
 					]
@@ -3042,7 +3767,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/definitions.d.ts",
 					"line": 44,
-					"character": 42
+					"character": 17
 				}
 			]
 		},
@@ -3055,7 +3780,12 @@
 				"isExternal": true
 			},
 			"comment": {
-				"shortText": "Provides definitions for a set of language grammars."
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Provides definitions for a set of language grammars."
+					}
+				]
 			},
 			"children": [
 				{
@@ -3066,14 +3796,11 @@
 					"flags": {
 						"isExternal": true
 					},
-					"comment": {
-						"shortText": "Obtains the definition in an editor at the given point. This should return null if no definition is available."
-					},
 					"sources": [
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/definitions.d.ts",
 							"line": 41,
-							"character": 15
+							"character": 2
 						}
 					],
 					"type": {
@@ -3086,6 +3813,13 @@
 							"flags": {
 								"isExternal": true
 							},
+							"sources": [
+								{
+									"fileName": "node_modules/atom-ide-base/types-packages/definitions.d.ts",
+									"line": 41,
+									"character": 17
+								}
+							],
 							"signatures": [
 								{
 									"id": 188,
@@ -3094,6 +3828,14 @@
 									"kindString": "Call signature",
 									"flags": {
 										"isExternal": true
+									},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Obtains the definition in an editor at the given point. This should return null if no definition is available."
+											}
+										]
 									},
 									"parameters": [
 										{
@@ -3106,7 +3848,9 @@
 											},
 											"type": {
 												"type": "reference",
-												"name": "TextEditor"
+												"name": "TextEditor",
+												"qualifiedName": "TextEditor",
+												"package": "@types/atom"
 											}
 										},
 										{
@@ -3119,7 +3863,9 @@
 											},
 											"type": {
 												"type": "reference",
-												"name": "Point"
+												"name": "Point",
+												"qualifiedName": "Point",
+												"package": "@types/atom"
 											}
 										}
 									],
@@ -3140,12 +3886,16 @@
 													{
 														"type": "reference",
 														"id": 178,
-														"name": "DefinitionQueryResult"
+														"name": "DefinitionQueryResult",
+														"qualifiedName": "DefinitionQueryResult",
+														"package": "atom-ide-base"
 													}
 												]
 											}
 										],
-										"name": "Promise"
+										"name": "Promise",
+										"qualifiedName": "Promise",
+										"package": ".pnpm"
 									}
 								}
 							]
@@ -3164,7 +3914,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/definitions.d.ts",
 							"line": 38,
-							"character": 15
+							"character": 2
 						}
 					],
 					"type": {
@@ -3191,7 +3941,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/definitions.d.ts",
 							"line": 35,
-							"character": 6
+							"character": 2
 						}
 					],
 					"type": {
@@ -3208,13 +3958,18 @@
 						"isExternal": true
 					},
 					"comment": {
-						"shortText": "If there are multiple providers for a given grammar, the one with the highest priority will be used."
+						"summary": [
+							{
+								"kind": "text",
+								"text": "If there are multiple providers for a given grammar, the one with the highest priority will be used."
+							}
+						]
 					},
 					"sources": [
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/definitions.d.ts",
 							"line": 37,
-							"character": 10
+							"character": 2
 						}
 					],
 					"type": {
@@ -3234,7 +3989,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/definitions.d.ts",
 							"line": 39,
-							"character": 12
+							"character": 2
 						}
 					],
 					"type": {
@@ -3250,7 +4005,9 @@
 							},
 							{
 								"type": "reference",
-								"name": "RegExp"
+								"name": "RegExp",
+								"qualifiedName": "RegExp",
+								"package": ".pnpm"
 							}
 						]
 					}
@@ -3259,7 +4016,6 @@
 			"groups": [
 				{
 					"title": "Properties",
-					"kind": 1024,
 					"children": [
 						186,
 						184,
@@ -3273,7 +4029,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/definitions.d.ts",
 					"line": 34,
-					"character": 35
+					"character": 17
 				}
 			]
 		},
@@ -3286,7 +4042,12 @@
 				"isExternal": true
 			},
 			"comment": {
-				"shortText": "Definition queries supply a point. The returned queryRange is the range within which the returned definition is\nvalid. Typically queryRange spans the containing identifier around the query point. (If a null queryRange is\nreturned, the range of the word containing the point is used.)"
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Definition queries supply a point. The returned queryRange is the range within which the returned definition is\nvalid. Typically queryRange spans the containing identifier around the query point. (If a null queryRange is\nreturned, the range of the word containing the point is used.)"
+					}
+				]
 			},
 			"children": [
 				{
@@ -3298,13 +4059,18 @@
 						"isExternal": true
 					},
 					"comment": {
-						"shortText": "Must be non-empty."
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Must be non-empty."
+							}
+						]
 					},
 					"sources": [
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/definitions.d.ts",
 							"line": 30,
-							"character": 13
+							"character": 2
 						}
 					],
 					"type": {
@@ -3315,7 +4081,9 @@
 							"elementType": {
 								"type": "reference",
 								"id": 171,
-								"name": "Definition"
+								"name": "Definition",
+								"qualifiedName": "Definition",
+								"package": "atom-ide-base"
 							}
 						}
 					}
@@ -3332,7 +4100,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/definitions.d.ts",
 							"line": 28,
-							"character": 12
+							"character": 2
 						}
 					],
 					"type": {
@@ -3353,7 +4121,9 @@
 									"type": "array",
 									"elementType": {
 										"type": "reference",
-										"name": "Range"
+										"name": "Range",
+										"qualifiedName": "Range",
+										"package": "@types/atom"
 									}
 								}
 							}
@@ -3364,7 +4134,6 @@
 			"groups": [
 				{
 					"title": "Properties",
-					"kind": 1024,
 					"children": [
 						180,
 						179
@@ -3375,7 +4144,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/definitions.d.ts",
 					"line": 27,
-					"character": 38
+					"character": 17
 				}
 			]
 		},
@@ -3400,7 +4169,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/code-actions.d.ts",
 							"line": 10,
-							"character": 10
+							"character": 2
 						}
 					],
 					"type": {
@@ -3420,7 +4189,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/code-actions.d.ts",
 							"line": 8,
-							"character": 14
+							"character": 2
 						}
 					],
 					"type": {
@@ -3440,12 +4209,14 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/code-actions.d.ts",
 							"line": 12,
-							"character": 7
+							"character": 2
 						}
 					],
 					"type": {
 						"type": "reference",
-						"name": "Range"
+						"name": "Range",
+						"qualifiedName": "Range",
+						"package": "@types/atom"
 					}
 				},
 				{
@@ -3461,7 +4232,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/code-actions.d.ts",
 							"line": 11,
-							"character": 6
+							"character": 2
 						}
 					],
 					"type": {
@@ -3481,20 +4252,21 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/code-actions.d.ts",
 							"line": 9,
-							"character": 6
+							"character": 2
 						}
 					],
 					"type": {
 						"type": "reference",
 						"id": 78,
-						"name": "DiagnosticType"
+						"name": "DiagnosticType",
+						"qualifiedName": "DiagnosticType",
+						"package": "atom-ide-base"
 					}
 				}
 			],
 			"groups": [
 				{
 					"title": "Properties",
-					"kind": 1024,
 					"children": [
 						82,
 						80,
@@ -3508,7 +4280,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/code-actions.d.ts",
 					"line": 7,
-					"character": 27
+					"character": 17
 				}
 			]
 		},
@@ -3533,7 +4305,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/code-format.d.ts",
 							"line": 5,
-							"character": 18
+							"character": 2
 						}
 					],
 					"type": {
@@ -3546,6 +4318,13 @@
 							"flags": {
 								"isExternal": true
 							},
+							"sources": [
+								{
+									"fileName": "node_modules/atom-ide-base/types-packages/code-format.d.ts",
+									"line": 5,
+									"character": 20
+								}
+							],
 							"signatures": [
 								{
 									"id": 313,
@@ -3566,7 +4345,9 @@
 											},
 											"type": {
 												"type": "reference",
-												"name": "TextEditor"
+												"name": "TextEditor",
+												"qualifiedName": "TextEditor",
+												"package": "@types/atom"
 											}
 										},
 										{
@@ -3579,7 +4360,9 @@
 											},
 											"type": {
 												"type": "reference",
-												"name": "Range"
+												"name": "Range",
+												"qualifiedName": "Range",
+												"package": "@types/atom"
 											}
 										}
 									],
@@ -3591,11 +4374,15 @@
 												"elementType": {
 													"type": "reference",
 													"id": 342,
-													"name": "TextEdit"
+													"name": "TextEdit",
+													"qualifiedName": "TextEdit",
+													"package": "atom-ide-base"
 												}
 											}
 										],
-										"name": "Promise"
+										"name": "Promise",
+										"qualifiedName": "Promise",
+										"package": ".pnpm"
 									}
 								}
 							]
@@ -3614,7 +4401,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/code-format.d.ts",
 							"line": 7,
-							"character": 15
+							"character": 2
 						}
 					],
 					"type": {
@@ -3637,7 +4424,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/code-format.d.ts",
 							"line": 6,
-							"character": 10
+							"character": 2
 						}
 					],
 					"type": {
@@ -3649,7 +4436,6 @@
 			"groups": [
 				{
 					"title": "Properties",
-					"kind": 1024,
 					"children": [
 						311,
 						317,
@@ -3661,7 +4447,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/code-format.d.ts",
 					"line": 4,
-					"character": 39
+					"character": 17
 				}
 			]
 		},
@@ -3686,7 +4472,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/find-references.d.ts",
 							"line": 22,
-							"character": 9
+							"character": 2
 						}
 					],
 					"type": {
@@ -3706,7 +4492,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/find-references.d.ts",
 							"line": 23,
-							"character": 22
+							"character": 2
 						}
 					],
 					"type": {
@@ -3726,7 +4512,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/find-references.d.ts",
 							"line": 24,
-							"character": 12
+							"character": 2
 						}
 					],
 					"type": {
@@ -3734,7 +4520,9 @@
 						"elementType": {
 							"type": "reference",
 							"id": 207,
-							"name": "Reference"
+							"name": "Reference",
+							"qualifiedName": "Reference",
+							"package": "atom-ide-base"
 						}
 					}
 				},
@@ -3748,13 +4536,18 @@
 						"isOptional": true
 					},
 					"comment": {
-						"shortText": "Defaults to 'Symbol References'"
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Defaults to 'Symbol References'"
+							}
+						]
 					},
 					"sources": [
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/find-references.d.ts",
 							"line": 26,
-							"character": 7
+							"character": 2
 						}
 					],
 					"type": {
@@ -3774,7 +4567,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/find-references.d.ts",
 							"line": 21,
-							"character": 6
+							"character": 2
 						}
 					],
 					"type": {
@@ -3786,7 +4579,6 @@
 			"groups": [
 				{
 					"title": "Properties",
-					"kind": 1024,
 					"children": [
 						213,
 						214,
@@ -3800,7 +4592,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/find-references.d.ts",
 					"line": 20,
-					"character": 35
+					"character": 17
 				}
 			]
 		},
@@ -3825,7 +4617,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/find-references.d.ts",
 							"line": 31,
-							"character": 9
+							"character": 2
 						}
 					],
 					"type": {
@@ -3845,7 +4637,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/find-references.d.ts",
 							"line": 30,
-							"character": 6
+							"character": 2
 						}
 					],
 					"type": {
@@ -3857,7 +4649,6 @@
 			"groups": [
 				{
 					"title": "Properties",
-					"kind": 1024,
 					"children": [
 						219,
 						218
@@ -3868,7 +4659,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/find-references.d.ts",
 					"line": 29,
-					"character": 36
+					"character": 17
 				}
 			]
 		},
@@ -3889,6 +4680,13 @@
 					"flags": {
 						"isExternal": true
 					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/find-references.d.ts",
+							"line": 9,
+							"character": 2
+						}
+					],
 					"signatures": [
 						{
 							"id": 204,
@@ -3899,7 +4697,24 @@
 								"isExternal": true
 							},
 							"comment": {
-								"shortText": "`findReferences` will only be called if `isEditorSupported` previously returned true for the given Atom.TextEditor."
+								"summary": [
+									{
+										"kind": "code",
+										"text": "`findReferences`"
+									},
+									{
+										"kind": "text",
+										"text": " will only be called if "
+									},
+									{
+										"kind": "code",
+										"text": "`isEditorSupported`"
+									},
+									{
+										"kind": "text",
+										"text": " previously returned true for the given Atom.TextEditor."
+									}
+								]
 							},
 							"parameters": [
 								{
@@ -3912,7 +4727,9 @@
 									},
 									"type": {
 										"type": "reference",
-										"name": "TextEditor"
+										"name": "TextEditor",
+										"qualifiedName": "TextEditor",
+										"package": "@types/atom"
 									}
 								},
 								{
@@ -3925,7 +4742,9 @@
 									},
 									"type": {
 										"type": "reference",
-										"name": "Point"
+										"name": "Point",
+										"qualifiedName": "Point",
+										"package": "@types/atom"
 									}
 								}
 							],
@@ -3946,12 +4765,16 @@
 											{
 												"type": "reference",
 												"id": 220,
-												"name": "FindReferencesReturn"
+												"name": "FindReferencesReturn",
+												"qualifiedName": "FindReferencesReturn",
+												"package": "atom-ide-base"
 											}
 										]
 									}
 								],
-								"name": "Promise"
+								"name": "Promise",
+								"qualifiedName": "Promise",
+								"package": ".pnpm"
 							}
 						}
 					]
@@ -3964,6 +4787,13 @@
 					"flags": {
 						"isExternal": true
 					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/find-references.d.ts",
+							"line": 6,
+							"character": 2
+						}
+					],
 					"signatures": [
 						{
 							"id": 201,
@@ -3974,7 +4804,12 @@
 								"isExternal": true
 							},
 							"comment": {
-								"shortText": "Return true if your provider supports finding references for the provided Atom.TextEditor."
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Return true if your provider supports finding references for the provided Atom.TextEditor."
+									}
+								]
 							},
 							"parameters": [
 								{
@@ -3987,7 +4822,9 @@
 									},
 									"type": {
 										"type": "reference",
-										"name": "TextEditor"
+										"name": "TextEditor",
+										"qualifiedName": "TextEditor",
+										"package": "@types/atom"
 									}
 								}
 							],
@@ -4006,7 +4843,9 @@
 												"name": "boolean"
 											}
 										],
-										"name": "Promise"
+										"name": "Promise",
+										"qualifiedName": "Promise",
+										"package": ".pnpm"
 									}
 								]
 							}
@@ -4017,7 +4856,6 @@
 			"groups": [
 				{
 					"title": "Methods",
-					"kind": 2048,
 					"children": [
 						203,
 						200
@@ -4028,7 +4866,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/find-references.d.ts",
 					"line": 4,
-					"character": 39
+					"character": 17
 				}
 			]
 		},
@@ -4050,14 +4888,11 @@
 						"isExternal": true,
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Use this to provide a suggestion if it can have non-contiguous ranges. A primary use-case for this is Objective-C methods."
-					},
 					"sources": [
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/hyperclick.d.ts",
 							"line": 14,
-							"character": 15
+							"character": 2
 						}
 					],
 					"type": {
@@ -4070,6 +4905,13 @@
 							"flags": {
 								"isExternal": true
 							},
+							"sources": [
+								{
+									"fileName": "node_modules/atom-ide-base/types-packages/hyperclick.d.ts",
+									"line": 14,
+									"character": 18
+								}
+							],
 							"signatures": [
 								{
 									"id": 231,
@@ -4078,6 +4920,14 @@
 									"kindString": "Call signature",
 									"flags": {
 										"isExternal": true
+									},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Use this to provide a suggestion if it can have non-contiguous ranges. A primary use-case for this is Objective-C methods."
+											}
+										]
 									},
 									"parameters": [
 										{
@@ -4090,7 +4940,9 @@
 											},
 											"type": {
 												"type": "reference",
-												"name": "TextEditor"
+												"name": "TextEditor",
+												"qualifiedName": "TextEditor",
+												"package": "@types/atom"
 											}
 										},
 										{
@@ -4103,7 +4955,9 @@
 											},
 											"type": {
 												"type": "reference",
-												"name": "Point"
+												"name": "Point",
+												"qualifiedName": "Point",
+												"package": "@types/atom"
 											}
 										}
 									],
@@ -4124,12 +4978,16 @@
 													{
 														"type": "reference",
 														"id": 237,
-														"name": "HyperclickSuggestion"
+														"name": "HyperclickSuggestion",
+														"qualifiedName": "HyperclickSuggestion",
+														"package": "atom-ide-base"
 													}
 												]
 											}
 										],
-										"name": "Promise"
+										"name": "Promise",
+										"qualifiedName": "Promise",
+										"package": ".pnpm"
 									}
 								}
 							]
@@ -4145,14 +5003,11 @@
 						"isExternal": true,
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Use this to provide a suggestion for single-word matches. Optionally set `wordRegExp` to adjust word-matching."
-					},
 					"sources": [
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/hyperclick.d.ts",
 							"line": 5,
-							"character": 22
+							"character": 2
 						}
 					],
 					"type": {
@@ -4165,6 +5020,13 @@
 							"flags": {
 								"isExternal": true
 							},
+							"sources": [
+								{
+									"fileName": "node_modules/atom-ide-base/types-packages/hyperclick.d.ts",
+									"line": 5,
+									"character": 25
+								}
+							],
 							"signatures": [
 								{
 									"id": 224,
@@ -4173,6 +5035,22 @@
 									"kindString": "Call signature",
 									"flags": {
 										"isExternal": true
+									},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Use this to provide a suggestion for single-word matches. Optionally set "
+											},
+											{
+												"kind": "code",
+												"text": "`wordRegExp`"
+											},
+											{
+												"kind": "text",
+												"text": " to adjust word-matching."
+											}
+										]
 									},
 									"parameters": [
 										{
@@ -4185,7 +5063,9 @@
 											},
 											"type": {
 												"type": "reference",
-												"name": "TextEditor"
+												"name": "TextEditor",
+												"qualifiedName": "TextEditor",
+												"package": "@types/atom"
 											}
 										},
 										{
@@ -4211,7 +5091,9 @@
 											},
 											"type": {
 												"type": "reference",
-												"name": "Range"
+												"name": "Range",
+												"qualifiedName": "Range",
+												"package": "@types/atom"
 											}
 										}
 									],
@@ -4232,12 +5114,16 @@
 													{
 														"type": "reference",
 														"id": 237,
-														"name": "HyperclickSuggestion"
+														"name": "HyperclickSuggestion",
+														"qualifiedName": "HyperclickSuggestion",
+														"package": "atom-ide-base"
 													}
 												]
 											}
 										],
-										"name": "Promise"
+										"name": "Promise",
+										"qualifiedName": "Promise",
+										"package": ".pnpm"
 									}
 								}
 							]
@@ -4254,13 +5140,18 @@
 						"isOptional": true
 					},
 					"comment": {
-						"shortText": "Optionally, limit the set of grammar scopes the provider should apply to."
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Optionally, limit the set of grammar scopes the provider should apply to."
+							}
+						]
 					},
 					"sources": [
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/hyperclick.d.ts",
 							"line": 26,
-							"character": 15
+							"character": 2
 						}
 					],
 					"type": {
@@ -4280,13 +5171,18 @@
 						"isExternal": true
 					},
 					"comment": {
-						"shortText": "The higher this is, the more precedence the provider gets."
+						"summary": [
+							{
+								"kind": "text",
+								"text": "The higher this is, the more precedence the provider gets."
+							}
+						]
 					},
 					"sources": [
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/hyperclick.d.ts",
 							"line": 23,
-							"character": 10
+							"character": 2
 						}
 					],
 					"type": {
@@ -4304,13 +5200,18 @@
 						"isOptional": true
 					},
 					"comment": {
-						"shortText": "Must be unique. Used for analytics."
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Must be unique. Used for analytics."
+							}
+						]
 					},
 					"sources": [
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/hyperclick.d.ts",
 							"line": 20,
-							"character": 14
+							"character": 2
 						}
 					],
 					"type": {
@@ -4331,19 +5232,20 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/hyperclick.d.ts",
 							"line": 11,
-							"character": 12
+							"character": 2
 						}
 					],
 					"type": {
 						"type": "reference",
-						"name": "RegExp"
+						"name": "RegExp",
+						"qualifiedName": "RegExp",
+						"package": ".pnpm"
 					}
 				}
 			],
 			"groups": [
 				{
 					"title": "Properties",
-					"kind": 1024,
 					"children": [
 						229,
 						222,
@@ -4358,7 +5260,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/hyperclick.d.ts",
 					"line": 3,
-					"character": 35
+					"character": 17
 				}
 			]
 		},
@@ -4380,51 +5282,29 @@
 						"isExternal": true
 					},
 					"comment": {
-						"shortText": "The function to call when the underlined text is clicked."
+						"summary": [
+							{
+								"kind": "text",
+								"text": "The function to call when the underlined text is clicked."
+							}
+						]
 					},
 					"sources": [
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/hyperclick.d.ts",
 							"line": 34,
-							"character": 10
+							"character": 2
 						}
 					],
 					"type": {
 						"type": "union",
 						"types": [
 							{
-								"type": "reflection",
-								"declaration": {
-									"id": 240,
-									"name": "__type",
-									"kind": 65536,
-									"kindString": "Type literal",
-									"flags": {
-										"isExternal": true
-									},
-									"signatures": [
-										{
-											"id": 241,
-											"name": "__type",
-											"kind": 4096,
-											"kindString": "Call signature",
-											"flags": {
-												"isExternal": true
-											},
-											"type": {
-												"type": "intrinsic",
-												"name": "void"
-											}
-										}
-									]
-								}
-							},
-							{
 								"type": "array",
 								"elementType": {
 									"type": "reflection",
 									"declaration": {
-										"id": 242,
+										"id": 240,
 										"name": "__type",
 										"kind": 65536,
 										"kindString": "Type literal",
@@ -4433,7 +5313,7 @@
 										},
 										"children": [
 											{
-												"id": 245,
+												"id": 243,
 												"name": "callback",
 												"kind": 1024,
 												"kindString": "Property",
@@ -4444,22 +5324,29 @@
 													{
 														"fileName": "node_modules/atom-ide-base/types-packages/hyperclick.d.ts",
 														"line": 34,
-														"character": 79
+														"character": 71
 													}
 												],
 												"type": {
 													"type": "reflection",
 													"declaration": {
-														"id": 246,
+														"id": 244,
 														"name": "__type",
 														"kind": 65536,
 														"kindString": "Type literal",
 														"flags": {
 															"isExternal": true
 														},
+														"sources": [
+															{
+																"fileName": "node_modules/atom-ide-base/types-packages/hyperclick.d.ts",
+																"line": 34,
+																"character": 81
+															}
+														],
 														"signatures": [
 															{
-																"id": 247,
+																"id": 245,
 																"name": "__type",
 																"kind": 4096,
 																"kindString": "Call signature",
@@ -4476,7 +5363,7 @@
 												}
 											},
 											{
-												"id": 243,
+												"id": 241,
 												"name": "rightLabel",
 												"kind": 1024,
 												"kindString": "Property",
@@ -4488,7 +5375,7 @@
 													{
 														"fileName": "node_modules/atom-ide-base/types-packages/hyperclick.d.ts",
 														"line": 34,
-														"character": 45
+														"character": 35
 													}
 												],
 												"type": {
@@ -4497,7 +5384,7 @@
 												}
 											},
 											{
-												"id": 244,
+												"id": 242,
 												"name": "title",
 												"kind": 1024,
 												"kindString": "Property",
@@ -4508,7 +5395,7 @@
 													{
 														"fileName": "node_modules/atom-ide-base/types-packages/hyperclick.d.ts",
 														"line": 34,
-														"character": 61
+														"character": 56
 													}
 												],
 												"type": {
@@ -4520,15 +5407,55 @@
 										"groups": [
 											{
 												"title": "Properties",
-												"kind": 1024,
 												"children": [
-													245,
 													243,
-													244
+													241,
+													242
 												]
+											}
+										],
+										"sources": [
+											{
+												"fileName": "node_modules/atom-ide-base/types-packages/hyperclick.d.ts",
+												"line": 34,
+												"character": 33
 											}
 										]
 									}
+								}
+							},
+							{
+								"type": "reflection",
+								"declaration": {
+									"id": 246,
+									"name": "__type",
+									"kind": 65536,
+									"kindString": "Type literal",
+									"flags": {
+										"isExternal": true
+									},
+									"sources": [
+										{
+											"fileName": "node_modules/atom-ide-base/types-packages/hyperclick.d.ts",
+											"line": 34,
+											"character": 13
+										}
+									],
+									"signatures": [
+										{
+											"id": 247,
+											"name": "__type",
+											"kind": 4096,
+											"kindString": "Call signature",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "void"
+											}
+										}
+									]
 								}
 							}
 						]
@@ -4543,13 +5470,18 @@
 						"isExternal": true
 					},
 					"comment": {
-						"shortText": "The range(s) to underline to provide as a visual cue for clicking."
+						"summary": [
+							{
+								"kind": "text",
+								"text": "The range(s) to underline to provide as a visual cue for clicking."
+							}
+						]
 					},
 					"sources": [
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/hyperclick.d.ts",
 							"line": 31,
-							"character": 7
+							"character": 2
 						}
 					],
 					"type": {
@@ -4557,13 +5489,17 @@
 						"types": [
 							{
 								"type": "reference",
-								"name": "Range"
+								"name": "Range",
+								"qualifiedName": "Range",
+								"package": "@types/atom"
 							},
 							{
 								"type": "array",
 								"elementType": {
 									"type": "reference",
-									"name": "Range"
+									"name": "Range",
+									"qualifiedName": "Range",
+									"package": "@types/atom"
 								}
 							}
 						]
@@ -4573,7 +5509,6 @@
 			"groups": [
 				{
 					"title": "Properties",
-					"kind": 1024,
 					"children": [
 						239,
 						238
@@ -4584,7 +5519,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/hyperclick.d.ts",
 					"line": 29,
-					"character": 37
+					"character": 17
 				}
 			]
 		},
@@ -4597,7 +5532,12 @@
 				"isExternal": true
 			},
 			"comment": {
-				"shortText": "Borrowed from the LSP API."
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Borrowed from the LSP API."
+					}
+				]
 			},
 			"children": [
 				{
@@ -4612,7 +5552,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
 							"line": 52,
-							"character": 6
+							"character": 2
 						}
 					],
 					"type": {
@@ -4632,7 +5572,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
 							"line": 53,
-							"character": 7
+							"character": 2
 						}
 					],
 					"type": {
@@ -4644,7 +5584,6 @@
 			"groups": [
 				{
 					"title": "Properties",
-					"kind": 1024,
 					"children": [
 						152,
 						153
@@ -4655,7 +5594,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
 					"line": 51,
-					"character": 37
+					"character": 17
 				}
 			]
 		},
@@ -4668,7 +5607,12 @@
 				"isExternal": true
 			},
 			"comment": {
-				"shortText": "The markdown service object"
+				"summary": [
+					{
+						"kind": "text",
+						"text": "The markdown service object"
+					}
+				]
 			},
 			"children": [
 				{
@@ -4679,6 +5623,13 @@
 					"flags": {
 						"isExternal": true
 					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/markdown-service.d.ts",
+							"line": 14,
+							"character": 2
+						}
+					],
 					"signatures": [
 						{
 							"id": 306,
@@ -4689,8 +5640,23 @@
 								"isExternal": true
 							},
 							"comment": {
-								"shortText": "Renders markdown to safe HTML asynchronously",
-								"returns": "The html string containing the result\n"
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Renders markdown to safe HTML asynchronously"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@returns",
+										"content": [
+											{
+												"kind": "text",
+												"text": "The html string containing the result"
+											}
+										]
+									}
+								]
 							},
 							"parameters": [
 								{
@@ -4702,7 +5668,12 @@
 										"isExternal": true
 									},
 									"comment": {
-										"text": "The markdown text to render"
+										"summary": [
+											{
+												"kind": "text",
+												"text": "The markdown text to render"
+											}
+										]
 									},
 									"type": {
 										"type": "intrinsic",
@@ -4719,7 +5690,12 @@
 										"isOptional": true
 									},
 									"comment": {
-										"text": "Scope name used for highlighting the code"
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Scope name used for highlighting the code"
+											}
+										]
 									},
 									"type": {
 										"type": "intrinsic",
@@ -4738,7 +5714,9 @@
 									"type": {
 										"type": "reference",
 										"id": 303,
-										"name": "DOMPurifyConfig"
+										"name": "DOMPurifyConfig",
+										"qualifiedName": "DOMPurifyConfig",
+										"package": "atom-ide-base"
 									}
 								}
 							],
@@ -4750,7 +5728,9 @@
 										"name": "string"
 									}
 								],
-								"name": "Promise"
+								"name": "Promise",
+								"qualifiedName": "Promise",
+								"package": ".pnpm"
 							}
 						}
 					]
@@ -4759,7 +5739,6 @@
 			"groups": [
 				{
 					"title": "Methods",
-					"kind": 2048,
 					"children": [
 						305
 					]
@@ -4769,7 +5748,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/markdown-service.d.ts",
 					"line": 5,
-					"character": 32
+					"character": 17
 				}
 			]
 		},
@@ -4794,7 +5773,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
 							"line": 65,
-							"character": 15
+							"character": 2
 						}
 					],
 					"type": {
@@ -4802,7 +5781,9 @@
 						"elementType": {
 							"type": "reference",
 							"id": 158,
-							"name": "MarkedString"
+							"name": "MarkedString",
+							"qualifiedName": "MarkedString",
+							"package": "atom-ide-base"
 						}
 					}
 				},
@@ -4819,7 +5800,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
 							"line": 67,
-							"character": 10
+							"character": 2
 						}
 					],
 					"type": {
@@ -4839,19 +5820,20 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
 							"line": 66,
-							"character": 7
+							"character": 2
 						}
 					],
 					"type": {
 						"type": "reference",
-						"name": "Range"
+						"name": "Range",
+						"qualifiedName": "Range",
+						"package": "@types/atom"
 					}
 				}
 			],
 			"groups": [
 				{
 					"title": "Properties",
-					"kind": 1024,
 					"children": [
 						160,
 						162,
@@ -4863,7 +5845,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
 					"line": 64,
-					"character": 36
+					"character": 17
 				}
 			]
 		},
@@ -4888,13 +5870,15 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
 							"line": 46,
-							"character": 6
+							"character": 2
 						}
 					],
 					"type": {
 						"type": "reference",
 						"id": 295,
-						"name": "MarkupKind"
+						"name": "MarkupKind",
+						"qualifiedName": "MarkupKind",
+						"package": "atom-ide-base"
 					}
 				},
 				{
@@ -4909,7 +5893,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
 							"line": 47,
-							"character": 7
+							"character": 2
 						}
 					],
 					"type": {
@@ -4921,7 +5905,6 @@
 			"groups": [
 				{
 					"title": "Properties",
-					"kind": 1024,
 					"children": [
 						297,
 						298
@@ -4932,7 +5915,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
 					"line": 45,
-					"character": 30
+					"character": 17
 				}
 			]
 		},
@@ -4958,7 +5941,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
 							"line": 26,
-							"character": 6
+							"character": 2
 						}
 					],
 					"type": {
@@ -4971,7 +5954,9 @@
 							{
 								"type": "reference",
 								"id": 398,
-								"name": "MessageKind"
+								"name": "MessageKind",
+								"qualifiedName": "MessageKind",
+								"package": "atom-ide-base"
 							}
 						]
 					}
@@ -4988,13 +5973,15 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
 							"line": 24,
-							"character": 7
+							"character": 2
 						}
 					],
 					"type": {
 						"type": "reference",
 						"id": 396,
-						"name": "Level"
+						"name": "Level",
+						"qualifiedName": "Level",
+						"package": "atom-ide-base"
 					}
 				},
 				{
@@ -5010,7 +5997,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
 							"line": 27,
-							"character": 11
+							"character": 2
 						}
 					],
 					"type": {
@@ -5040,7 +6027,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
 							"line": 25,
-							"character": 6
+							"character": 2
 						}
 					],
 					"type": {
@@ -5072,7 +6059,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
 							"line": 23,
-							"character": 6
+							"character": 2
 						}
 					],
 					"type": {
@@ -5084,7 +6071,6 @@
 			"groups": [
 				{
 					"title": "Properties",
-					"kind": 1024,
 					"children": [
 						393,
 						391,
@@ -5098,7 +6084,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
 					"line": 22,
-					"character": 24
+					"character": 17
 				}
 			]
 		},
@@ -5124,7 +6110,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
 							"line": 39,
-							"character": 15
+							"character": 2
 						}
 					],
 					"type": {
@@ -5147,7 +6133,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
 							"line": 38,
-							"character": 10
+							"character": 2
 						}
 					],
 					"type": {
@@ -5167,7 +6153,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
 							"line": 40,
-							"character": 14
+							"character": 2
 						}
 					],
 					"type": {
@@ -5183,6 +6169,13 @@
 					"flags": {
 						"isExternal": true
 					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
+							"line": 41,
+							"character": 2
+						}
+					],
 					"signatures": [
 						{
 							"id": 146,
@@ -5203,7 +6196,9 @@
 									},
 									"type": {
 										"type": "reference",
-										"name": "TextEditor"
+										"name": "TextEditor",
+										"qualifiedName": "TextEditor",
+										"package": "@types/atom"
 									}
 								},
 								{
@@ -5216,7 +6211,9 @@
 									},
 									"type": {
 										"type": "reference",
-										"name": "Point"
+										"name": "Point",
+										"qualifiedName": "Point",
+										"package": "@types/atom"
 									}
 								},
 								{
@@ -5233,10 +6230,14 @@
 											{
 												"type": "reference",
 												"id": 170,
-												"name": "ModifierKey"
+												"name": "ModifierKey",
+												"qualifiedName": "ModifierKey",
+												"package": "atom-ide-base"
 											}
 										],
-										"name": "Set"
+										"name": "Set",
+										"qualifiedName": "Set",
+										"package": ".pnpm"
 									}
 								}
 							],
@@ -5257,12 +6258,16 @@
 											{
 												"type": "reference",
 												"id": 169,
-												"name": "Datatip"
+												"name": "Datatip",
+												"qualifiedName": "Datatip",
+												"package": "atom-ide-base"
 											}
 										]
 									}
 								],
-								"name": "Promise"
+								"name": "Promise",
+								"qualifiedName": "Promise",
+								"package": ".pnpm"
 							}
 						}
 					]
@@ -5271,7 +6276,6 @@
 			"groups": [
 				{
 					"title": "Properties",
-					"kind": 1024,
 					"children": [
 						143,
 						142,
@@ -5280,7 +6284,6 @@
 				},
 				{
 					"title": "Methods",
-					"kind": 2048,
 					"children": [
 						145
 					]
@@ -5290,7 +6293,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
 					"line": 37,
-					"character": 40
+					"character": 17
 				}
 			]
 		},
@@ -5315,7 +6318,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/code-format.d.ts",
 							"line": 17,
-							"character": 14
+							"character": 2
 						}
 					],
 					"type": {
@@ -5328,6 +6331,13 @@
 							"flags": {
 								"isExternal": true
 							},
+							"sources": [
+								{
+									"fileName": "node_modules/atom-ide-base/types-packages/code-format.d.ts",
+									"line": 17,
+									"character": 16
+								}
+							],
 							"signatures": [
 								{
 									"id": 329,
@@ -5348,7 +6358,9 @@
 											},
 											"type": {
 												"type": "reference",
-												"name": "TextEditor"
+												"name": "TextEditor",
+												"qualifiedName": "TextEditor",
+												"package": "@types/atom"
 											}
 										}
 									],
@@ -5360,11 +6372,15 @@
 												"elementType": {
 													"type": "reference",
 													"id": 342,
-													"name": "TextEdit"
+													"name": "TextEdit",
+													"qualifiedName": "TextEdit",
+													"package": "atom-ide-base"
 												}
 											}
 										],
-										"name": "Promise"
+										"name": "Promise",
+										"qualifiedName": "Promise",
+										"package": ".pnpm"
 									}
 								}
 							]
@@ -5383,7 +6399,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/code-format.d.ts",
 							"line": 19,
-							"character": 15
+							"character": 2
 						}
 					],
 					"type": {
@@ -5406,7 +6422,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/code-format.d.ts",
 							"line": 18,
-							"character": 10
+							"character": 2
 						}
 					],
 					"type": {
@@ -5418,7 +6434,6 @@
 			"groups": [
 				{
 					"title": "Properties",
-					"kind": 1024,
 					"children": [
 						327,
 						332,
@@ -5430,7 +6445,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/code-format.d.ts",
 					"line": 16,
-					"character": 41
+					"character": 17
 				}
 			]
 		},
@@ -5455,7 +6470,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/code-format.d.ts",
 							"line": 23,
-							"character": 18
+							"character": 2
 						}
 					],
 					"type": {
@@ -5468,6 +6483,13 @@
 							"flags": {
 								"isExternal": true
 							},
+							"sources": [
+								{
+									"fileName": "node_modules/atom-ide-base/types-packages/code-format.d.ts",
+									"line": 23,
+									"character": 20
+								}
+							],
 							"signatures": [
 								{
 									"id": 336,
@@ -5488,7 +6510,9 @@
 											},
 											"type": {
 												"type": "reference",
-												"name": "TextEditor"
+												"name": "TextEditor",
+												"qualifiedName": "TextEditor",
+												"package": "@types/atom"
 											}
 										},
 										{
@@ -5501,7 +6525,9 @@
 											},
 											"type": {
 												"type": "reference",
-												"name": "Point"
+												"name": "Point",
+												"qualifiedName": "Point",
+												"package": "@types/atom"
 											}
 										},
 										{
@@ -5526,11 +6552,15 @@
 												"elementType": {
 													"type": "reference",
 													"id": 342,
-													"name": "TextEdit"
+													"name": "TextEdit",
+													"qualifiedName": "TextEdit",
+													"package": "atom-ide-base"
 												}
 											}
 										],
-										"name": "Promise"
+										"name": "Promise",
+										"qualifiedName": "Promise",
+										"package": ".pnpm"
 									}
 								}
 							]
@@ -5549,7 +6579,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/code-format.d.ts",
 							"line": 25,
-							"character": 15
+							"character": 2
 						}
 					],
 					"type": {
@@ -5572,7 +6602,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/code-format.d.ts",
 							"line": 24,
-							"character": 10
+							"character": 2
 						}
 					],
 					"type": {
@@ -5584,7 +6614,6 @@
 			"groups": [
 				{
 					"title": "Properties",
-					"kind": 1024,
 					"children": [
 						334,
 						341,
@@ -5596,7 +6625,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/code-format.d.ts",
 					"line": 22,
-					"character": 41
+					"character": 17
 				}
 			]
 		},
@@ -5621,7 +6650,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
 							"line": 33,
-							"character": 14
+							"character": 2
 						}
 					],
 					"type": {
@@ -5629,7 +6658,9 @@
 						"elementType": {
 							"type": "reference",
 							"id": 256,
-							"name": "OutlineTree"
+							"name": "OutlineTree",
+							"qualifiedName": "OutlineTree",
+							"package": "atom-ide-base"
 						}
 					}
 				}
@@ -5637,7 +6668,6 @@
 			"groups": [
 				{
 					"title": "Properties",
-					"kind": 1024,
 					"children": [
 						267
 					]
@@ -5647,7 +6677,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
 					"line": 32,
-					"character": 24
+					"character": 17
 				}
 			]
 		},
@@ -5672,7 +6702,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
 							"line": 7,
-							"character": 15
+							"character": 2
 						}
 					],
 					"type": {
@@ -5699,7 +6729,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
 							"line": 4,
-							"character": 6
+							"character": 2
 						}
 					],
 					"type": {
@@ -5716,13 +6746,18 @@
 						"isExternal": true
 					},
 					"comment": {
-						"shortText": "If there are multiple providers for a given grammar, the one with the highest priority will be used."
+						"summary": [
+							{
+								"kind": "text",
+								"text": "If there are multiple providers for a given grammar, the one with the highest priority will be used."
+							}
+						]
 					},
 					"sources": [
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
 							"line": 6,
-							"character": 10
+							"character": 2
 						}
 					],
 					"type": {
@@ -5743,7 +6778,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
 							"line": 8,
-							"character": 14
+							"character": 2
 						}
 					],
 					"type": {
@@ -5759,6 +6794,13 @@
 					"flags": {
 						"isExternal": true
 					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
+							"line": 9,
+							"character": 2
+						}
+					],
 					"signatures": [
 						{
 							"id": 254,
@@ -5779,7 +6821,9 @@
 									},
 									"type": {
 										"type": "reference",
-										"name": "TextEditor"
+										"name": "TextEditor",
+										"qualifiedName": "TextEditor",
+										"package": "@types/atom"
 									}
 								}
 							],
@@ -5800,12 +6844,16 @@
 											{
 												"type": "reference",
 												"id": 266,
-												"name": "Outline"
+												"name": "Outline",
+												"qualifiedName": "Outline",
+												"package": "atom-ide-base"
 											}
 										]
 									}
 								],
-								"name": "Promise"
+								"name": "Promise",
+								"qualifiedName": "Promise",
+								"package": ".pnpm"
 							}
 						}
 					]
@@ -5814,7 +6862,6 @@
 			"groups": [
 				{
 					"title": "Properties",
-					"kind": 1024,
 					"children": [
 						251,
 						249,
@@ -5824,7 +6871,6 @@
 				},
 				{
 					"title": "Methods",
-					"kind": 2048,
 					"children": [
 						253
 					]
@@ -5834,7 +6880,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
 					"line": 3,
-					"character": 32
+					"character": 17
 				}
 			]
 		},
@@ -5859,7 +6905,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
 							"line": 29,
-							"character": 10
+							"character": 2
 						}
 					],
 					"type": {
@@ -5867,7 +6913,9 @@
 						"elementType": {
 							"type": "reference",
 							"id": 256,
-							"name": "OutlineTree"
+							"name": "OutlineTree",
+							"qualifiedName": "OutlineTree",
+							"package": "atom-ide-base"
 						}
 					}
 				},
@@ -5884,12 +6932,14 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
 							"line": 27,
-							"character": 13
+							"character": 2
 						}
 					],
 					"type": {
 						"type": "reference",
-						"name": "Point"
+						"name": "Point",
+						"qualifiedName": "Point",
+						"package": "@types/atom"
 					}
 				},
 				{
@@ -5902,13 +6952,18 @@
 						"isOptional": true
 					},
 					"comment": {
-						"shortText": "From Atom.Octicon or Atom.OcticonsPrivate (types not allowed over rpc so we use string)"
+						"summary": [
+							{
+								"kind": "text",
+								"text": "From Atom.Octicon or Atom.OcticonsPrivate (types not allowed over rpc so we use string)"
+							}
+						]
 					},
 					"sources": [
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
 							"line": 14,
-							"character": 6
+							"character": 2
 						}
 					],
 					"type": {
@@ -5926,19 +6981,26 @@
 						"isOptional": true
 					},
 					"comment": {
-						"shortText": "Kind you can pass to the UI for theming"
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Kind you can pass to the UI for theming"
+							}
+						]
 					},
 					"sources": [
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
 							"line": 16,
-							"character": 6
+							"character": 2
 						}
 					],
 					"type": {
 						"type": "reference",
 						"id": 268,
-						"name": "OutlineTreeKind"
+						"name": "OutlineTreeKind",
+						"qualifiedName": "OutlineTreeKind",
+						"package": "atom-ide-base"
 					}
 				},
 				{
@@ -5954,12 +7016,14 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
 							"line": 28,
-							"character": 17
+							"character": 2
 						}
 					],
 					"type": {
 						"type": "reference",
-						"name": "Point"
+						"name": "Point",
+						"qualifiedName": "Point",
+						"package": "@types/atom"
 					}
 				},
 				{
@@ -5972,13 +7036,42 @@
 						"isOptional": true
 					},
 					"comment": {
-						"shortText": "Must have `plainText` or the `tokenizedText` property. If both are present, `tokenizedText` is preferred."
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Must have "
+							},
+							{
+								"kind": "code",
+								"text": "`plainText`"
+							},
+							{
+								"kind": "text",
+								"text": " or the "
+							},
+							{
+								"kind": "code",
+								"text": "`tokenizedText`"
+							},
+							{
+								"kind": "text",
+								"text": " property. If both are present, "
+							},
+							{
+								"kind": "code",
+								"text": "`tokenizedText`"
+							},
+							{
+								"kind": "text",
+								"text": " is preferred."
+							}
+						]
 					},
 					"sources": [
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
 							"line": 19,
-							"character": 11
+							"character": 2
 						}
 					],
 					"type": {
@@ -5996,13 +7089,18 @@
 						"isOptional": true
 					},
 					"comment": {
-						"shortText": "If user has atom-ide-base-outline-view.nameOnly then representativeName is used instead."
+						"summary": [
+							{
+								"kind": "text",
+								"text": "If user has atom-ide-base-outline-view.nameOnly then representativeName is used instead."
+							}
+						]
 					},
 					"sources": [
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
 							"line": 24,
-							"character": 20
+							"character": 2
 						}
 					],
 					"type": {
@@ -6022,12 +7120,14 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
 							"line": 26,
-							"character": 15
+							"character": 2
 						}
 					],
 					"type": {
 						"type": "reference",
-						"name": "Point"
+						"name": "Point",
+						"qualifiedName": "Point",
+						"package": "@types/atom"
 					}
 				},
 				{
@@ -6040,26 +7140,56 @@
 						"isOptional": true
 					},
 					"comment": {
-						"shortText": "Must have `plainText` or the `tokenizedText` property. If both are present, `tokenizedText` is preferred."
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Must have "
+							},
+							{
+								"kind": "code",
+								"text": "`plainText`"
+							},
+							{
+								"kind": "text",
+								"text": " or the "
+							},
+							{
+								"kind": "code",
+								"text": "`tokenizedText`"
+							},
+							{
+								"kind": "text",
+								"text": " property. If both are present, "
+							},
+							{
+								"kind": "code",
+								"text": "`tokenizedText`"
+							},
+							{
+								"kind": "text",
+								"text": " is preferred."
+							}
+						]
 					},
 					"sources": [
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
 							"line": 21,
-							"character": 15
+							"character": 2
 						}
 					],
 					"type": {
 						"type": "reference",
 						"id": 273,
-						"name": "TokenizedText"
+						"name": "TokenizedText",
+						"qualifiedName": "TokenizedText",
+						"package": "atom-ide-base"
 					}
 				}
 			],
 			"groups": [
 				{
 					"title": "Properties",
-					"kind": 1024,
 					"children": [
 						265,
 						263,
@@ -6077,7 +7207,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
 					"line": 12,
-					"character": 28
+					"character": 17
 				}
 			]
 		},
@@ -6100,19 +7230,26 @@
 						"isOptional": true
 					},
 					"comment": {
-						"shortText": "Defaults to 'end-of-line'."
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Defaults to 'end-of-line'."
+							}
+						]
 					},
 					"sources": [
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
 							"line": 11,
-							"character": 10
+							"character": 2
 						}
 					],
 					"type": {
 						"type": "reference",
 						"id": 128,
-						"name": "PinnedDatatipPosition"
+						"name": "PinnedDatatipPosition",
+						"qualifiedName": "PinnedDatatipPosition",
+						"package": "atom-ide-base"
 					}
 				},
 				{
@@ -6125,13 +7262,18 @@
 						"isOptional": true
 					},
 					"comment": {
-						"shortText": "Defaults to true."
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Defaults to true."
+							}
+						]
 					},
 					"sources": [
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
 							"line": 13,
-							"character": 20
+							"character": 2
 						}
 					],
 					"type": {
@@ -6143,7 +7285,6 @@
 			"groups": [
 				{
 					"title": "Properties",
-					"kind": 1024,
 					"children": [
 						126,
 						127
@@ -6154,7 +7295,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
 					"line": 9,
-					"character": 37
+					"character": 17
 				}
 			]
 		},
@@ -6177,13 +7318,18 @@
 						"isOptional": true
 					},
 					"comment": {
-						"shortText": "Omitting grammarScopes implies that the provider applies to all grammars."
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Omitting grammarScopes implies that the provider applies to all grammars."
+							}
+						]
 					},
 					"sources": [
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/main.d.ts",
 							"line": 38,
-							"character": 15
+							"character": 2
 						}
 					],
 					"type": {
@@ -6203,13 +7349,18 @@
 						"isExternal": true
 					},
 					"comment": {
-						"shortText": "Providers with higher priorities will be preferred over lower ones."
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Providers with higher priorities will be preferred over lower ones."
+							}
+						]
 					},
 					"sources": [
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/main.d.ts",
 							"line": 36,
-							"character": 10
+							"character": 2
 						}
 					],
 					"type": {
@@ -6221,7 +7372,6 @@
 			"groups": [
 				{
 					"title": "Properties",
-					"kind": 1024,
 					"children": [
 						3,
 						2
@@ -6232,7 +7382,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/main.d.ts",
 					"line": 34,
-					"character": 31
+					"character": 17
 				}
 			]
 		},
@@ -6257,7 +7407,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/code-format.d.ts",
 							"line": 11,
-							"character": 12
+							"character": 2
 						}
 					],
 					"type": {
@@ -6270,6 +7420,13 @@
 							"flags": {
 								"isExternal": true
 							},
+							"sources": [
+								{
+									"fileName": "node_modules/atom-ide-base/types-packages/code-format.d.ts",
+									"line": 11,
+									"character": 14
+								}
+							],
 							"signatures": [
 								{
 									"id": 321,
@@ -6290,7 +7447,9 @@
 											},
 											"type": {
 												"type": "reference",
-												"name": "TextEditor"
+												"name": "TextEditor",
+												"qualifiedName": "TextEditor",
+												"package": "@types/atom"
 											}
 										},
 										{
@@ -6303,7 +7462,9 @@
 											},
 											"type": {
 												"type": "reference",
-												"name": "Range"
+												"name": "Range",
+												"qualifiedName": "Range",
+												"package": "@types/atom"
 											}
 										}
 									],
@@ -6315,11 +7476,15 @@
 												"elementType": {
 													"type": "reference",
 													"id": 342,
-													"name": "TextEdit"
+													"name": "TextEdit",
+													"qualifiedName": "TextEdit",
+													"package": "atom-ide-base"
 												}
 											}
 										],
-										"name": "Promise"
+										"name": "Promise",
+										"qualifiedName": "Promise",
+										"package": ".pnpm"
 									}
 								}
 							]
@@ -6338,7 +7503,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/code-format.d.ts",
 							"line": 13,
-							"character": 15
+							"character": 2
 						}
 					],
 					"type": {
@@ -6361,7 +7526,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/code-format.d.ts",
 							"line": 12,
-							"character": 10
+							"character": 2
 						}
 					],
 					"type": {
@@ -6373,7 +7538,6 @@
 			"groups": [
 				{
 					"title": "Properties",
-					"kind": 1024,
 					"children": [
 						319,
 						325,
@@ -6385,7 +7549,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/code-format.d.ts",
 					"line": 10,
-					"character": 40
+					"character": 17
 				}
 			]
 		},
@@ -6406,14 +7570,11 @@
 					"flags": {
 						"isExternal": true
 					},
-					"comment": {
-						"shortText": "React component"
-					},
 					"sources": [
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
 							"line": 74,
-							"character": 11
+							"character": 2
 						}
 					],
 					"type": {
@@ -6426,6 +7587,13 @@
 							"flags": {
 								"isExternal": true
 							},
+							"sources": [
+								{
+									"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
+									"line": 74,
+									"character": 13
+								}
+							],
 							"signatures": [
 								{
 									"id": 166,
@@ -6435,9 +7603,19 @@
 									"flags": {
 										"isExternal": true
 									},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "React component"
+											}
+										]
+									},
 									"type": {
 										"type": "reference",
-										"name": "Element"
+										"name": "Element",
+										"qualifiedName": "global.JSX.Element",
+										"package": "@types/react"
 									}
 								}
 							]
@@ -6457,7 +7635,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
 							"line": 76,
-							"character": 10
+							"character": 2
 						}
 					],
 					"type": {
@@ -6477,19 +7655,20 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
 							"line": 75,
-							"character": 7
+							"character": 2
 						}
 					],
 					"type": {
 						"type": "reference",
-						"name": "Range"
+						"name": "Range",
+						"qualifiedName": "Range",
+						"package": "@types/atom"
 					}
 				}
 			],
 			"groups": [
 				{
 					"title": "Properties",
-					"kind": 1024,
 					"children": [
 						164,
 						168,
@@ -6501,7 +7680,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
 					"line": 70,
-					"character": 38
+					"character": 17
 				}
 			]
 		},
@@ -6526,7 +7705,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/refactor.d.ts",
 							"line": 6,
-							"character": 15
+							"character": 2
 						}
 					],
 					"type": {
@@ -6549,7 +7728,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/refactor.d.ts",
 							"line": 7,
-							"character": 10
+							"character": 2
 						}
 					],
 					"type": {
@@ -6566,6 +7745,13 @@
 						"isExternal": true,
 						"isOptional": true
 					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/refactor.d.ts",
+							"line": 8,
+							"character": 2
+						}
+					],
 					"signatures": [
 						{
 							"id": 350,
@@ -6586,7 +7772,9 @@
 									},
 									"type": {
 										"type": "reference",
-										"name": "TextEditor"
+										"name": "TextEditor",
+										"qualifiedName": "TextEditor",
+										"package": "@types/atom"
 									}
 								},
 								{
@@ -6599,7 +7787,9 @@
 									},
 									"type": {
 										"type": "reference",
-										"name": "Point"
+										"name": "Point",
+										"qualifiedName": "Point",
+										"package": "@types/atom"
 									}
 								},
 								{
@@ -6638,16 +7828,22 @@
 														"elementType": {
 															"type": "reference",
 															"id": 342,
-															"name": "TextEdit"
+															"name": "TextEdit",
+															"qualifiedName": "TextEdit",
+															"package": "atom-ide-base"
 														}
 													}
 												],
-												"name": "Map"
+												"name": "Map",
+												"qualifiedName": "Map",
+												"package": ".pnpm"
 											}
 										]
 									}
 								],
-								"name": "Promise"
+								"name": "Promise",
+								"qualifiedName": "Promise",
+								"package": ".pnpm"
 							}
 						}
 					]
@@ -6656,7 +7852,6 @@
 			"groups": [
 				{
 					"title": "Properties",
-					"kind": 1024,
 					"children": [
 						347,
 						348
@@ -6664,7 +7859,6 @@
 				},
 				{
 					"title": "Methods",
-					"kind": 2048,
 					"children": [
 						349
 					]
@@ -6674,7 +7868,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/refactor.d.ts",
 					"line": 5,
-					"character": 33
+					"character": 17
 				}
 			]
 		},
@@ -6696,13 +7890,18 @@
 						"isExternal": true
 					},
 					"comment": {
-						"shortText": "Name of calling method/function/symbol"
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Name of calling method/function/symbol"
+							}
+						]
 					},
 					"sources": [
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/find-references.d.ts",
 							"line": 16,
-							"character": 6
+							"character": 2
 						}
 					],
 					"type": {
@@ -6735,12 +7934,14 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/find-references.d.ts",
 							"line": 17,
-							"character": 7
+							"character": 2
 						}
 					],
 					"type": {
 						"type": "reference",
-						"name": "Range"
+						"name": "Range",
+						"qualifiedName": "Range",
+						"package": "@types/atom"
 					}
 				},
 				{
@@ -6752,13 +7953,18 @@
 						"isExternal": true
 					},
 					"comment": {
-						"shortText": "URI of the file path"
+						"summary": [
+							{
+								"kind": "text",
+								"text": "URI of the file path"
+							}
+						]
 					},
 					"sources": [
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/find-references.d.ts",
 							"line": 14,
-							"character": 5
+							"character": 2
 						}
 					],
 					"type": {
@@ -6770,7 +7976,6 @@
 			"groups": [
 				{
 					"title": "Properties",
-					"kind": 1024,
 					"children": [
 						209,
 						210,
@@ -6782,7 +7987,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/find-references.d.ts",
 					"line": 12,
-					"character": 26
+					"character": 17
 				}
 			]
 		},
@@ -6808,7 +8013,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
 							"line": 38,
-							"character": 15
+							"character": 2
 						}
 					],
 					"type": {
@@ -6825,7 +8030,9 @@
 							{
 								"type": "reference",
 								"id": 296,
-								"name": "MarkupContent"
+								"name": "MarkupContent",
+								"qualifiedName": "MarkupContent",
+								"package": "atom-ide-base"
 							}
 						]
 					}
@@ -6842,7 +8049,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
 							"line": 37,
-							"character": 7
+							"character": 2
 						}
 					],
 					"type": {
@@ -6863,7 +8070,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
 							"line": 39,
-							"character": 12
+							"character": 2
 						}
 					],
 					"type": {
@@ -6871,7 +8078,9 @@
 						"elementType": {
 							"type": "reference",
 							"id": 299,
-							"name": "SignatureParameter"
+							"name": "SignatureParameter",
+							"qualifiedName": "SignatureParameter",
+							"package": "atom-ide-base"
 						}
 					}
 				}
@@ -6879,7 +8088,6 @@
 			"groups": [
 				{
 					"title": "Properties",
-					"kind": 1024,
 					"children": [
 						292,
 						291,
@@ -6891,7 +8099,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
 					"line": 36,
-					"character": 26
+					"character": 17
 				}
 			]
 		},
@@ -6917,7 +8125,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
 							"line": 33,
-							"character": 17
+							"character": 2
 						}
 					],
 					"type": {
@@ -6947,7 +8155,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
 							"line": 32,
-							"character": 17
+							"character": 2
 						}
 					],
 					"type": {
@@ -6976,7 +8184,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
 							"line": 31,
-							"character": 12
+							"character": 2
 						}
 					],
 					"type": {
@@ -6984,7 +8192,9 @@
 						"elementType": {
 							"type": "reference",
 							"id": 290,
-							"name": "Signature"
+							"name": "Signature",
+							"qualifiedName": "Signature",
+							"package": "atom-ide-base"
 						}
 					}
 				}
@@ -6992,7 +8202,6 @@
 			"groups": [
 				{
 					"title": "Properties",
-					"kind": 1024,
 					"children": [
 						289,
 						288,
@@ -7004,7 +8213,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
 					"line": 30,
-					"character": 30
+					"character": 17
 				}
 			]
 		},
@@ -7017,8 +8226,12 @@
 				"isExternal": true
 			},
 			"comment": {
-				"shortText": "Signature help is activated when:",
-				"text": "- Upon keystroke, any provider with a matching grammar scope contains the pressed key inside its triggerCharacters set\n- The signature-help:show command is manually activated\n\nOnce signature help has been triggered, the provider will be queried immediately with the current cursor position,\nand then repeatedly upon cursor movements until a null/empty signature is returned.\n\nReturned signatures will be displayed in a small datatip at the current cursor. The highest-priority provider with a\nnon-null result will be used.\n"
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Signature help is activated when:\n\n- Upon keystroke, any provider with a matching grammar scope contains the pressed key inside its triggerCharacters set\n- The signature-help:show command is manually activated\n\nOnce signature help has been triggered, the provider will be queried immediately with the current cursor position,\nand then repeatedly upon cursor movements until a null/empty signature is returned.\n\nReturned signatures will be displayed in a small datatip at the current cursor. The highest-priority provider with a\nnon-null result will be used."
+					}
+				]
 			},
 			"children": [
 				{
@@ -7033,7 +8246,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
 							"line": 19,
-							"character": 15
+							"character": 2
 						}
 					],
 					"type": {
@@ -7060,7 +8273,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
 							"line": 18,
-							"character": 10
+							"character": 2
 						}
 					],
 					"type": {
@@ -7078,13 +8291,18 @@
 						"isOptional": true
 					},
 					"comment": {
-						"shortText": "A set of characters that will trigger signature help when typed. If a null/empty set is provided, only manual\nactivation of the command works."
+						"summary": [
+							{
+								"kind": "text",
+								"text": "A set of characters that will trigger signature help when typed. If a null/empty set is provided, only manual\nactivation of the command works."
+							}
+						]
 					},
 					"sources": [
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
 							"line": 25,
-							"character": 19
+							"character": 2
 						}
 					],
 					"type": {
@@ -7095,7 +8313,9 @@
 								"name": "string"
 							}
 						],
-						"name": "Set"
+						"name": "Set",
+						"qualifiedName": "Set",
+						"package": ".pnpm"
 					}
 				},
 				{
@@ -7106,6 +8326,13 @@
 					"flags": {
 						"isExternal": true
 					},
+					"sources": [
+						{
+							"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
+							"line": 27,
+							"character": 2
+						}
+					],
 					"signatures": [
 						{
 							"id": 283,
@@ -7126,7 +8353,9 @@
 									},
 									"type": {
 										"type": "reference",
-										"name": "TextEditor"
+										"name": "TextEditor",
+										"qualifiedName": "TextEditor",
+										"package": "@types/atom"
 									}
 								},
 								{
@@ -7139,7 +8368,9 @@
 									},
 									"type": {
 										"type": "reference",
-										"name": "Point"
+										"name": "Point",
+										"qualifiedName": "Point",
+										"package": "@types/atom"
 									}
 								}
 							],
@@ -7160,12 +8391,16 @@
 											{
 												"type": "reference",
 												"id": 286,
-												"name": "SignatureHelp"
+												"name": "SignatureHelp",
+												"qualifiedName": "SignatureHelp",
+												"package": "atom-ide-base"
 											}
 										]
 									}
 								],
-								"name": "Promise"
+								"name": "Promise",
+								"qualifiedName": "Promise",
+								"package": ".pnpm"
 							}
 						}
 					]
@@ -7174,7 +8409,6 @@
 			"groups": [
 				{
 					"title": "Properties",
-					"kind": 1024,
 					"children": [
 						280,
 						279,
@@ -7183,7 +8417,6 @@
 				},
 				{
 					"title": "Methods",
-					"kind": 2048,
 					"children": [
 						282
 					]
@@ -7193,7 +8426,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
 					"line": 17,
-					"character": 38
+					"character": 17
 				}
 			]
 		},
@@ -7219,7 +8452,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
 							"line": 52,
-							"character": 15
+							"character": 2
 						}
 					],
 					"type": {
@@ -7236,7 +8469,9 @@
 							{
 								"type": "reference",
 								"id": 296,
-								"name": "MarkupContent"
+								"name": "MarkupContent",
+								"qualifiedName": "MarkupContent",
+								"package": "atom-ide-base"
 							}
 						]
 					}
@@ -7253,7 +8488,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
 							"line": 51,
-							"character": 7
+							"character": 2
 						}
 					],
 					"type": {
@@ -7283,7 +8518,6 @@
 			"groups": [
 				{
 					"title": "Properties",
-					"kind": 1024,
 					"children": [
 						301,
 						300
@@ -7294,7 +8528,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
 					"line": 50,
-					"character": 35
+					"character": 17
 				}
 			]
 		},
@@ -7319,12 +8553,14 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
 							"line": 58,
-							"character": 9
+							"character": 2
 						}
 					],
 					"type": {
 						"type": "reference",
-						"name": "Grammar"
+						"name": "Grammar",
+						"qualifiedName": "Grammar",
+						"package": "@types/atom"
 					}
 				},
 				{
@@ -7339,7 +8575,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
 							"line": 57,
-							"character": 6
+							"character": 2
 						}
 					],
 					"type": {
@@ -7359,7 +8595,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
 							"line": 59,
-							"character": 7
+							"character": 2
 						}
 					],
 					"type": {
@@ -7371,7 +8607,6 @@
 			"groups": [
 				{
 					"title": "Properties",
-					"kind": 1024,
 					"children": [
 						156,
 						155,
@@ -7383,7 +8618,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
 					"line": 56,
-					"character": 36
+					"character": 17
 				}
 			]
 		},
@@ -7408,7 +8643,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
 							"line": 2,
-							"character": 4
+							"character": 2
 						}
 					],
 					"type": {
@@ -7428,7 +8663,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
 							"line": 3,
-							"character": 6
+							"character": 2
 						}
 					],
 					"type": {
@@ -7449,7 +8684,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
 							"line": 4,
-							"character": 7
+							"character": 2
 						}
 					],
 					"type": {
@@ -7462,6 +8697,13 @@
 							"flags": {
 								"isExternal": true
 							},
+							"sources": [
+								{
+									"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
+									"line": 4,
+									"character": 10
+								}
+							],
 							"signatures": [
 								{
 									"id": 359,
@@ -7493,7 +8735,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
 							"line": 5,
-							"character": 6
+							"character": 2
 						}
 					],
 					"type": {
@@ -7506,6 +8748,13 @@
 							"flags": {
 								"isExternal": true
 							},
+							"sources": [
+								{
+									"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
+									"line": 5,
+									"character": 9
+								}
+							],
 							"signatures": [
 								{
 									"id": 362,
@@ -7528,7 +8777,6 @@
 			"groups": [
 				{
 					"title": "Properties",
-					"kind": 1024,
 					"children": [
 						355,
 						356,
@@ -7541,7 +8789,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
 					"line": 1,
-					"character": 27
+					"character": 17
 				}
 			]
 		},
@@ -7566,7 +8814,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/text-edit.d.ts",
 							"line": 5,
-							"character": 9
+							"character": 2
 						}
 					],
 					"type": {
@@ -7586,12 +8834,14 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/text-edit.d.ts",
 							"line": 4,
-							"character": 10
+							"character": 2
 						}
 					],
 					"type": {
 						"type": "reference",
-						"name": "Range"
+						"name": "Range",
+						"qualifiedName": "Range",
+						"package": "@types/atom"
 					}
 				},
 				{
@@ -7604,13 +8854,18 @@
 						"isOptional": true
 					},
 					"comment": {
-						"shortText": "If included, this will be used to verify that the edit still applies cleanly."
+						"summary": [
+							{
+								"kind": "text",
+								"text": "If included, this will be used to verify that the edit still applies cleanly."
+							}
+						]
 					},
 					"sources": [
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/text-edit.d.ts",
 							"line": 7,
-							"character": 9
+							"character": 2
 						}
 					],
 					"type": {
@@ -7622,7 +8877,6 @@
 			"groups": [
 				{
 					"title": "Properties",
-					"kind": 1024,
 					"children": [
 						344,
 						343,
@@ -7634,7 +8888,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/text-edit.d.ts",
 					"line": 3,
-					"character": 25
+					"character": 17
 				}
 			]
 		},
@@ -7659,13 +8913,15 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
 							"line": 69,
-							"character": 6
+							"character": 2
 						}
 					],
 					"type": {
 						"type": "reference",
 						"id": 269,
-						"name": "TokenKind"
+						"name": "TokenKind",
+						"qualifiedName": "TokenKind",
+						"package": "atom-ide-base"
 					}
 				},
 				{
@@ -7680,7 +8936,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
 							"line": 70,
-							"character": 7
+							"character": 2
 						}
 					],
 					"type": {
@@ -7692,7 +8948,6 @@
 			"groups": [
 				{
 					"title": "Properties",
-					"kind": 1024,
 					"children": [
 						271,
 						272
@@ -7703,7 +8958,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
 					"line": 68,
-					"character": 26
+					"character": 17
 				}
 			]
 		},
@@ -7719,7 +8974,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
 					"line": 48,
-					"character": 30
+					"character": 12
 				}
 			],
 			"type": {
@@ -7728,12 +8983,16 @@
 					{
 						"type": "reference",
 						"id": 129,
-						"name": "DatatipProvider"
+						"name": "DatatipProvider",
+						"qualifiedName": "DatatipProvider",
+						"package": "atom-ide-base"
 					},
 					{
 						"type": "reference",
 						"id": 141,
-						"name": "ModifierDatatipProvider"
+						"name": "ModifierDatatipProvider",
+						"qualifiedName": "ModifierDatatipProvider",
+						"package": "atom-ide-base"
 					}
 				]
 			}
@@ -7750,7 +9009,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/call-hierarchy.d.ts",
 					"line": 4,
-					"character": 29
+					"character": 12
 				}
 			],
 			"type": {
@@ -7779,7 +9038,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
 					"line": 32,
-					"character": 10
+					"character": 5
 				}
 			],
 			"type": {
@@ -7832,7 +9091,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
 					"line": 8,
-					"character": 26
+					"character": 12
 				}
 			],
 			"type": {
@@ -7849,7 +9108,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
 							"line": 8,
-							"character": 28
+							"character": 29
 						}
 					],
 					"signatures": [
@@ -7873,14 +9132,18 @@
 									"type": {
 										"type": "reference",
 										"id": 354,
-										"name": "SourceInfo"
+										"name": "SourceInfo",
+										"qualifiedName": "SourceInfo",
+										"package": "atom-ide-base"
 									}
 								}
 							],
 							"type": {
 								"type": "reference",
 								"id": 367,
-								"name": "ConsoleApi"
+								"name": "ConsoleApi",
+								"qualifiedName": "ConsoleApi",
+								"package": "atom-ide-base"
 							}
 						}
 					]
@@ -7899,7 +9162,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/markdown-service.d.ts",
 					"line": 2,
-					"character": 27
+					"character": 12
 				}
 			],
 			"type": {
@@ -7907,7 +9170,9 @@
 				"typeArguments": [
 					{
 						"type": "reference",
-						"name": "Config"
+						"name": "Config",
+						"qualifiedName": "DOMPurify.Config",
+						"package": "@types/dompurify"
 					},
 					{
 						"type": "union",
@@ -7927,7 +9192,9 @@
 						]
 					}
 				],
-				"name": "Omit"
+				"name": "Omit",
+				"qualifiedName": "Omit",
+				"package": ".pnpm"
 			}
 		},
 		{
@@ -7942,7 +9209,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
 					"line": 79,
-					"character": 19
+					"character": 12
 				}
 			],
 			"type": {
@@ -7951,12 +9218,16 @@
 					{
 						"type": "reference",
 						"id": 159,
-						"name": "MarkedStringDatatip"
+						"name": "MarkedStringDatatip",
+						"qualifiedName": "MarkedStringDatatip",
+						"package": "atom-ide-base"
 					},
 					{
 						"type": "reference",
 						"id": 163,
-						"name": "ReactComponentDatatip"
+						"name": "ReactComponentDatatip",
+						"qualifiedName": "ReactComponentDatatip",
+						"package": "atom-ide-base"
 					}
 				]
 			}
@@ -7973,7 +9244,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/code-actions.d.ts",
 					"line": 5,
-					"character": 26
+					"character": 12
 				}
 			],
 			"type": {
@@ -8006,7 +9277,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/find-references.d.ts",
 					"line": 34,
-					"character": 32
+					"character": 12
 				}
 			],
 			"type": {
@@ -8015,12 +9286,16 @@
 					{
 						"type": "reference",
 						"id": 211,
-						"name": "FindReferencesData"
+						"name": "FindReferencesData",
+						"qualifiedName": "FindReferencesData",
+						"package": "atom-ide-base"
 					},
 					{
 						"type": "reference",
 						"id": 217,
-						"name": "FindReferencesError"
+						"name": "FindReferencesError",
+						"qualifiedName": "FindReferencesError",
+						"package": "atom-ide-base"
 					}
 				]
 			}
@@ -8037,7 +9312,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/uri.d.ts",
 					"line": 1,
-					"character": 18
+					"character": 12
 				}
 			],
 			"type": {
@@ -8057,7 +9332,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
 					"line": 31,
-					"character": 17
+					"character": 12
 				}
 			],
 			"type": {
@@ -8066,12 +9341,16 @@
 					{
 						"type": "reference",
 						"id": 395,
-						"name": "TaskLevelType"
+						"name": "TaskLevelType",
+						"qualifiedName": "TaskLevelType",
+						"package": "atom-ide-base"
 					},
 					{
 						"type": "reference",
 						"id": 397,
-						"name": "Color"
+						"name": "Color",
+						"qualifiedName": "Color",
+						"package": "atom-ide-base"
 					}
 				]
 			}
@@ -8088,7 +9367,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
 					"line": 62,
-					"character": 24
+					"character": 12
 				}
 			],
 			"type": {
@@ -8097,12 +9376,16 @@
 					{
 						"type": "reference",
 						"id": 151,
-						"name": "MarkdownMarkedString"
+						"name": "MarkdownMarkedString",
+						"qualifiedName": "MarkdownMarkedString",
+						"package": "atom-ide-base"
 					},
 					{
 						"type": "reference",
 						"id": 154,
-						"name": "SnippetMarkedString"
+						"name": "SnippetMarkedString",
+						"qualifiedName": "SnippetMarkedString",
+						"package": "atom-ide-base"
 					}
 				]
 			}
@@ -8119,7 +9402,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
 					"line": 43,
-					"character": 22
+					"character": 12
 				}
 			],
 			"type": {
@@ -8148,7 +9431,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
 					"line": 34,
-					"character": 23
+					"character": 12
 				}
 			],
 			"type": {
@@ -8181,7 +9464,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
 					"line": 81,
-					"character": 23
+					"character": 12
 				}
 			],
 			"type": {
@@ -8215,13 +9498,18 @@
 				"isExternal": true
 			},
 			"comment": {
-				"shortText": "Kind of outline tree - matches the names from the Language Server Protocol v2."
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Kind of outline tree - matches the names from the Language Server Protocol v2."
+					}
+				]
 			},
 			"sources": [
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
 					"line": 37,
-					"character": 27
+					"character": 12
 				}
 			],
 			"type": {
@@ -8314,7 +9602,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
 					"line": 20,
-					"character": 32
+					"character": 12
 				}
 			],
 			"type": {
@@ -8347,13 +9635,15 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
 					"line": 54,
-					"character": 32
+					"character": 12
 				}
 			],
 			"type": {
 				"type": "reference",
 				"id": 299,
-				"name": "SignatureParameter"
+				"name": "SignatureParameter",
+				"qualifiedName": "SignatureParameter",
+				"package": "atom-ide-base"
 			}
 		},
 		{
@@ -8368,7 +9658,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/datatip.d.ts",
 					"line": 16,
-					"character": 33
+					"character": 12
 				}
 			],
 			"type": {
@@ -8397,7 +9687,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/main.d.ts",
 					"line": 41,
-					"character": 20
+					"character": 12
 				}
 			],
 			"type": {
@@ -8406,57 +9696,79 @@
 					{
 						"type": "reference",
 						"id": 1,
-						"name": "ProviderCommon"
+						"name": "ProviderCommon",
+						"qualifiedName": "ProviderCommon",
+						"package": "atom-ide-base"
 					},
 					{
 						"type": "reference",
 						"id": 38,
-						"name": "BusySignalProvider"
+						"name": "BusySignalProvider",
+						"qualifiedName": "BusySignalProvider",
+						"package": "atom-ide-base"
 					},
 					{
 						"type": "reference",
 						"id": 50,
-						"name": "CallHierarchyProvider"
+						"name": "CallHierarchyProvider",
+						"qualifiedName": "CallHierarchyProvider",
+						"package": "atom-ide-base"
 					},
 					{
 						"type": "reference",
 						"id": 92,
-						"name": "CodeActionProvider"
+						"name": "CodeActionProvider",
+						"qualifiedName": "CodeActionProvider",
+						"package": "atom-ide-base"
 					},
 					{
 						"type": "reference",
 						"id": 106,
-						"name": "CodeHighlightProvider"
+						"name": "CodeHighlightProvider",
+						"qualifiedName": "CodeHighlightProvider",
+						"package": "atom-ide-base"
 					},
 					{
 						"type": "reference",
 						"id": 150,
-						"name": "AnyDatatipProvider"
+						"name": "AnyDatatipProvider",
+						"qualifiedName": "AnyDatatipProvider",
+						"package": "atom-ide-base"
 					},
 					{
 						"type": "reference",
 						"id": 181,
-						"name": "DefinitionProvider"
+						"name": "DefinitionProvider",
+						"qualifiedName": "DefinitionProvider",
+						"package": "atom-ide-base"
 					},
 					{
 						"type": "reference",
 						"id": 199,
-						"name": "FindReferencesProvider"
+						"name": "FindReferencesProvider",
+						"qualifiedName": "FindReferencesProvider",
+						"package": "atom-ide-base"
 					},
 					{
 						"type": "reference",
 						"id": 221,
-						"name": "HyperclickProvider"
+						"name": "HyperclickProvider",
+						"qualifiedName": "HyperclickProvider",
+						"package": "atom-ide-base"
 					},
 					{
 						"type": "reference",
 						"id": 248,
-						"name": "OutlineProvider"
+						"name": "OutlineProvider",
+						"qualifiedName": "OutlineProvider",
+						"package": "atom-ide-base"
 					},
 					{
 						"type": "reference",
 						"id": 278,
-						"name": "SignatureHelpProvider"
+						"name": "SignatureHelpProvider",
+						"qualifiedName": "SignatureHelpProvider",
+						"package": "atom-ide-base"
 					}
 				]
 			}
@@ -8473,7 +9785,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
 					"line": 3,
-					"character": 33
+					"character": 12
 				}
 			],
 			"type": {
@@ -8490,7 +9802,7 @@
 						{
 							"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
 							"line": 3,
-							"character": 35
+							"character": 36
 						}
 					],
 					"signatures": [
@@ -8514,13 +9826,17 @@
 									"type": {
 										"type": "reference",
 										"id": 278,
-										"name": "SignatureHelpProvider"
+										"name": "SignatureHelpProvider",
+										"qualifiedName": "SignatureHelpProvider",
+										"package": "atom-ide-base"
 									}
 								}
 							],
 							"type": {
 								"type": "reference",
-								"name": "DisposableLike"
+								"name": "DisposableLike",
+								"qualifiedName": "DisposableLike",
+								"package": "@types/atom"
 							}
 						}
 					]
@@ -8539,13 +9855,15 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/sig-help.d.ts",
 					"line": 41,
-					"character": 32
+					"character": 12
 				}
 			],
 			"type": {
 				"type": "reference",
 				"id": 290,
-				"name": "Signature"
+				"name": "Signature",
+				"qualifiedName": "Signature",
+				"package": "atom-ide-base"
 			}
 		},
 		{
@@ -8557,13 +9875,18 @@
 				"isExternal": true
 			},
 			"comment": {
-				"shortText": "Kind of symbol tag - matches the names from the Language Server Protocol. LSP specification:\nhttps://microsoft.github.io/language-server-protocol/specifications/specification-current/#symbolTag"
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Kind of symbol tag - matches the names from the Language Server Protocol. LSP specification:\r\nhttps://microsoft.github.io/language-server-protocol/specifications/specification-current/#symbolTag"
+					}
+				]
 			},
 			"sources": [
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/call-hierarchy.d.ts",
 					"line": 36,
-					"character": 25
+					"character": 12
 				}
 			],
 			"type": {
@@ -8583,7 +9906,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/console.d.ts",
 					"line": 30,
-					"character": 25
+					"character": 12
 				}
 			],
 			"type": {
@@ -8628,7 +9951,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
 					"line": 57,
-					"character": 21
+					"character": 12
 				}
 			],
 			"type": {
@@ -8685,7 +10008,7 @@
 				{
 					"fileName": "node_modules/atom-ide-base/types-packages/outline.d.ts",
 					"line": 73,
-					"character": 25
+					"character": 12
 				}
 			],
 			"type": {
@@ -8693,7 +10016,9 @@
 				"elementType": {
 					"type": "reference",
 					"id": 270,
-					"name": "TextToken"
+					"name": "TextToken",
+					"qualifiedName": "TextToken",
+					"package": "atom-ide-base"
 				}
 			}
 		}
@@ -8701,7 +10026,6 @@
 	"groups": [
 		{
 			"title": "Interfaces",
-			"kind": 256,
 			"children": [
 				29,
 				6,
@@ -8757,8 +10081,7 @@
 			]
 		},
 		{
-			"title": "Type aliases",
-			"kind": 4194304,
+			"title": "Type Aliases",
 			"children": [
 				150,
 				49,
@@ -8792,7 +10115,8 @@
 		{
 			"fileName": "api.ts",
 			"line": 1,
-			"character": 0
+			"character": 0,
+			"url": "https://github.com/atom-community/atom-community.github.io/blob/cbf1b7a/api.ts#L1"
 		}
 	]
 }
