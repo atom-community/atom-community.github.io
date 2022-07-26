@@ -1,4 +1,11 @@
 {
   "extends": "eslint-config-atomic",
-  "ignorePatterns": ["_site-dev/", "_site/", "dist/", "node_modules/"]
+  "ignorePatterns": [
+    "_site-dev/",
+    "_site/",
+    "dist/",
+    "node_modules/",
+    "docs/_merged_assets",
+    "components/type-doc.js"
+  ]
 }
