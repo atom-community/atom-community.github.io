@@ -36,12 +36,12 @@
   },
   "prettier": "prettier-config-atomic",
   "dependencies": {
-    "@rocket/blog": "^0.3.0",
-    "@rocket/cli": "^0.6.0",
+    "@rocket/blog": "^0.4.0",
+    "@rocket/cli": "^0.10.0",
     "@rocket/core": "^0.1.2",
-    "@rocket/launch": "^0.4.0",
-    "@rocket/search": "^0.3.2",
-    "lit-element": "^2.4.0"
+    "@rocket/launch": "^0.6.0",
+    "@rocket/search": "^0.6.0",
+    "lit-element": "^3.0.0"
   },
   "devDependencies": {
     "@types/atom": "^1.40.10",
