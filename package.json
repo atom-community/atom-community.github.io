@@ -36,7 +36,7 @@
   "prettier": "prettier-config-atomic",
   "dependencies": {
     "atom-ide-base": "^3.3.0",
-    "lit-element": "^2.4.0"
+    "lit-element": "^3.2.2"
   },
   "devDependencies": {
     "@rocket/blog": "^0.3.0",
