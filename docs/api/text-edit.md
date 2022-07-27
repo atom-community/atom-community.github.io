@@ -9,6 +9,6 @@ links:
   github: https://github.com/atom-community/atom-ide-text-edit
 ---
 
-![screenshot of text-edit feature]({{ '/_assets/images/screenshot-text-edit.png' | asset | url }})
+<!-- ![screenshot of text-edit feature]({{ '/_assets/images/screenshot-text-edit.png' | asset | url }}) -->
 
 ## API

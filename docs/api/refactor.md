@@ -9,6 +9,6 @@ links:
   github: https://github.com/atom-community/atom-ide-refactor
 ---
 
-![screenshot of refactor feature]({{ '/_assets/images/screenshot-refactor.png' | asset | url }})
+<!-- ![screenshot of refactor feature]({{ '/_assets/images/screenshot-refactor.png' | asset | url }}) -->
 
 ## API

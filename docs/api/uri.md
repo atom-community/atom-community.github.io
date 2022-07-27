@@ -9,6 +9,6 @@ links:
   github: https://github.com/atom-community/atom-ide-uri
 ---
 
-![screenshot of uri feature]({{ '/_assets/images/screenshot-uri.png' | asset | url }})
+<!-- ![screenshot of uri feature]({{ '/_assets/images/screenshot-uri.png' | asset | url }}) -->
 
 ## API
