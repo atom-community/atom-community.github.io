@@ -1,137 +1,143 @@
-<!--?xml version="1.0" encoding="utf-8"?--><html><head></head><body><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
     <url>
       <loc>/404.html</loc>
-      <lastmod>2022-07-26T23:09:01.384Z</lastmod>
+      <lastmod>2022-07-27T00:05:18.419Z</lastmod>
       <changefreq>monthly</changefreq>
     </url>
   
     <url>
       <loc>/api/autocomplete/</loc>
-      <lastmod>2022-07-26T23:09:01.420Z</lastmod>
+      <lastmod>2022-07-27T00:05:18.455Z</lastmod>
       <changefreq>monthly</changefreq>
     </url>
   
     <url>
       <loc>/api/busy-signal/</loc>
-      <lastmod>2022-07-26T23:09:01.420Z</lastmod>
+      <lastmod>2022-07-27T00:05:18.455Z</lastmod>
+      <changefreq>monthly</changefreq>
+    </url>
+  
+    <url>
+      <loc>/api/call-hierarchy/</loc>
+      <lastmod>2022-07-27T00:05:18.455Z</lastmod>
       <changefreq>monthly</changefreq>
     </url>
   
     <url>
       <loc>/api/code-actions/</loc>
-      <lastmod>2022-07-26T23:09:01.420Z</lastmod>
+      <lastmod>2022-07-27T00:05:18.455Z</lastmod>
       <changefreq>monthly</changefreq>
     </url>
   
     <url>
       <loc>/api/code-format/</loc>
-      <lastmod>2022-07-26T23:09:01.420Z</lastmod>
+      <lastmod>2022-07-27T00:05:18.455Z</lastmod>
       <changefreq>monthly</changefreq>
     </url>
   
     <url>
       <loc>/api/code-highlight/</loc>
-      <lastmod>2022-07-26T23:09:01.420Z</lastmod>
+      <lastmod>2022-07-27T00:05:18.455Z</lastmod>
       <changefreq>monthly</changefreq>
     </url>
   
     <url>
       <loc>/api/console/</loc>
-      <lastmod>2022-07-26T23:09:01.420Z</lastmod>
+      <lastmod>2022-07-27T00:05:18.455Z</lastmod>
       <changefreq>monthly</changefreq>
     </url>
   
     <url>
       <loc>/api/datatip/</loc>
-      <lastmod>2022-07-26T23:09:01.420Z</lastmod>
+      <lastmod>2022-07-27T00:05:18.455Z</lastmod>
       <changefreq>monthly</changefreq>
     </url>
   
     <url>
       <loc>/api/definitions/</loc>
-      <lastmod>2022-07-26T23:09:01.420Z</lastmod>
+      <lastmod>2022-07-27T00:05:18.455Z</lastmod>
       <changefreq>monthly</changefreq>
     </url>
   
     <url>
       <loc>/api/find-references/</loc>
-      <lastmod>2022-07-26T23:09:01.420Z</lastmod>
+      <lastmod>2022-07-27T00:05:18.455Z</lastmod>
       <changefreq>monthly</changefreq>
     </url>
   
     <url>
       <loc>/api/hyperclick/</loc>
-      <lastmod>2022-07-26T23:09:01.420Z</lastmod>
+      <lastmod>2022-07-27T00:05:18.455Z</lastmod>
       <changefreq>monthly</changefreq>
     </url>
   
     <url>
       <loc>/api/</loc>
-      <lastmod>2022-07-26T23:09:01.420Z</lastmod>
+      <lastmod>2022-07-27T00:05:18.455Z</lastmod>
       <changefreq>monthly</changefreq>
     </url>
   
     <url>
       <loc>/api/linter/</loc>
-      <lastmod>2022-07-26T23:09:01.420Z</lastmod>
+      <lastmod>2022-07-27T00:05:18.455Z</lastmod>
       <changefreq>monthly</changefreq>
     </url>
   
     <url>
       <loc>/api/main/</loc>
-      <lastmod>2022-07-26T23:09:01.420Z</lastmod>
+      <lastmod>2022-07-27T00:05:18.455Z</lastmod>
       <changefreq>monthly</changefreq>
     </url>
   
     <url>
       <loc>/api/markdown-service/</loc>
-      <lastmod>2022-07-26T23:09:01.420Z</lastmod>
+      <lastmod>2022-07-27T00:05:18.455Z</lastmod>
       <changefreq>monthly</changefreq>
     </url>
   
     <url>
       <loc>/api/outline/</loc>
-      <lastmod>2022-07-26T23:09:01.420Z</lastmod>
+      <lastmod>2022-07-27T00:05:18.455Z</lastmod>
       <changefreq>monthly</changefreq>
     </url>
   
     <url>
       <loc>/api/refactor/</loc>
-      <lastmod>2022-07-26T23:09:01.420Z</lastmod>
+      <lastmod>2022-07-27T00:05:18.455Z</lastmod>
       <changefreq>monthly</changefreq>
     </url>
   
     <url>
       <loc>/api/sig-help/</loc>
-      <lastmod>2022-07-26T23:09:01.420Z</lastmod>
+      <lastmod>2022-07-27T00:05:18.455Z</lastmod>
       <changefreq>monthly</changefreq>
     </url>
   
     <url>
       <loc>/api/text-edit/</loc>
-      <lastmod>2022-07-26T23:09:01.420Z</lastmod>
+      <lastmod>2022-07-27T00:05:18.455Z</lastmod>
       <changefreq>monthly</changefreq>
     </url>
   
     <url>
       <loc>/api/uri/</loc>
-      <lastmod>2022-07-26T23:09:01.420Z</lastmod>
+      <lastmod>2022-07-27T00:05:18.455Z</lastmod>
       <changefreq>monthly</changefreq>
     </url>
   
     <url>
       <loc>/getting-started/</loc>
-      <lastmod>2022-07-26T23:09:01.420Z</lastmod>
+      <lastmod>2022-07-27T00:05:18.455Z</lastmod>
       <changefreq>monthly</changefreq>
     </url>
   
     <url>
       <loc>/</loc>
-      <lastmod>2022-07-26T23:09:01.420Z</lastmod>
+      <lastmod>2022-07-27T00:05:18.455Z</lastmod>
       <changefreq>monthly</changefreq>
     </url>
   
 </urlset>
 
-</body></html>

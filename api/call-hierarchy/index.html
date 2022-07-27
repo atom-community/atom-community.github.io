@@ -8,11 +8,11 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Code Actions: Atom Community</title>
-<meta property="og:title" content="Code Actions: Atom Community">
+<title>Call Hierarchy: Atom Community</title>
+<meta property="og:title" content="Call Hierarchy: Atom Community">
 
 <meta name="generator" content="rocket 0.1">
-<link rel="canonical" href="/api/code-actions/">
+<link rel="canonical" href="/api/call-hierarchy/">
 
 
 
@@ -33,7 +33,7 @@
 <meta property="og:type" content="website">
 
 <meta property="og:image" content="../../5c22e8c1.png">
-<meta property="og:url" content="/api/code-actions/">
+<meta property="og:url" content="/api/call-hierarchy/">
 
 <meta name="twitter:card" content="summary_large_image">
 
@@ -61,8 +61,8 @@
 <link rel="preload" href="../../a6d56f55.js" as="script" crossorigin="anonymous" />
 <link rel="preload" href="../../0a30bcf5.js" as="script" crossorigin="anonymous" />
 <link rel="preload" href="../../5969e7ee.js" as="script" crossorigin="anonymous" />
-<link rel="preload" href="../../81d5322c4.js" as="script" crossorigin="anonymous" />
-<link rel="preload" href="../../479c1ff03.js" as="script" crossorigin="anonymous" />
+<link rel="preload" href="../../81d5322c3.js" as="script" crossorigin="anonymous" />
+<link rel="preload" href="../../479c1ff02.js" as="script" crossorigin="anonymous" />
 <link rel="preload" href="../../e55a85c9.js" as="script" crossorigin="anonymous" />
 </head>
 
@@ -165,17 +165,17 @@
 <a href="/api/busy-signal/">Busy Signal</a>
 
 </li>
-<li class="menu-item">
-<a href="/api/call-hierarchy/">Call Hierarchy</a>
-
-</li>
 <li class="menu-item current">
-<a href="/api/code-actions/">Code Actions</a>
+<a href="/api/call-hierarchy/">Call Hierarchy</a>
 <ul>
   <li class="menu-item anchor">
     <a href="#api" class="anchor">API</a>
   </li>
 </ul>
+
+</li>
+<li class="menu-item">
+<a href="/api/code-actions/">Code Actions</a>
 
 </li>
 <li class="menu-item">
@@ -262,23 +262,54 @@
       <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
     </svg>
   </a>
-  <span class="title">Code Actions</span>
+  <span class="title">Call Hierarchy</span>
+  
+    <a href="https://atom.io/packages/atom-ide-outline" target="_blank" rel="noreferrer noopener">
+      <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="atom-logo-a" x1="50%" x2="50%" y1="3.961%" y2="100%">
+      <stop offset="0%" stop-color="#FDFDFD"></stop>
+      <stop offset="100%" stop-color="#CBCBCB"></stop>
+    </linearGradient>
+    <linearGradient id="atom-logo-b" x1="50%" x2="50%" y1="3.961%" y2="100%">
+      <stop offset="0%" stop-color="#B2E198"></stop>
+      <stop offset="100%" stop-color="#04A171"></stop>
+    </linearGradient>
+  </defs>
+  <circle cx="128" cy="128" r="127.858" fill="url(#atom-logo-a)"></circle>
+  <circle cx="127.858" cy="128.142" r="116.907" fill="url(#atom-logo-b)"></circle>
+  <path fill="#F2F8F6" d="M100.453 110.097a221.782 221.782 0 00-3.988 6.382 164.44 164.44 0 01-3.684-11.377c3.73-.535 7.695-.957 11.874-1.249a224.887 224.887 0 00-4.202 6.244zm103.138 7.475c-4.132-3.967-10.04-7.602-17.558-10.804-14.926-6.356-34.918-10.474-56.295-11.595a234.82 234.82 0 00-7.529-.277C138.53 75.415 154.292 65.05 163.472 64.7c1.944-.074 3.576.31 4.854 1.141 4.296 2.792 5.488 11.453 3.189 23.166a4.267 4.267 0 008.373 1.644c3.953-20.137-1.576-28.497-6.911-31.965-2.785-1.81-6.093-2.655-9.83-2.513-14.12.536-33.904 15.592-51.956 38.803-7.148.247-14.038.864-20.483 1.827a106.106 106.106 0 01-1.625-9.522c-1.619-13.344.367-22.816 5.312-25.337.794-.405 1.662-.639 2.654-.713 4.418-.332 10.652 2.637 17.542 8.359a4.267 4.267 0 005.452-6.565c-8.85-7.35-16.8-10.817-23.633-10.303-2.112.158-4.095.703-5.892 1.62-4.593 2.342-7.732 6.828-9.33 13.331-1.368 5.57-1.562 12.513-.576 20.636.39 3.213.96 6.556 1.695 9.998-5.04 1.062-9.71 2.356-13.897 3.869-18.316 6.616-22.544 15.337-22.866 21.488-.308 5.876 2.7 14.62 18.775 22.91a4.267 4.267 0 003.911-7.583c-9.247-4.77-14.41-10.193-14.165-14.88.346-6.605 11.417-13.596 30.274-17.535 1.747 6.309 3.99 12.861 6.68 19.505-6.777 12.723-11.722 25.262-14.286 36.416-1.833 7.97-2.369 14.89-1.592 20.567.906 6.63 3.558 11.418 7.881 14.228 2.205 1.433 5.176 2.553 9.079 2.553 5.658 0 13.275-2.357 23.343-9.538a4.267 4.267 0 10-4.955-6.948c-9.925 7.08-18.454 9.613-22.816 6.778-4.652-3.023-5.633-12.642-2.624-25.728 1.995-8.678 5.555-18.296 10.383-28.21a220.995 220.995 0 003.283 6.731c9.717 19.087 21.612 35.694 33.494 46.762 5.984 5.573 11.708 9.497 17.011 11.663 3.218 1.314 6.24 1.971 9.045 1.971 2.596 0 5.008-.563 7.216-1.69 4.43-2.259 7.511-6.52 9.157-12.665 1.41-5.263 1.726-11.827.942-19.512-1.543-15.11-7.253-33.539-16.077-51.891a4.267 4.267 0 00-7.69 3.697c8.407 17.485 13.833 34.908 15.278 49.06 1.27 12.447-.78 21.31-5.486 23.71-4.942 2.52-13.756-1.438-23.58-10.588-11.17-10.404-22.43-26.168-31.706-44.388a210.555 210.555 0 01-5.851-12.483 210.936 210.936 0 017.143-11.836 213.301 213.301 0 017.877-11.333c.7-.01 1.405-.017 2.115-.019 3.664-.012 7.592.09 11.688.305 20.404 1.07 39.368 4.95 53.399 10.925 12.34 5.256 19.534 11.704 19.244 17.25-.246 4.708-5.967 9.575-15.696 13.352a4.267 4.267 0 003.088 7.955c16.905-6.563 20.821-14.967 21.13-20.861.27-5.151-2.04-10.111-6.865-14.743z"></path>
+  <path fill="#F1F8F3" d="M119.194 129.133c0 5.153 4.174 9.33 9.323 9.33s9.323-4.177 9.323-9.33c0-5.154-4.174-9.331-9.323-9.331s-9.323 4.177-9.323 9.33"></path>
+</svg>
+
+    </a>
+  
+    <a href="https://github.com/atom-community/atom-ide-outline" target="_blank" rel="noreferrer noopener">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 16" fill="none">
+  <title>GitHub</title>
+  <path fill="currentColor" fill-rule="evenodd" d="M8.18391.249268C3.82241.249268.253906 3.81777.253906 8.17927c0 3.46933 2.279874 6.44313 5.451874 7.53353.3965.0991.49563-.1983.49563-.3965v-1.3878c-2.18075.4956-2.67638-.9912-2.67638-.9912-.3965-.8922-.89212-1.1895-.89212-1.1895-.69388-.4957.09912-.4957.09912-.4957.793.0992 1.1895.793 1.1895.793.69388 1.2887 1.88338.8922 2.27988.6939.09912-.4956.29737-.8921.49562-1.0904-1.78425-.1982-3.5685-.8921-3.5685-3.96496 0-.89212.29738-1.586.793-2.08162-.09912-.19825-.3965-.99125.09913-2.08163 0 0 .69387-.19825 2.18075.793.59475-.19825 1.28862-.29737 1.9825-.29737.69387 0 1.38775.09912 1.98249.29737 1.4869-.99125 2.1808-.793 2.1808-.793.3965 1.09038.1982 1.88338.0991 2.08163.4956.59475.793 1.28862.793 2.08162 0 3.07286-1.8834 3.66766-3.66764 3.86586.29737.3965.59474.8921.59474 1.586v2.1808c0 .1982.0991.4956.5948.3965 3.172-1.0904 5.4518-4.0642 5.4518-7.53353-.0991-4.3615-3.6676-7.930002-8.02909-7.930002z" clip-rule="evenodd"></path>
+</svg>
+
+    </a>
   
 </h1>
 
+<p>Show function call hierarchy in atom-ide-outline</p>
+<p>Double-click the function name to go to the definition.</p>
+<p><img src="../../ff6c1fa7.png" alt="screenshot of call hierarchy feature"></p>
 <h2 id="api"><a class="anchor" href="#api"><svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>API</h2>
 
   
     
 
   
-<article class="type" data-name="CodeAction">
-    <h3 id="codeaction" class="" slot="">
-    <a class="anchor" href="#codeaction">
+<article class="type" data-name="CallHierarchy">
+    <h3 id="callhierarchy" class="" slot="">
+    <a class="anchor" href="#callhierarchy">
       <svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
         <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
       </svg>
-    </a>CodeAction</h3>
+    </a>CallHierarchy</h3>
     
 
 
@@ -287,110 +318,70 @@
 
     
     
-    
-
-    
-    
-      <h3 id="codeaction-methods" class="" slot="">
-    <a class="anchor" href="#codeaction-methods">
+      <h3 id="callhierarchy-properties" class="" slot="">
+    <a class="anchor" href="#callhierarchy-properties">
       <svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
         <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
       </svg>
-    </a>Methods</h3><type-doc kind="method" data-method="apply" data-name="apply">
-          <h4 id="codeaction-apply" class="" slot="name">
-    <a class="anchor" href="#codeaction-apply">
+    </a>Properties</h3><type-doc kind="property" data-name="data">
+          <span slot="name">
+            <h4 id="callhierarchy-data" class="" slot="">
+    <a class="anchor" href="#callhierarchy-data">
       <svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
         <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
       </svg>
-    </a>apply</h4>
-
+    </a>data</h4>
+            
+          </span>
           
-
-            
-
-
-
-
-
-            
-
-            
-            
-            
-
-            
-            <type-doc kind="return">
-              <h4 id="codeaction-apply-returns" class="" slot="name">
-    <a class="anchor" href="#codeaction-apply-returns">
-      <svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
-        <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
-      </svg>
-    </a>Returns</h4>
-              <span slot="type">
-                <pre class="language-ts"><code class="language-ts"><span class="token builtin">Promise</span><span class="token operator">&lt;</span><span class="token keyword">void</span><span class="token operator">&gt;</span>
+            <span slot="type"><pre class="language-ts"><code class="language-ts">CallHierarchyItem<span class="token punctuation">[</span><span class="token punctuation">]</span>
 </code></pre>
-
-              </span>
-              
-
-
-
-
-            </type-doc>
-            
+</span>
           
-
-        </type-doc><type-doc kind="method" data-method="dispose" data-name="dispose">
-          <h4 id="codeaction-dispose" class="" slot="name">
-    <a class="anchor" href="#codeaction-dispose">
-      <svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
-        <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
-      </svg>
-    </a>dispose</h4>
 
           
 
-            
 
 
 
-
-
-            
-
-            
-            
-            
-
-            
-            <type-doc kind="return">
-              <h4 id="codeaction-dispose-returns" class="" slot="name">
-    <a class="anchor" href="#codeaction-dispose-returns">
+        </type-doc><type-doc kind="property" data-name="type">
+          <span slot="name">
+            <h4 id="callhierarchy-type" class="" slot="">
+    <a class="anchor" href="#callhierarchy-type">
       <svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
         <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
       </svg>
-    </a>Returns</h4>
-              <span slot="type">
-                <pre class="language-ts"><code class="language-ts"><span class="token keyword">void</span>
+    </a>type</h4>
+            
+          </span>
+          
+            <span slot="type"><pre class="language-ts"><code class="language-ts"><span class="token constant">T</span>
 </code></pre>
-
-              </span>
-              
-
-
-
-
-            </type-doc>
-            
+</span>
           
 
-        </type-doc><type-doc kind="method" data-method="getTitle" data-name="getTitle">
-          <h4 id="codeaction-gettitle" class="" slot="name">
-    <a class="anchor" href="#codeaction-gettitle">
+          
+
+
+
+
+        </type-doc>
+    
+
+    
+    
+      <h3 id="callhierarchy-methods" class="" slot="">
+    <a class="anchor" href="#callhierarchy-methods">
       <svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
         <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
       </svg>
-    </a>getTitle</h4>
+    </a>Methods</h3><type-doc kind="method" data-method="itemAt" data-name="itemAt">
+          <h4 id="callhierarchy-itemat" class="" slot="name">
+    <a class="anchor" href="#callhierarchy-itemat">
+      <svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
+        <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+      </svg>
+    </a>itemAt</h4>
 
           
 
@@ -404,18 +395,39 @@
 
             
             
+              <h4 id="itemat-parameters" class="" slot="">
+    <a class="anchor" href="#itemat-parameters">
+      <svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
+        <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+      </svg>
+    </a>Parameters</h4><type-doc kind="parameter" data-parameter="i">
+                  <h5 id="parameter-itemat-i" class="" slot="name">
+    <a class="anchor" href="#parameter-itemat-i">
+      <svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
+        <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+      </svg>
+    </a>i</h5>
+                  <span slot="type"><pre class="language-ts"><code class="language-ts"><span class="token builtin">number</span>
+</code></pre>
+</span>
+                  
+
+
+
+
+                </type-doc>
             
 
             
             <type-doc kind="return">
-              <h4 id="codeaction-gettitle-returns" class="" slot="name">
-    <a class="anchor" href="#codeaction-gettitle-returns">
+              <h4 id="callhierarchy-itemat-returns" class="" slot="name">
+    <a class="anchor" href="#callhierarchy-itemat-returns">
       <svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
         <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
       </svg>
     </a>Returns</h4>
               <span slot="type">
-                <pre class="language-ts"><code class="language-ts"><span class="token builtin">Promise</span><span class="token operator">&lt;</span><span class="token builtin">string</span><span class="token operator">&gt;</span>
+                <pre class="language-ts"><code class="language-ts"><span class="token builtin">Promise</span><span class="token operator">&lt;</span>CallHierarchy<span class="token operator">&gt;</span>
 </code></pre>
 
               </span>
@@ -431,13 +443,13 @@
         </type-doc>
     
 
-  </article><article class="type" data-name="CodeActionFetcher">
-    <h3 id="codeactionfetcher" class="" slot="">
-    <a class="anchor" href="#codeactionfetcher">
+  </article><article class="type" data-name="CallHierarchyItem">
+    <h3 id="callhierarchyitem" class="" slot="">
+    <a class="anchor" href="#callhierarchyitem">
       <svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
         <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
       </svg>
-    </a>CodeActionFetcher</h3>
+    </a>CallHierarchyItem</h3>
     
 
 
@@ -446,24 +458,149 @@
 
     
     
-      <h3 id="codeactionfetcher-properties" class="" slot="">
-    <a class="anchor" href="#codeactionfetcher-properties">
+      <h3 id="callhierarchyitem-properties" class="" slot="">
+    <a class="anchor" href="#callhierarchyitem-properties">
       <svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
         <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
       </svg>
-    </a>Properties</h3><type-doc kind="property" data-name="getCodeActionForDiagnostic">
+    </a>Properties</h3><type-doc kind="property" data-name="detail">
           <span slot="name">
-            <h4 id="codeactionfetcher-getcodeactionfordiagnostic" class="" slot="">
-    <a class="anchor" href="#codeactionfetcher-getcodeactionfordiagnostic">
+            <h4 id="callhierarchyitem-detail" class="" slot="">
+    <a class="anchor" href="#callhierarchyitem-detail">
       <svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
         <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
       </svg>
-    </a>getCodeActionForDiagnostic</h4>
+    </a>detail</h4>
+            <span>(optional)</span>
+          </span>
+          
+            <span slot="type"><pre class="language-ts"><code class="language-ts"><span class="token builtin">string</span>
+</code></pre>
+</span>
+          
+
+          
+
+
+
+
+        </type-doc><type-doc kind="property" data-name="icon">
+          <span slot="name">
+            <h4 id="callhierarchyitem-icon" class="" slot="">
+    <a class="anchor" href="#callhierarchyitem-icon">
+      <svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
+        <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+      </svg>
+    </a>icon</h4>
+            <span>(optional)</span>
+          </span>
+          
+            <span slot="type"><pre class="language-ts"><code class="language-ts"><span class="token builtin">string</span>
+</code></pre>
+</span>
+          
+
+          
+
+
+
+
+        </type-doc><type-doc kind="property" data-name="name">
+          <span slot="name">
+            <h4 id="callhierarchyitem-name" class="" slot="">
+    <a class="anchor" href="#callhierarchyitem-name">
+      <svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
+        <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+      </svg>
+    </a>name</h4>
             
           </span>
           
-            <span slot="type"><pre class="language-ts"><code class="language-ts">
-  
+            <span slot="type"><pre class="language-ts"><code class="language-ts"><span class="token builtin">string</span>
+</code></pre>
+</span>
+          
+
+          
+
+
+
+
+        </type-doc><type-doc kind="property" data-name="path">
+          <span slot="name">
+            <h4 id="callhierarchyitem-path" class="" slot="">
+    <a class="anchor" href="#callhierarchyitem-path">
+      <svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
+        <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+      </svg>
+    </a>path</h4>
+            
+          </span>
+          
+            <span slot="type"><pre class="language-ts"><code class="language-ts"><span class="token builtin">string</span>
+</code></pre>
+</span>
+          
+
+          
+
+
+
+
+        </type-doc><type-doc kind="property" data-name="range">
+          <span slot="name">
+            <h4 id="callhierarchyitem-range" class="" slot="">
+    <a class="anchor" href="#callhierarchyitem-range">
+      <svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
+        <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+      </svg>
+    </a>range</h4>
+            
+          </span>
+          
+            <span slot="type"><pre class="language-ts"><code class="language-ts">Range
+</code></pre>
+</span>
+          
+
+          
+
+
+
+
+        </type-doc><type-doc kind="property" data-name="selectionRange">
+          <span slot="name">
+            <h4 id="callhierarchyitem-selectionrange" class="" slot="">
+    <a class="anchor" href="#callhierarchyitem-selectionrange">
+      <svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
+        <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+      </svg>
+    </a>selectionRange</h4>
+            
+          </span>
+          
+            <span slot="type"><pre class="language-ts"><code class="language-ts">Range
+</code></pre>
+</span>
+          
+
+          
+
+
+
+
+        </type-doc><type-doc kind="property" data-name="tags">
+          <span slot="name">
+            <h4 id="callhierarchyitem-tags" class="" slot="">
+    <a class="anchor" href="#callhierarchyitem-tags">
+      <svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
+        <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+      </svg>
+    </a>tags</h4>
+            
+          </span>
+          
+            <span slot="type"><pre class="language-ts"><code class="language-ts"><span class="token punctuation">[</span><span class="token punctuation">]</span>
 </code></pre>
 </span>
           
@@ -480,13 +617,13 @@
     
     
 
-  </article><article class="type" data-name="CodeActionProvider">
-    <h3 id="codeactionprovider" class="" slot="">
-    <a class="anchor" href="#codeactionprovider">
+  </article><article class="type" data-name="CallHierarchyProvider">
+    <h3 id="callhierarchyprovider" class="" slot="">
+    <a class="anchor" href="#callhierarchyprovider">
       <svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
         <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
       </svg>
-    </a>CodeActionProvider</h3>
+    </a>CallHierarchyProvider</h3>
     
 
 
@@ -495,20 +632,20 @@
 
     
     
-      <h3 id="codeactionprovider-properties" class="" slot="">
-    <a class="anchor" href="#codeactionprovider-properties">
+      <h3 id="callhierarchyprovider-properties" class="" slot="">
+    <a class="anchor" href="#callhierarchyprovider-properties">
       <svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
         <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
       </svg>
     </a>Properties</h3><type-doc kind="property" data-name="grammarScopes">
           <span slot="name">
-            <h4 id="codeactionprovider-grammarscopes" class="" slot="">
-    <a class="anchor" href="#codeactionprovider-grammarscopes">
+            <h4 id="callhierarchyprovider-grammarscopes" class="" slot="">
+    <a class="anchor" href="#callhierarchyprovider-grammarscopes">
       <svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
         <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
       </svg>
     </a>grammarScopes</h4>
-            <span>(optional)</span>
+            
           </span>
           
             <span slot="type"><pre class="language-ts"><code class="language-ts"><span class="token keyword">readonly</span> <span class="token builtin">string</span><span class="token punctuation">[</span><span class="token punctuation">]</span>
@@ -521,10 +658,31 @@
 
 
 
+        </type-doc><type-doc kind="property" data-name="name">
+          <span slot="name">
+            <h4 id="callhierarchyprovider-name" class="" slot="">
+    <a class="anchor" href="#callhierarchyprovider-name">
+      <svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
+        <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+      </svg>
+    </a>name</h4>
+            
+          </span>
+          
+            <span slot="type"><pre class="language-ts"><code class="language-ts"><span class="token builtin">string</span>
+</code></pre>
+</span>
+          
+
+          
+
+
+
+
         </type-doc><type-doc kind="property" data-name="priority">
           <span slot="name">
-            <h4 id="codeactionprovider-priority" class="" slot="">
-    <a class="anchor" href="#codeactionprovider-priority">
+            <h4 id="callhierarchyprovider-priority" class="" slot="">
+    <a class="anchor" href="#callhierarchyprovider-priority">
       <svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
         <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
       </svg>
@@ -547,18 +705,18 @@
 
     
     
-      <h3 id="codeactionprovider-methods" class="" slot="">
-    <a class="anchor" href="#codeactionprovider-methods">
+      <h3 id="callhierarchyprovider-methods" class="" slot="">
+    <a class="anchor" href="#callhierarchyprovider-methods">
       <svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
         <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
       </svg>
-    </a>Methods</h3><type-doc kind="method" data-method="getCodeActions" data-name="getCodeActions">
-          <h4 id="codeactionprovider-getcodeactions" class="" slot="name">
-    <a class="anchor" href="#codeactionprovider-getcodeactions">
+    </a>Methods</h3><type-doc kind="method" data-method="getIncomingCallHierarchy" data-name="getIncomingCallHierarchy">
+          <h4 id="callhierarchyprovider-getincomingcallhierarchy" class="" slot="name">
+    <a class="anchor" href="#callhierarchyprovider-getincomingcallhierarchy">
       <svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
         <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
       </svg>
-    </a>getCodeActions</h4>
+    </a>getIncomingCallHierarchy</h4>
 
           
 
@@ -572,14 +730,14 @@
 
             
             
-              <h4 id="getcodeactions-parameters" class="" slot="">
-    <a class="anchor" href="#getcodeactions-parameters">
+              <h4 id="getincomingcallhierarchy-parameters" class="" slot="">
+    <a class="anchor" href="#getincomingcallhierarchy-parameters">
       <svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
         <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
       </svg>
     </a>Parameters</h4><type-doc kind="parameter" data-parameter="editor">
-                  <h5 id="parameter-getcodeactions-editor" class="" slot="name">
-    <a class="anchor" href="#parameter-getcodeactions-editor">
+                  <h5 id="parameter-getincomingcallhierarchy-editor" class="" slot="name">
+    <a class="anchor" href="#parameter-getincomingcallhierarchy-editor">
       <svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
         <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
       </svg>
@@ -592,29 +750,14 @@
 
 
 
-                </type-doc><type-doc kind="parameter" data-parameter="range">
-                  <h5 id="parameter-getcodeactions-range" class="" slot="name">
-    <a class="anchor" href="#parameter-getcodeactions-range">
+                </type-doc><type-doc kind="parameter" data-parameter="point">
+                  <h5 id="parameter-getincomingcallhierarchy-point" class="" slot="name">
+    <a class="anchor" href="#parameter-getincomingcallhierarchy-point">
       <svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
         <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
       </svg>
-    </a>range</h5>
-                  <span slot="type"><pre class="language-ts"><code class="language-ts">Range
-</code></pre>
-</span>
-                  
-
-
-
-
-                </type-doc><type-doc kind="parameter" data-parameter="diagnostics">
-                  <h5 id="parameter-getcodeactions-diagnostics" class="" slot="name">
-    <a class="anchor" href="#parameter-getcodeactions-diagnostics">
-      <svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
-        <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
-      </svg>
-    </a>diagnostics</h5>
-                  <span slot="type"><pre class="language-ts"><code class="language-ts">Diagnostic<span class="token punctuation">[</span><span class="token punctuation">]</span>
+    </a>point</h5>
+                  <span slot="type"><pre class="language-ts"><code class="language-ts">Point
 </code></pre>
 </span>
                   
@@ -627,14 +770,94 @@
 
             
             <type-doc kind="return">
-              <h4 id="codeactionprovider-getcodeactions-returns" class="" slot="name">
-    <a class="anchor" href="#codeactionprovider-getcodeactions-returns">
+              <h4 id="callhierarchyprovider-getincomingcallhierarchy-returns" class="" slot="name">
+    <a class="anchor" href="#callhierarchyprovider-getincomingcallhierarchy-returns">
       <svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
         <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
       </svg>
     </a>Returns</h4>
               <span slot="type">
-                <pre class="language-ts"><code class="language-ts"><span class="token builtin">Promise</span><span class="token operator">&lt;</span><span class="token keyword">undefined</span><span class="token operator">|</span><span class="token keyword">null</span><span class="token operator">|</span>CodeAction<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token operator">&gt;</span>
+                <pre class="language-ts"><code class="language-ts"><span class="token builtin">Promise</span><span class="token operator">&lt;</span><span class="token keyword">null</span><span class="token operator">|</span>CallHierarchy<span class="token operator">&lt;</span><span class="token operator">&gt;&gt;</span>
+</code></pre>
+
+              </span>
+              
+
+
+
+
+            </type-doc>
+            
+          
+
+        </type-doc><type-doc kind="method" data-method="getOutgoingCallHierarchy" data-name="getOutgoingCallHierarchy">
+          <h4 id="callhierarchyprovider-getoutgoingcallhierarchy" class="" slot="name">
+    <a class="anchor" href="#callhierarchyprovider-getoutgoingcallhierarchy">
+      <svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
+        <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+      </svg>
+    </a>getOutgoingCallHierarchy</h4>
+
+          
+
+            
+
+
+
+
+
+            
+
+            
+            
+              <h4 id="getoutgoingcallhierarchy-parameters" class="" slot="">
+    <a class="anchor" href="#getoutgoingcallhierarchy-parameters">
+      <svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
+        <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+      </svg>
+    </a>Parameters</h4><type-doc kind="parameter" data-parameter="editor">
+                  <h5 id="parameter-getoutgoingcallhierarchy-editor" class="" slot="name">
+    <a class="anchor" href="#parameter-getoutgoingcallhierarchy-editor">
+      <svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
+        <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+      </svg>
+    </a>editor</h5>
+                  <span slot="type"><pre class="language-ts"><code class="language-ts">TextEditor
+</code></pre>
+</span>
+                  
+
+
+
+
+                </type-doc><type-doc kind="parameter" data-parameter="point">
+                  <h5 id="parameter-getoutgoingcallhierarchy-point" class="" slot="name">
+    <a class="anchor" href="#parameter-getoutgoingcallhierarchy-point">
+      <svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
+        <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+      </svg>
+    </a>point</h5>
+                  <span slot="type"><pre class="language-ts"><code class="language-ts">Point
+</code></pre>
+</span>
+                  
+
+
+
+
+                </type-doc>
+            
+
+            
+            <type-doc kind="return">
+              <h4 id="callhierarchyprovider-getoutgoingcallhierarchy-returns" class="" slot="name">
+    <a class="anchor" href="#callhierarchyprovider-getoutgoingcallhierarchy-returns">
+      <svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
+        <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+      </svg>
+    </a>Returns</h4>
+              <span slot="type">
+                <pre class="language-ts"><code class="language-ts"><span class="token builtin">Promise</span><span class="token operator">&lt;</span><span class="token keyword">null</span><span class="token operator">|</span>CallHierarchy<span class="token operator">&lt;</span><span class="token operator">&gt;&gt;</span>
 </code></pre>
 
               </span>
@@ -650,13 +873,13 @@
         </type-doc>
     
 
-  </article><article class="type" data-name="Diagnostic">
-    <h3 id="diagnostic" class="" slot="">
-    <a class="anchor" href="#diagnostic">
+  </article><article class="type" data-name="CallHierarchyType">
+    <h3 id="callhierarchytype" class="" slot="">
+    <a class="anchor" href="#callhierarchytype">
       <svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
         <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
       </svg>
-    </a>Diagnostic</h3>
+    </a>CallHierarchyType</h3>
     
 
 
@@ -665,130 +888,19 @@
 
     
     
-      <h3 id="diagnostic-properties" class="" slot="">
-    <a class="anchor" href="#diagnostic-properties">
-      <svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
-        <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
-      </svg>
-    </a>Properties</h3><type-doc kind="property" data-name="filePath">
-          <span slot="name">
-            <h4 id="diagnostic-filepath" class="" slot="">
-    <a class="anchor" href="#diagnostic-filepath">
-      <svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
-        <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
-      </svg>
-    </a>filePath</h4>
-            
-          </span>
-          
-            <span slot="type"><pre class="language-ts"><code class="language-ts"><span class="token builtin">string</span>
-</code></pre>
-</span>
-          
-
-          
-
-
-
-
-        </type-doc><type-doc kind="property" data-name="providerName">
-          <span slot="name">
-            <h4 id="diagnostic-providername" class="" slot="">
-    <a class="anchor" href="#diagnostic-providername">
-      <svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
-        <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
-      </svg>
-    </a>providerName</h4>
-            
-          </span>
-          
-            <span slot="type"><pre class="language-ts"><code class="language-ts"><span class="token builtin">string</span>
-</code></pre>
-</span>
-          
-
-          
-
-
-
-
-        </type-doc><type-doc kind="property" data-name="range">
-          <span slot="name">
-            <h4 id="diagnostic-range" class="" slot="">
-    <a class="anchor" href="#diagnostic-range">
-      <svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
-        <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
-      </svg>
-    </a>range</h4>
-            
-          </span>
-          
-            <span slot="type"><pre class="language-ts"><code class="language-ts">Range
-</code></pre>
-</span>
-          
-
-          
-
-
-
-
-        </type-doc><type-doc kind="property" data-name="text">
-          <span slot="name">
-            <h4 id="diagnostic-text" class="" slot="">
-    <a class="anchor" href="#diagnostic-text">
-      <svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
-        <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
-      </svg>
-    </a>text</h4>
-            <span>(optional)</span>
-          </span>
-          
-            <span slot="type"><pre class="language-ts"><code class="language-ts"><span class="token builtin">string</span>
-</code></pre>
-</span>
-          
-
-          
-
-
-
-
-        </type-doc><type-doc kind="property" data-name="type">
-          <span slot="name">
-            <h4 id="diagnostic-type" class="" slot="">
-    <a class="anchor" href="#diagnostic-type">
-      <svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
-        <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
-      </svg>
-    </a>type</h4>
-            
-          </span>
-          
-            <span slot="type"><pre class="language-ts"><code class="language-ts">DiagnosticType
-</code></pre>
-</span>
-          
-
-          
-
-
-
-
-        </type-doc>
     
 
     
     
     
 
-  </article><article class="type" data-name="DiagnosticType">
-    <h3 id="diagnostictype" class="" slot="">
-    <a class="anchor" href="#diagnostictype">
+  </article><article class="type" data-name="SymbolTagKind">
+    <h3 id="symboltagkind" class="" slot="">
+    <a class="anchor" href="#symboltagkind">
       <svg class="octicon octicon-link" viewBox="0 0 16 16" aria-hidden="true" width="16" height="16">
         <path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
       </svg>
-    </a>DiagnosticType</h3>
+    </a>SymbolTagKind</h3>
     
 
 
@@ -808,7 +920,7 @@
     <div class="content-footer">
   <p>
     Caught a mistake or want to contribute to the documentation?
-    <a href="https://github.com/atom-community/atom-community.github.io/edit/master/./docs/api/code-actions.md">Edit this page on GitHub!</a>
+    <a href="https://github.com/atom-community/atom-community.github.io/edit/master/./docs/api/call-hierarchy.md">Edit this page on GitHub!</a>
   </p>
 </div>
 
@@ -937,7 +1049,7 @@ serviceWorkerUpdate();
   </script>
 <script type="module" src="../../1fe76fa2.js"></script>
 <script type="module" src="../../0a30bcf5.js"></script>
-<script type="module" src="../../81d5322c4.js" async=""></script>
-<script type="module" src="../../479c1ff03.js"></script>
+<script type="module" src="../../81d5322c3.js" async=""></script>
+<script type="module" src="../../479c1ff02.js"></script>
 
 </body></html>

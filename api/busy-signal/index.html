@@ -49,19 +49,21 @@
 
 
   
+    <noscript>&#x3C;link rel="stylesheet" href="/_merged_assets/_static/search/noscript.css"></noscript>
+
+  
     <noscript>&#x3C;link rel="stylesheet" href="/_merged_assets/_static/noscript.css"></noscript>
 
   
 
-<link rel="preload" href="../../becb48382.js" as="script" crossorigin="anonymous">
-<link rel="preload" href="../../57bee0e8.js" as="script" crossorigin="anonymous">
-<link rel="preload" href="../../94d90def.js" as="script" crossorigin="anonymous">
-<link rel="preload" href="../../4ada7d80.js" as="script" crossorigin="anonymous">
-<link rel="preload" href="../../81d5322c2.js" as="script" crossorigin="anonymous">
-<link rel="preload" href="../../9066fa7c2.js" as="script" crossorigin="anonymous">
-<link rel="preload" href="../../b19775e7.js" as="script" crossorigin="anonymous">
-<link rel="preload" href="../../19486717.js" as="script" crossorigin="anonymous">
-<link rel="preload" href="../../88cc1e0f.js" as="script" crossorigin="anonymous">
+<link rel="preload" href="../../1fe76fa2.js" as="script" crossorigin="anonymous" />
+<link rel="preload" href="../../8d94b22a.js" as="script" crossorigin="anonymous" />
+<link rel="preload" href="../../a6d56f55.js" as="script" crossorigin="anonymous" />
+<link rel="preload" href="../../0a30bcf5.js" as="script" crossorigin="anonymous" />
+<link rel="preload" href="../../5969e7ee.js" as="script" crossorigin="anonymous" />
+<link rel="preload" href="../../81d5322c2.js" as="script" crossorigin="anonymous" />
+<link rel="preload" href="../../479c1ff0.js" as="script" crossorigin="anonymous" />
+<link rel="preload" href="../../e55a85c9.js" as="script" crossorigin="anonymous" />
 </head>
 
   
@@ -162,6 +164,10 @@
 <li class="menu-item current">
 <a href="/api/busy-signal/">Busy Signal</a>
 
+
+</li>
+<li class="menu-item">
+<a href="/api/call-hierarchy/">Call Hierarchy</a>
 
 </li>
 <li class="menu-item">
@@ -299,7 +305,6 @@
       </svg>
     </a>BusyMessage</h3>
     
-<p>Represents a particular busy signal.</p>
 
 
 
@@ -327,7 +332,6 @@
           
 
             
-<p>Dispose of the signal when done to make it go away.</p>
 
 
 
@@ -372,7 +376,6 @@
           
 
             
-<p>Set or update the title of a signal.</p>
 
 
 
@@ -400,7 +403,6 @@
                   
 
 
-<p>New title for the signal.</p>
 
 
                 </type-doc>
@@ -469,7 +471,6 @@
 
           
 
-<p>Debounce it? default = <code>true</code> for busy-signal, and <code>false</code> for action-required.</p>
 
 
 
@@ -492,7 +493,6 @@
 
           
 
-<p>If <code>onClick</code> is set, then the tooltip will be clickable.</p>
 
 
 
@@ -514,8 +514,6 @@
 
           
 
-<p>Can say that a busy signal will only appear when a given file is open.
-Default = <code>null</code>, meaning the busy signal applies to all files.</p>
 
 
 
@@ -537,8 +535,6 @@ Default = <code>null</code>, meaning the busy signal applies to all files.</p>
 
           
 
-<p>If set to <code>true</code>, the busy signal tooltip will be immediately revealed
-when it first becomes visible (without explicit mouse interaction).</p>
 
 
 
@@ -553,15 +549,13 @@ when it first becomes visible (without explicit mouse interaction).</p>
             <span>(optional)</span>
           </span>
           
-            <span slot="type"><pre class="language-ts"><code class="language-ts"><span class="token string">"computer"</span><span class="token operator">|</span><span class="token string">"user"</span>
+            <span slot="type"><pre class="language-ts"><code class="language-ts"><span class="token string">"user"</span><span class="token operator">|</span><span class="token string">"computer"</span>
 </code></pre>
 </span>
           
 
           
 
-<p>Is user waiting for computer to finish a task? (traditional busy spinner)
-or is the computer waiting for user to finish a task? (action required)</p>
 
 
 
@@ -580,7 +574,6 @@ or is the computer waiting for user to finish a task? (action required)</p>
       </svg>
     </a>BusySignalProvider</h3>
     
-<p><code>busy-signal</code> service.</p>
 
 
 
@@ -608,7 +601,6 @@ or is the computer waiting for user to finish a task? (action required)</p>
           
 
             
-<p>Fires a <code>did-add</code> event.</p>
 
 
 
@@ -636,7 +628,6 @@ or is the computer waiting for user to finish a task? (action required)</p>
                   
 
 
-<p>Name of the signal to notify regarding its addition.</p>
 
 
                 </type-doc>
@@ -675,7 +666,6 @@ or is the computer waiting for user to finish a task? (action required)</p>
           
 
             
-<p>Fires a <code>did-clear</code> event.</p>
 
 
 
@@ -720,7 +710,6 @@ or is the computer waiting for user to finish a task? (action required)</p>
           
 
             
-<p>Fires a <code>did-dispose</code> event and disposes of subscriptions.</p>
 
 
 
@@ -765,7 +754,6 @@ or is the computer waiting for user to finish a task? (action required)</p>
           
 
             
-<p>Fires a <code>did-remove</code> event.</p>
 
 
 
@@ -793,7 +781,6 @@ or is the computer waiting for user to finish a task? (action required)</p>
                   
 
 
-<p>Name of the signal to notify regarding its removal.</p>
 
 
                 </type-doc>
@@ -832,7 +819,6 @@ or is the computer waiting for user to finish a task? (action required)</p>
       </svg>
     </a>BusySignalRegistry</h3>
     
-<p><code>busy-signal</code> service.</p>
 
 
 
@@ -860,7 +846,6 @@ or is the computer waiting for user to finish a task? (action required)</p>
           
 
             
-<p>Creates a <code>busy-signal</code> provider and adds it to the registry.</p>
 
 
 
@@ -906,7 +891,6 @@ or is the computer waiting for user to finish a task? (action required)</p>
     </a>BusySignalService</h3>
     
 
-<p><code>atom-ide-busy-signal</code> service.</p>
 
 
 
@@ -933,9 +917,6 @@ or is the computer waiting for user to finish a task? (action required)</p>
           
 
             
-<p>This is a no-op.</p>
-<p>When someone consumes the busy service, they get back a
-reference to the single shared instance, so disposing of it would be wrong.</p>
 
 
 
@@ -981,8 +962,6 @@ reference to the single shared instance, so disposing of it would be wrong.</p>
 
             
 
-<p>Activates the busy signal. Set the title in the returned BusySignal
-object (you can update the title multiple times) and dispose it when done.</p>
 
 
 
@@ -1009,7 +988,6 @@ object (you can update the title multiple times) and dispose it when done.</p>
                   
 
 
-<p>name of the busy signal to activate</p>
 
 
                 </type-doc><type-doc kind="parameter" data-parameter="options">
@@ -1025,7 +1003,6 @@ object (you can update the title multiple times) and dispose it when done.</p>
                   
 
 
-<p>options for this signal</p>
 
 
                 </type-doc>
@@ -1065,10 +1042,6 @@ object (you can update the title multiple times) and dispose it when done.</p>
 
             
 
-<p>Activates the busy signal with the given title and returns the promise
-from the provided callback.
-The busy signal automatically deactivates when the returned promise
-either resolves or rejects.</p>
 
 
 
@@ -1089,7 +1062,6 @@ either resolves or rejects.</p>
                   
 
 
-<p>return type of the async function</p>
 
 
                 </type-doc>
@@ -1114,7 +1086,6 @@ either resolves or rejects.</p>
                   
 
 
-<p>name of the busy signal to activate</p>
 
 
                 </type-doc><type-doc kind="parameter" data-parameter="f">
@@ -1131,7 +1102,6 @@ either resolves or rejects.</p>
                   
 
 
-<p>Async function. When the promise resolves, the signal deactivates.</p>
 
 
                 </type-doc><type-doc kind="parameter" data-parameter="options">
@@ -1147,7 +1117,6 @@ either resolves or rejects.</p>
                   
 
 
-<p>options for this signal</p>
 
 
                 </type-doc>
@@ -1255,7 +1224,6 @@ either resolves or rejects.</p>
   
 
 
-
   <script>
   async function serviceWorkerUpdate() {
   if ('serviceWorker' in navigator) {
@@ -1311,9 +1279,9 @@ serviceWorkerUpdate();
       });
     }
   </script>
-<script type="module" src="../../becb48382.js"></script>
-<script type="module" src="../../81d5322c2.js"></script>
-<script type="module" src="../../9066fa7c2.js"></script>
-<script type="module" src="../../19486717.js"></script>
+<script type="module" src="../../1fe76fa2.js"></script>
+<script type="module" src="../../0a30bcf5.js"></script>
+<script type="module" src="../../81d5322c2.js" async=""></script>
+<script type="module" src="../../479c1ff0.js"></script>
 
 </body></html>

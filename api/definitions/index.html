@@ -49,19 +49,21 @@
 
 
   
+    <noscript>&#x3C;link rel="stylesheet" href="/_merged_assets/_static/search/noscript.css"></noscript>
+
+  
     <noscript>&#x3C;link rel="stylesheet" href="/_merged_assets/_static/noscript.css"></noscript>
 
   
 
-<link rel="preload" href="../../becb48388.js" as="script" crossorigin="anonymous">
-<link rel="preload" href="../../57bee0e8.js" as="script" crossorigin="anonymous">
-<link rel="preload" href="../../94d90def.js" as="script" crossorigin="anonymous">
-<link rel="preload" href="../../4ada7d80.js" as="script" crossorigin="anonymous">
-<link rel="preload" href="../../81d5322c8.js" as="script" crossorigin="anonymous">
-<link rel="preload" href="../../9066fa7c8.js" as="script" crossorigin="anonymous">
-<link rel="preload" href="../../b19775e7.js" as="script" crossorigin="anonymous">
-<link rel="preload" href="../../194867177.js" as="script" crossorigin="anonymous">
-<link rel="preload" href="../../88cc1e0f.js" as="script" crossorigin="anonymous">
+<link rel="preload" href="../../1fe76fa2.js" as="script" crossorigin="anonymous" />
+<link rel="preload" href="../../8d94b22a.js" as="script" crossorigin="anonymous" />
+<link rel="preload" href="../../a6d56f55.js" as="script" crossorigin="anonymous" />
+<link rel="preload" href="../../0a30bcf5.js" as="script" crossorigin="anonymous" />
+<link rel="preload" href="../../5969e7ee.js" as="script" crossorigin="anonymous" />
+<link rel="preload" href="../../81d5322c9.js" as="script" crossorigin="anonymous" />
+<link rel="preload" href="../../479c1ff08.js" as="script" crossorigin="anonymous" />
+<link rel="preload" href="../../e55a85c9.js" as="script" crossorigin="anonymous" />
 </head>
 
   
@@ -161,6 +163,10 @@
 </li>
 <li class="menu-item">
 <a href="/api/busy-signal/">Busy Signal</a>
+
+</li>
+<li class="menu-item">
+<a href="/api/call-hierarchy/">Call Hierarchy</a>
 
 </li>
 <li class="menu-item">
@@ -334,7 +340,6 @@
 
           
 
-<p><code>language</code> may be used by consumers to identify the source of definitions.</p>
 
 
 
@@ -356,8 +361,6 @@
 
           
 
-<p>Optional: <code>name</code> and <code>projectRoot</code> can be provided to display a more human-readable title
-inside of Hyperclick when there are multiple definitions.</p>
 
 
 
@@ -379,7 +382,6 @@ inside of Hyperclick when there are multiple definitions.</p>
 
           
 
-<p>Path of the file in which the definition is located.</p>
 
 
 
@@ -401,8 +403,6 @@ inside of Hyperclick when there are multiple definitions.</p>
 
           
 
-<p>First character of the definition's identifier.
-e.g. "F" in <code>class Foo {}</code></p>
 
 
 
@@ -424,7 +424,6 @@ e.g. "F" in <code>class Foo {}</code></p>
 
           
 
-<p>If provided, <code>projectRoot</code> will be used to display a relativized version of <code>path</code>.</p>
 
 
 
@@ -446,8 +445,6 @@ e.g. "F" in <code>class Foo {}</code></p>
 
           
 
-<p>Optional: the range of the entire definition.
-e.g. "c" to "}" in <code>class Foo {}</code></p>
 
 
 
@@ -560,7 +557,6 @@ e.g. "c" to "}" in <code>class Foo {}</code></p>
     </a>DefinitionProvider</h3>
     
 
-<p>Provides definitions for a set of language grammars.</p>
 
 
 
@@ -591,8 +587,6 @@ e.g. "c" to "}" in <code>class Foo {}</code></p>
 
           
 
-<p>Obtains the definition in an editor at the given point.
-This should return null if no definition is available.</p>
 
 
 
@@ -656,8 +650,6 @@ This should return null if no definition is available.</p>
 
           
 
-<p>If there are multiple providers for a given grammar,
-the one with the highest priority will be used.</p>
 
 
 
@@ -698,10 +690,6 @@ the one with the highest priority will be used.</p>
     </a>DefinitionQueryResult</h3>
     
 
-<p>Definition queries supply a point.
-The returned queryRange is the range within which the returned definition is valid.
-Typically queryRange spans the containing identifier around the query point.
-(If a null queryRange is returned, the range of the word containing the point is used.)</p>
 
 
 
@@ -731,7 +719,6 @@ Typically queryRange spans the containing identifier around the query point.
 
           
 
-<p>Must be non-empty.</p>
 
 
 
@@ -840,7 +827,6 @@ Typically queryRange spans the containing identifier around the query point.
   
 
 
-
   <script>
   async function serviceWorkerUpdate() {
   if ('serviceWorker' in navigator) {
@@ -896,9 +882,9 @@ serviceWorkerUpdate();
       });
     }
   </script>
-<script type="module" src="../../becb48388.js"></script>
-<script type="module" src="../../81d5322c8.js"></script>
-<script type="module" src="../../9066fa7c8.js"></script>
-<script type="module" src="../../194867177.js"></script>
+<script type="module" src="../../1fe76fa2.js"></script>
+<script type="module" src="../../0a30bcf5.js"></script>
+<script type="module" src="../../81d5322c9.js" async=""></script>
+<script type="module" src="../../479c1ff08.js"></script>
 
 </body></html>
