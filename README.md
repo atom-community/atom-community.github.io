@@ -8,5 +8,5 @@ Uses [TypeDoc](https://typedoc.org/) for introspection.
 
 ```
 pnpm install
-pnpm start
+pnpm dev
 ```
