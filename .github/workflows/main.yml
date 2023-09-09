@@ -21,7 +21,7 @@ jobs:
           - 7
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
@@ -29,7 +29,7 @@ jobs:
         uses: wagoid/commitlint-github-action@v5
 
       - name: Checkout 🛎️
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Cache
         uses: actions/cache@v2
